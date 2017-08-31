@@ -1,0 +1,17 @@
+{
+  "name": "",
+  "devDependencies": {
+    "browser-sync": "*",
+    "del": "*",
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-clean-css": "*",
+    "gulp-rename": "*",
+    "gulp-sass": "*",
+    "gulp-uglify": "*",
+    "gulp-watch": "*",
+    "run-sequence": "*",
+    "sass-mq": "*",
+    "susy": "*"
+  }
+}

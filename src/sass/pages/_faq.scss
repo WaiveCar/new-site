@@ -1,0 +1,412 @@
+
+/* "FAQ" page
+================================================================================ */
+
+
+
+
+
+/* COVER
+============================================================ */
+
+.faq-cover {
+  @include container-outer;
+  background: url('../img/faq-cover-bg.jpg') 10% 50% no-repeat;
+  background-size: cover;
+
+  &__wrapper {
+    @include container;
+    display: flex;
+    align-items: center;
+    height: 64rem;
+    height: 50vw;
+    max-height: 64rem;
+  }
+}
+
+
+
+/* Information
+------------------------------------ */
+
+.faq-cover-info {
+  flex: 0 1 auto;
+
+  &__title {
+    margin: 0;
+    max-width: 32rem;
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: (40/30);
+  }
+}
+
+
+
+
+
+/* CONTENT WRAPPER
+============================================================ */
+
+.faq-wrapper {
+  @include container-outer;
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+  background-color: #fff;
+
+  &__container {
+    @include container;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+
+
+
+
+/* SIDEBAR
+============================================================ */
+
+.faq-sidebar {
+  flex: 0 0 22rem;
+  margin-right: 6rem;
+  width: 22rem;
+}
+
+
+
+/* Button
+------------------------------------ */
+
+.faq-sidebar-btn {
+  display: block;
+  padding: 0 0 0 3.3rem;
+  width: 100%;
+  height: 4.8rem;
+  background-color: transparent;
+  border: none;
+  border-left: 0.2rem solid #ebedec;
+  text-align: left;
+  cursor: pointer;
+
+  &:hover {
+    border-left-color: $main-color;
+
+    .faq-sidebar-btn__icon {
+      fill: $main-color;
+
+      &--driving {
+        .icon-driving-baloons {
+          fill: $main-color;
+        }
+
+        .icon-driving-line {
+          stroke: $main-color;
+        }
+      }
+    }
+
+    .faq-sidebar-btn__title {
+      color: $main-color;
+    }
+  }
+
+  // Active item
+  &.js-active {
+    border-left-color: $main-color;
+    cursor: default;
+
+    .faq-sidebar-btn__icon {
+      fill: $main-color;
+
+      &--driving {
+        .icon-driving-baloons {
+          fill: $main-color;
+        }
+
+        .icon-driving-line {
+          stroke: $main-color;
+        }
+      }
+    }
+
+    .faq-sidebar-btn__title {
+      color: $main-color;
+    }
+  }
+
+  &__icon {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    transition: all 150ms ease;
+
+    &--user {
+      margin-right: 2.2rem;
+      width: 2rem;
+      height: 2rem;
+      fill: #b6beb8;
+    }
+
+    &--booking {
+      margin-right: 2.3rem;
+      width: 1.8rem;
+      height: 1.6rem;
+      fill: #b6beb8;
+    }
+
+    &--driving {
+      margin-right: 2.2rem;
+      width: 1.9rem;
+      height: 2rem;
+
+      .icon-driving-baloons {
+        fill: #b6beb8;
+      }
+
+      .icon-driving-line {
+        stroke: #b6beb8;
+      }
+    }
+
+    &--ending {
+      margin-right: 2.3rem;
+      width: 1.8rem;
+      height: 1.7rem;
+      fill: #b6beb8;
+    }
+  }
+
+  &__title {
+    display: inline-block;
+    vertical-align: middle;
+    color: #a3aaa4;
+    font-size: 1.7rem;
+    font-weight: 600;
+    line-height: 1;
+    transition: all 150ms ease;
+  }
+}
+
+
+
+
+
+/* CONTENT
+============================================================ */
+
+.faq-content {
+  flex: 0 1 80rem;
+  width: 100%;
+  max-width: 80rem;
+
+  &__container {
+    display: none;
+
+    // Active tab
+    &.js-active {
+      display: block;
+    }
+  }
+}
+
+
+
+/* Item
+------------------------------------ */
+
+.faq-content-item {
+  margin-bottom: 4.5rem;
+  padding-bottom: 4.5rem;
+  border-bottom: 0.1rem solid #e7e7e7;
+  transition: all 150ms ease;
+
+  // Active
+  &.js-active {
+    border-bottom-color: $main-color;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+
+    &:hover {
+      .faq-content-item__question {
+        color: $main-color;
+      }
+
+      .faq-content-item__icon {
+        &::before,
+        &::after {
+          background-color: $main-color;
+        }
+      }
+    }
+
+    // Add to the header when the content is visible
+    &.js-expanded {
+      .faq-content-item__question {
+        color: $main-color;
+      }
+
+      .faq-content-item__icon {
+        &::before,
+        &::after {
+          background-color: $main-color;
+        }
+
+        &::after {
+          transform: rotate(90deg);
+        }
+      }
+    }
+  }
+
+  &__question {
+    flex: 0 1 auto;
+    margin-right: 4rem;
+    color: $title-color;
+    font-size: 2.2rem;
+    line-height: (28/22);
+    transition: all 150ms ease;
+  }
+
+  &__icon {
+    flex: 0 0 auto;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    width: 2.4rem;
+    height: 2.4rem;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 1.1rem;
+      left: 0;
+      width: 2.4rem;
+      height: 0.2rem;
+      background-color: #bdbdbd;
+      transition: all 150ms ease;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 1.1rem;
+      width: 0.2rem;
+      height: 2.4rem;
+      background-color: #bdbdbd;
+      transition: all 150ms ease;
+    }
+  }
+
+  &__content {
+    display: none;
+    margin-top: 2.6rem;
+    color: $title-color;
+    font-size: 1.6rem;
+    line-height: (24/16);
+
+    *:first-child {
+      margin-top: 0;
+    }
+
+    *:last-child {
+      margin-bottom: 0;
+    }
+
+    a {
+      color: $main-color;
+      text-decoration: none;
+
+      @include links-states-reverse
+    }
+  }
+}
+
+
+
+
+
+
+
+/* Responsiveness
+================================================================================ */
+
+// Until 960px
+@include mq($until: tabletAlbum) {
+  .faq-cover-info {
+    flex: 0 1 auto;
+
+    &__title {
+      max-width: 28rem;
+      font-size: 2.6rem;
+    }
+  }
+
+  .faq-wrapper {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+}
+
+
+// Until 768px
+@include mq($until: tabletPortrait) {
+  .faq-cover {
+    background: url('../img/index-pricing-bg.jpg') 50% 50% no-repeat;
+    background-size: cover;
+
+    &__wrapper {
+      height: auto;
+      max-height: none;
+    }
+  }
+
+  .faq-cover-info {
+    margin: 0 auto;
+    padding: 5rem 0;
+    text-align: center;
+
+    &__title {
+      max-width: 30rem;
+    }
+  }
+
+  .faq-wrapper {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+
+    &__container {
+      display: block;
+    }
+  }
+
+  .faq-sidebar {
+    margin-right: 0;
+    margin-bottom: 6rem;
+  }
+}
+
+
+// Until 414px
+@include mq($until: iPhone6Plus) {
+  .faq-content-item {
+    margin-bottom: 4rem;
+    padding-bottom: 4rem;
+
+    &__question {
+      font-size: 2rem;
+    }
+  }
+}

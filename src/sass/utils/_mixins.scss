@@ -1,0 +1,59 @@
+
+/* Mixins
+================================================================================ */
+
+// Links states
+@mixin links-states {
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:active {
+    text-decoration: underline;
+  }
+}
+
+
+// Links states reversed
+@mixin links-states-reverse {
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:active {
+    text-decoration: none;
+  }
+}
+
+
+// Placeholder's styles
+@mixin placeholder($color) {
+  &:-ms-input-placeholder {
+    color: $color;
+  }
+
+  &:-moz-placeholder {
+    color: $color;
+    opacity: 1;
+  }
+
+  &::-moz-placeholder {
+    color: $color;
+    opacity: 1;
+  }
+
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+
+  &::placeholder {
+    color: $color;
+  }
+}
+
+
+// Font normalization
+@mixin normalize-font {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

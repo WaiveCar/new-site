@@ -1,0 +1,121 @@
+
+/* Stories
+================================================================================ */
+
+.stories {
+  @include container-outer;
+  background-color: #f9f9fa;
+
+  &__wrapper {
+    @include container;
+    padding-top: 10.8rem;
+    padding-bottom: 12rem;
+  }
+
+  &__title {
+    margin: 0 0 6rem;
+    color: $title-color;
+    font-size: 4rem;
+    font-weight: 300;
+    line-height: (50/40);
+    text-align: center;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+
+
+/* Item
+------------------------------------ */
+
+.stories-item {
+  flex: 0 1 31.36%;
+  width: 31.36%;
+  background-color: #fff;
+  border-radius: 0.4rem;
+
+  &__thumb {
+  }
+
+  &__img {
+    display: block;
+    max-width: 100%;
+    border-radius: 0.4rem 0.4rem 0 0;
+  }
+
+  &__info {
+    padding: 2.6rem 2.9rem 5rem;
+  }
+
+  &__title {
+    display: block;
+    margin-bottom: 1.6rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: (20/16);
+
+    a {
+      color: $title-color;
+      text-decoration: none;
+
+      @include links-states-reverse;
+    }
+  }
+
+  &__desc {
+    color: $text-color;
+    font-size: 1.6rem;
+    line-height: (24/16);
+  }
+}
+
+
+
+
+
+
+/* Responsiveness
+================================================================================ */
+
+// Until 768px
+@include mq($until: tabletPortrait) {
+  .stories {
+    &__wrapper {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
+
+    &__title {
+      font-size: 3.6rem;
+    }
+
+    &__container {
+      display: block;
+    }
+  }
+
+  .stories-item {
+    display: block;
+    margin: 0 auto 6rem;
+    width: 100%;
+    max-width: 37rem;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+// Until 568px
+@include mq($until: mobileAlbum) {
+  .stories {
+    &__title {
+      font-size: 3rem;
+    }
+  }
+}

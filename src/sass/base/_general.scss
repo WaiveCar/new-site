@@ -1,0 +1,19 @@
+
+/* General styles
+================================================================================ */
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  @include normalize-font;
+  position: relative;
+  background-color: #e3e3e3;
+  font-family: $muli-font-stack;
+}

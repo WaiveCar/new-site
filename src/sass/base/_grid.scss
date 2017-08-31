@@ -1,0 +1,41 @@
+
+/* Grid & Responsive breakpoints settings
+================================================================================ */
+
+@import "mq";
+
+
+/* Breakpoints settings
+------------------------------------ */
+
+$mq-breakpoints: (
+  iPhone6Plus: 414px,
+  mobileAlbum: 568px,
+  tabletPortrait: 768px,
+  tabletAlbum: 960px,
+  desktop: 1480px
+);
+
+
+
+/* Grid settings
+------------------------------------ */
+
+// Padding on the edges of the page
+$pad: 1.5rem;
+
+// Outer Container
+@mixin container-outer {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 148rem;
+}
+
+// Container
+@mixin container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $pad;
+  padding-right: $pad;
+  max-width: 121rem;
+}

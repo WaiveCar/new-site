@@ -1,0 +1,832 @@
+
+/* "Waive Work" page
+================================================================================ */
+
+
+
+
+
+/* MAIN
+============================================================ */
+
+.work-main {
+  @include container-outer;
+  background-color: #fff;
+}
+
+
+
+/* Information
+------------------------------------ */
+
+.work-main-info {
+  @include container;
+  display: flex;
+  align-items: center;
+  padding-top: 4.4rem;
+  padding-bottom: 6rem;
+
+  &__textual {
+    flex: 0 1 auto;
+    margin-right: 5rem;
+  }
+
+  &__title {
+    margin: 0 0 1.5rem;
+    color: $title-color;
+    font-size: 4rem;
+    font-weight: 300;
+    line-height: (50/40);
+  }
+
+  &__desc {
+    margin: 0;
+    color: $text-color;
+    font-size: 1.8rem;
+    line-height: (28/18);
+  }
+}
+
+// Button
+.work-main-btn {
+  flex: 0 0 23rem;
+  margin-left: auto;
+  display: block;
+  width: 23rem;
+  height: 5.2rem;
+  background-color: $main-color;
+  border-radius: 0.4rem;
+  outline: 0;
+  font-size: 0;
+  line-height: 5.2rem;
+  text-align: center;
+  text-decoration: none;
+  transition: all 150ms ease;
+
+  &:hover {
+    background-color: darken($main-color, 10%);
+  }
+
+  &:active {
+    background-color: $main-color;
+  }
+
+  &:focus {
+    box-shadow: 0 0 1rem rgba($main-color, 0.5);
+  }
+
+
+  &__title {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 1.6rem;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 2rem;
+    height: 1.4rem;
+    fill: #fff;
+    transform: translateZ(0);
+  }
+}
+
+
+
+/* Picture
+------------------------------------ */
+
+.work-main-picture {
+  width: 100%;
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+}
+
+
+
+
+
+
+/* WHY WAIVEWORK?
+============================================================ */
+
+.work-why {
+  @include container-outer;
+  background-color: #fff;
+
+  &__wrapper {
+    @include container;
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+    text-align: center;
+  }
+
+  &__title {
+    margin: 0 0 1.4rem;
+    color: $title-color;
+    font-size: 4rem;
+    font-weight: 300;
+    line-height: (50/40);
+  }
+
+  &__desc {
+    margin: 0 auto;
+    max-width: 93rem;
+    color: $text-color;
+    font-size: 1.8rem;
+    line-height: (30/18);
+  }
+}
+
+
+
+
+
+
+/* WORK FOR ME
+============================================================ */
+
+.work-for-me {
+  @include container-outer;
+  background-color: #eff8f8;
+  overflow: hidden;
+  
+  &__wrapper {
+    @include container;
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+    text-align: center;
+  }
+
+  &__title {
+    margin: 0 0 1.9rem;
+    color: $title-color;
+    font-size: 4rem;
+    font-weight: 300;
+    line-height: (50/40);
+  }
+
+  &__desc {
+    margin: 0 auto 5.3rem;
+    max-width: 65.4rem;
+    color: $text-color;
+    font-size: 1.8rem;
+    line-height: (30/18);
+  }
+
+  &__container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    // Fake left rectangle
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -24rem;
+      width: 22rem;
+      height: 15rem;
+      background-color: rgba(#fff, 0.6);
+      border-radius: 0.4rem;
+    }
+
+    // Fake right rectangle
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -24rem;
+      width: 22rem;
+      height: 15rem;
+      background-color: rgba(#fff, 0.6);
+      border-radius: 0.4rem;
+    }
+  }
+}
+
+
+
+/* Item
+------------------------------------ */
+
+.work-for-me-item {
+  flex: 0 1 22rem;
+  margin-right: 1rem;
+  padding: 2.9rem 2rem 0;
+  width: 22rem;
+  height: 15rem;
+  background-color: #fff;
+  box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.4rem;
+  transition: all 150ms ease;
+
+  &:hover {
+    box-shadow: none;
+  }
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 2.2rem;
+    width: 6.6rem;
+    height: 5rem;
+
+    &--1 {
+      svg {
+        width: 5rem;
+        height: 5rem;
+      }
+    }
+
+    &--2 {
+      svg {
+        width: 6.6rem;
+        height: 3.8rem;
+      }
+    }
+
+    &--3 {
+      svg {
+        width: 4.7rem;
+        height: 4.8rem;
+      }
+    }
+
+    &--4 {
+      svg {
+        width: 4.1rem;
+        height: 4.8rem;
+      }
+    }
+
+    &--5 {
+      svg {
+        width: 4.8rem;
+        height: 4.4rem;
+      }
+    }
+
+    svg {
+      flex: 0 0 auto;
+      fill: #56665a;
+      transform: translateZ(0);
+    }
+  }
+
+  &__title {
+    color: $text-color;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+/* HOW IT WORKS
+============================================================ */
+
+.work-how {
+  @include container-outer;
+  background-color: #fff;
+
+  &__wrapper {
+    @include container;
+    padding-top: 11rem;
+    padding-bottom: 11.4rem;
+    text-align: center;
+  }
+
+  &__title {
+    margin: 0 0 6rem;
+    color: $title-color;
+    font-size: 4rem;
+    font-weight: 300;
+    letter-spacing: (50/40);
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+
+
+/* Item
+------------------------------------ */
+
+.work-how-item {
+  flex: 0 1 auto;
+  margin-right: 3rem;
+
+  &:nth-of-type(1) {
+    max-width: 28rem;
+  }
+
+  &:nth-of-type(2) {
+    max-width: 36.7rem;
+  }
+
+  &:nth-of-type(3) {
+    max-width: 28rem;
+  }
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 4rem;
+    width: 8.2rem;
+    height: 8.2rem;
+
+    &--1 {
+      svg {
+        width: 7.3rem;
+        height: 8rem;
+      }
+    }
+
+    &--2 {
+      svg {
+        width: 8.2rem;
+        height: 8.2rem;
+      }
+    }
+
+    &--3 {
+      svg {
+        width: 8.2rem;
+        height: 6.7rem;
+      }
+    }
+
+    svg {
+      flex: 0 0 auto;
+      transform: translateZ(0);
+    }
+  }
+
+  &__title {
+    margin: 0 0 1.4rem;
+    color: $main-color;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: (28/22);
+  }
+
+  &__desc {
+    margin: 0;
+    color: $text-color;
+    font-size: 1.6rem;
+    line-height: (28/16);
+  }
+}
+
+
+
+
+
+
+/* PRICING
+============================================================ */
+
+.work-pricing {
+  @include container-outer;
+  background: url('../img/index-pricing-bg.jpg') 50% 50% no-repeat;
+
+  &__wrapper {
+    @include container;
+    padding-top: 10.8rem;
+    padding-bottom: 12rem;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__icon {
+    flex: 0 0 8.2rem;
+    margin-top: 2rem;
+    margin-right: 5.5rem;
+    width: 8.2rem;
+    height: 5.8rem;
+    transform: translateZ(0);
+  }
+
+  &__textual {
+    flex: 0 1 38.2rem;
+  }
+
+  &__title {
+    margin: 0 0 1.7rem;
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: (50/40);
+  }
+
+  &__desc {
+    margin: 0;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: (28/18);
+  }
+}
+
+
+
+
+
+
+/* SIGN UP / GOT QUESTION
+============================================================ */
+
+.work-bottom {
+  @include container-outer;
+  background-color: #fff;
+
+  &__wrapper {
+    @include container;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
+
+  &__line {
+    flex: 0 0 auto;
+    width: 0.1rem;
+    background-color: #e7e7e7;
+  }
+}
+
+
+
+/* Driver Sign Up
+------------------------------------ */
+
+.work-sign-up {
+  flex: 0 1 auto;
+  padding: 0 2rem;
+  text-align: center;
+
+  &__title {
+    margin: 0 0 1.4rem;
+    color: $title-color;
+    font-size: 3.2rem;
+    font-weight: 300;
+    line-height: (40/32);
+  }
+
+  &__desc {
+    margin: 0 auto 3.7rem;
+    max-width: 35.8rem;
+    color: $text-color;
+    font-size: 1.6rem;
+    line-height: (28/16);
+  }
+}
+
+// Button
+.work-sign-up-btn {
+  display: block;
+  margin: 0 auto;
+  width: 23rem;
+  height: 5.2rem;
+  background-color: $main-color;
+  border-radius: 0.4rem;
+  outline: 0;
+  font-size: 0;
+  line-height: 5.2rem;
+  text-align: center;
+  text-decoration: none;
+  transition: all 150ms ease;
+
+  &:hover {
+    background-color: darken($main-color, 10%);
+  }
+
+  &:active {
+    background-color: $main-color;
+  }
+
+  &:focus {
+    box-shadow: 0 0 1rem rgba($main-color, 0.5);
+  }
+
+
+  &__title {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 1.6rem;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 2rem;
+    height: 1.4rem;
+    fill: #fff;
+    transform: translateZ(0);
+  }
+}
+
+
+
+/* Got Question?
+------------------------------------ */
+
+.work-question {
+  flex: 0 1 auto;
+  padding: 0 2rem;
+  text-align: center;
+
+  &__title {
+    margin: 0 0 1.4rem;
+    color: $title-color;
+    font-size: 3.2rem;
+    font-weight: 300;
+    line-height: (40/32);
+  }
+
+  &__desc {
+    margin: 0 auto 3.7rem;
+    max-width: 38.8rem;
+    color: $text-color;
+    font-size: 1.6rem;
+    line-height: (28/16);
+  }
+}
+
+// Link
+.work-question-link {
+  font-size: 0;
+
+  &:hover {
+    .work-question-link__icon {
+      fill: $main-color;
+      transform: translateX(0.5rem);
+    }
+  }
+
+  &__title {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.8rem;
+    color: $title-color;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: (18/15);
+    text-transform: uppercase;
+  }
+
+  &__icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 0.8rem;
+    height: 1.2rem;
+    fill: $title-color;
+    transform: translateZ(0);
+    transition: all 150ms ease;
+  }
+}
+
+
+
+
+
+
+/* Responsiveness
+================================================================================ */
+
+// Until 960px
+@include mq($until: tabletAlbum) {
+  .work-for-me {
+    &__container {
+      display: block;
+      font-size: 0;
+      text-align: center;
+
+      // Fake left rectangle
+      &::before {
+        display: none;
+      }
+
+      // Fake right rectangle
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  .work-for-me-item {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 1rem 2rem;
+
+    &:last-of-type {
+      margin-right: 1rem;
+    }
+  }
+}
+
+
+// Until 768px
+@include mq($until: tabletPortrait) {
+  .work-main-info {
+    display: block;
+    text-align: center;
+
+    &__textual {
+      margin: 0 auto 5rem;
+      max-width: 40rem;
+    }
+  }
+
+  .work-main-btn {
+    margin: 0 auto;
+  }
+
+  .work-why {
+    &__wrapper {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
+
+    &__title {
+      font-size: 3.6rem;
+    }
+  }
+
+  .work-for-me {
+    &__wrapper {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
+
+    &__title {
+      font-size: 3.6rem;
+    }
+  }
+
+  .work-how {
+    &__wrapper {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
+
+    &__title {
+      font-size: 3.6rem;
+    }
+
+    &__container {
+      display: block;
+    }
+  }
+
+  .work-how-item {
+    display: block;
+    margin: 0 auto 6rem;
+
+    &:nth-of-type(2) {
+      max-width: 28rem;
+    }
+
+    &:last-of-type {
+      margin-right: auto;
+      margin-bottom: 0;
+    }
+  }
+
+  .work-pricing {
+    &__wrapper {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
+  }
+
+  .work-bottom {
+    &__wrapper {
+      display: block;
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
+
+    &__line {
+      display: none;
+    }
+  }
+
+  .work-sign-up {
+    margin-bottom: 10rem;
+  }
+}
+
+
+// Until 568px
+@include mq($until: mobileAlbum) {
+  .work-main-info {
+    &__title {
+      margin-bottom: 2rem;
+      font-size: 3rem;
+    }
+  }
+
+  .work-why {
+    &__title {
+      font-size: 3rem;
+    }
+  }
+
+  .work-for-me {
+    &__title {
+      font-size: 3rem;
+    }
+  }
+
+  .work-how {
+    &__title {
+      font-size: 3rem;
+    }
+  }
+
+  .work-how-item {
+    display: block;
+    margin: 0 auto 6rem;
+
+    &:nth-of-type(2) {
+      max-width: 28rem;
+    }
+
+    &:last-of-type {
+      margin-right: auto;
+      margin-bottom: 0;
+    }
+  }
+
+  .work-pricing {
+    &__icon {
+      flex: 0 0 6rem;
+      margin-top: 1rem;
+      margin-right: 3rem;
+      width: 6rem;
+      height: auto;
+    }
+
+    &__textual {
+      flex: 0 1 auto;
+    }
+
+    &__title {
+      font-size: 3rem;
+    }
+  }
+
+  .work-bottom {
+    &__wrapper {
+      display: block;
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
+
+    &__line {
+      display: none;
+    }
+  }
+
+  .work-sign-up,
+  .work-question {
+    &__title {
+      font-size: 3rem;
+    }
+  }
+}

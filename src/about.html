@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Metadata -->
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Title -->
+  <title>About | WaiveCar</title>
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <!-- SVG sprite loading -->
+  <script>
+    var ajax = new XMLHttpRequest();
+
+    ajax.open('GET', 'img/sprites.svg', true);
+
+    ajax.send();
+
+    ajax.onload = function(e) {
+
+      var div = document.createElement('div');
+
+      div.innerHTML = ajax.responseText;
+
+      document.body.insertBefore(div, document.body.childNodes[0]);
+
+    };
+  </script>
+</head>
+
+<body>
+  
+  <!-- Wrapper for "Sticky footer" -->
+  <div class="page-wrapper page-wrapper--no-download">
+    
+    <!-- ==========================
+      HEADER
+    =========================== -->
+    <header class="header">
+      <div class="header__wrapper header__wrapper--inner">
+        
+        <!-- Logo -->
+        <a class="h-logo" href="index.html">
+          <svg class="h-logo__icon">
+            <use xlink:href="#logo"></use>
+          </svg>
+        </a>
+        
+        <!-- Menu -->
+        <nav class="h-menu">
+          <span class="h-menu__item">
+            <a class="h-menu__link" href="waive-work.html">Waive Work</a>
+          </span>
+          
+          <span class="h-menu__item">
+            <a class="h-menu__link" href="how-it-works.html">How it Works</a>
+          </span>
+          
+          <span class="h-menu__item">
+            <a class="h-menu__link" href="faq.html">FAQ</a>
+          </span>
+          
+          <span class="h-menu__item h-menu__item--active">
+            <span class="h-menu__link">About us</span>
+          </span>
+          
+          <a class="h-menu__login" href="#">Login</a>
+        </nav>
+  
+        <!-- Hamburger -->
+        <button class="h-hamburger" id="hamburger" type="button" aria-label="Open menu">
+          <svg class="h-hamburger__icon">
+            <use xlink:href="#icon-hamburger"></use>
+          </svg>
+        </button>
+      
+      </div>
+    </header>
+    
+    
+    <!-- ==========================
+      ARTICLE
+    =========================== -->
+    <section class="about-article">
+      <article class="about-article__wrapper">
+        
+        <!-- Textual -->
+        <div class="about-article__info">
+          
+          <h1 class="about-article__title">About Us</h1>
+          
+          <div class="about-article__desc">
+            <p>We believe there are smarter ways for communities to benefit from cars. Our contribution is WaiveCar, a revolutionary transportation
+              system that connects users with ad-displaying electric cars for free, anywhere in their city. Together, drivers and companies can make a
+              positive impact on the environment.</p>
+            
+            <p>WaiveCar is a car sharing startup currently operating in the Los Angeles area. Our electric fleet is completely free to drive for the
+              first 2 hours.</p>
+          </div>
+        
+        </div>
+        
+        <!-- Picture -->
+        <div class="about-article__thumb">
+          <img class="about-article__img" src="pic/about-article-img.svg" alt="About WaiveCar">
+        </div>
+      
+      </article>
+    </section>
+    
+    
+    <!-- ==========================
+      MAP
+    =========================== -->
+    <section class="about-map">
+      
+      <!-- Map's container -->
+      <div class="about-map__container" id="map"></div>
+  
+      <!-- Content -->
+      <div class="about-map__wrapper">
+    
+        <!-- Get in Touch -->
+        <div class="about-map-contacts">
+      
+          <!-- Title -->
+          <h2 class="about-map-contacts__title">Get in Touch</h2>
+      
+          <!-- Description -->
+          <p class="about-map-contacts__desc">Got questions? Don’t hesitate to reach out!</p>
+      
+          <!-- Container -->
+          <address class="about-map-contacts__container">
+        
+            <!-- Address -->
+            <div class="about-map-contacts-item">
+          
+              <!-- Icon -->
+              <div class="about-map-contacts-item__thumb">
+                <svg class="about-map-contacts-item__icon about-map-contacts-item__icon--marker">
+                  <use xlink:href="#icon-map-marker"></use>
+                </svg>
+              </div>
+          
+              <!-- Information -->
+              <div class="about-map-contacts-item__info">
+            
+                <!-- Title -->
+                <div class="about-map-contacts-item__title">Address</div>
+            
+                <!-- Data -->
+                <div class="about-map-contacts-item__link">1547 7th St, Santa Monica, CA 90401</div>
+          
+              </div>
+        
+            </div>
+        
+            <!-- Phone -->
+            <div class="about-map-contacts-item">
+          
+              <!-- Icon -->
+              <div class="about-map-contacts-item__thumb">
+                <svg class="about-map-contacts-item__icon about-map-contacts-item__icon--phone">
+                  <use xlink:href="#icon-phone"></use>
+                </svg>
+              </div>
+          
+              <!-- Information -->
+              <div class="about-map-contacts-item__info">
+            
+                <!-- Title -->
+                <div class="about-map-contacts-item__title">Phone</div>
+            
+                <!-- Data -->
+                <div class="about-map-contacts-item__link">
+                  <a href="tel:+18559248355">+1 855-924-8355</a>
+                </div>
+          
+              </div>
+        
+            </div>
+        
+            <!-- Email -->
+            <div class="about-map-contacts-item">
+          
+              <!-- Icon -->
+              <div class="about-map-contacts-item__thumb">
+                <svg class="about-map-contacts-item__icon about-map-contacts-item__icon--email">
+                  <use xlink:href="#icon-email"></use>
+                </svg>
+              </div>
+          
+              <!-- Information -->
+              <div class="about-map-contacts-item__info">
+            
+                <!-- Title -->
+                <div class="about-map-contacts-item__title">Email</div>
+            
+                <!-- Data -->
+                <div class="about-map-contacts-item__link">
+                  <a href="mailto:info@waivecar.com">info@waivecar.com</a>
+                </div>
+          
+              </div>
+        
+            </div>
+      
+          </address>
+    
+        </div>
+  
+      </div>
+      
+    </section>
+  
+  </div>
+  
+  
+  <!-- ==========================
+    FOOTER
+  =========================== -->
+  <footer class="footer">
+    
+    <!-- Actual footer -->
+    <div class="footer__container">
+      
+      <!-- Logo -->
+      <a class="f-logo" href="index.html">
+        <svg class="f-logo__icon">
+          <use xlink:href="#logo"></use>
+        </svg>
+      </a>
+  
+      <!-- First Menu -->
+      <div class="f-menu">
+        <div class="f-menu__title">Company</div>
+    
+        <ul class="f-menu__wrapper">
+          <li class="f-menu__item">
+            <a class="f-menu__link" href="waive-work.html">Waive Work</a>
+          </li>
+      
+          <li class="f-menu__item">
+            <a class="f-menu__link" href="how-it-works.html">How it Works</a>
+          </li>
+      
+          <li class="f-menu__item">
+            <a class="f-menu__link" href="faq.html">FAQ</a>
+          </li>
+      
+          <li class="f-menu__item">
+            <a class="f-menu__link" href="about.html">About Us</a>
+          </li>
+        </ul>
+      </div>
+  
+      <!-- Second Menu -->
+      <div class="f-menu">
+        <div class="f-menu__title">More</div>
+    
+        <ul class="f-menu__wrapper">
+          <li class="f-menu__item">
+            <a class="f-menu__link" href="#">Login</a>
+          </li>
+      
+          <li class="f-menu__item">
+            <a class="f-menu__link" href="#">Advertise</a>
+          </li>
+      
+          <li class="f-menu__item">
+            <a class="f-menu__link" href="terms.html">Terms</a>
+          </li>
+      
+          <li class="f-menu__item">
+            <a class="f-menu__link" href="privacy.html">Privacy</a>
+          </li>
+      
+          <li class="f-menu__item">
+            <a class="f-menu__link" href="#">Support</a>
+          </li>
+        </ul>
+      </div>
+      
+      <!-- Social -->
+      <div class="f-social">
+        <div class="f-social__title">Follow us</div>
+        
+        <div class="f-social__container">
+          
+          <a class="f-social__link" href="#" target="_blank">
+            <svg class="f-social__icon f-social__icon--instagram">
+              <use xlink:href="#icon-instagram"></use>
+            </svg>
+          </a>
+          
+          <a class="f-social__link" href="#" target="_blank">
+            <svg class="f-social__icon f-social__icon--facebook">
+              <use xlink:href="#icon-facebook"></use>
+            </svg>
+          </a>
+          
+          <a class="f-social__link" href="#" target="_blank">
+            <svg class="f-social__icon f-social__icon--twitter">
+              <use xlink:href="#icon-twitter"></use>
+            </svg>
+          </a>
+        
+        </div>
+      </div>
+      
+    </div>
+  
+  </footer>
+  
+  
+  <!-- Google Fonts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ['Muli:300,400,600,700']
+      }
+    });
+  </script>
+  
+  <!-- jQuery 3 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
+  <!-- Custom JS-code -->
+  <script src="js/custom.js"></script>
+  
+  <!-- Map -->
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7HUwHY3Z21eZnUpAYUbXO1Y8Ru9M81hc&callback=initContactsMap"></script>
+</body>
+</html>

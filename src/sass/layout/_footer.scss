@@ -1,0 +1,203 @@
+
+/* Footer
+================================================================================ */
+
+.footer {
+  @include container-outer;
+  background-color: $title-color;
+
+  &__container {
+    @include container;
+    display: flex;
+    padding-top: 13.7rem;
+    height: 60rem;
+  }
+}
+
+
+
+
+
+/* LOGO
+============================================================ */
+
+.f-logo {
+  flex: 0 0 18.2rem;
+  margin-right: 10rem;
+
+  &__icon {
+    width: 18.2rem;
+    height: 2.8rem;
+    fill: #fff;
+    transform: translateZ(0);
+  }
+}
+
+
+
+
+
+/* MENU
+============================================================ */
+
+.f-menu {
+  flex: 0 1 auto;
+  margin-right: 12rem;
+  padding-top: 0.4rem;
+
+  &__title {
+    margin-bottom: 4.5rem;
+    color: $main-color;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: (19/14);
+    text-transform: uppercase;
+  }
+
+  &__wrapper {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  &__item {
+    margin-bottom: 2rem;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  &__link {
+    color: #fff;
+    opacity: 0.8;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1;
+    text-decoration: none;
+
+    @include links-states-reverse;
+  }
+}
+
+
+
+
+
+/* SOCIAL
+============================================================ */
+
+.f-social {
+  flex: 0 1 auto;
+  padding-top: 0.4rem;
+
+  &__title {
+    margin-bottom: 4.5rem;
+    color: $main-color;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: (19/14);
+    text-transform: uppercase;
+  }
+
+  &__container {
+    font-size: 0;
+  }
+
+  &__link {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 2.8rem;
+    text-decoration: none;
+
+    &:hover {
+      .f-social__icon {
+        fill: $main-color;
+      }
+    }
+
+    &:active {
+      .f-social__icon {
+        fill: #fff;
+      }
+    }
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  &__icon {
+    fill: #fff;
+    transform: translateZ(0);
+    transition: all 150ms ease;
+
+    &--instagram {
+      width: 2.2rem;
+      height: 2.2rem;
+    }
+
+    &--facebook {
+      width: 1.1rem;
+      height: 2rem;
+    }
+
+    &--twitter {
+      width: 2.1rem;
+      height: 1.8rem;
+    }
+  }
+}
+
+
+
+
+
+
+/* Responsiveness
+================================================================================ */
+
+// Until 960px
+@include mq($until: tabletAlbum) {
+  .footer {
+    &__container {
+      display: block;
+      padding-top: 10rem;
+      padding-bottom: 10rem;
+      height: auto;
+    }
+  }
+
+  .f-logo {
+    margin: 0 auto 6rem;
+    width: 18.2rem;
+  }
+
+  .f-menu {
+    margin-right: 0;
+    margin-bottom: 6rem;
+    padding-top: 0;
+    text-align: center;
+
+    &__title {
+      margin-bottom: 3rem;
+    }
+
+    &__item {
+      margin-bottom: 2rem;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .f-social {
+    padding-top: 0;
+    text-align: center;
+
+    &__title {
+      margin-bottom: 3rem;
+    }
+  }
+}

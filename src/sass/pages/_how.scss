@@ -1,0 +1,437 @@
+
+/* "How it works" page
+================================================================================ */
+
+
+
+
+
+/* MAIN SECTION
+============================================================ */
+
+.how-main {
+  @include container-outer;
+  background: #eff8f8 url('../img/how-main-bg.svg') 50% 100% no-repeat;
+
+  &__wrapper {
+    @include container;
+    display: flex;
+  }
+
+  &__info {
+    flex: 0 1 40%;
+    padding-top: 10.7rem;
+    padding-bottom: 28.6rem;
+    width: 40%;
+  }
+
+  &__title {
+    margin: 0 0 1.7rem;
+    color: $title-color;
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: (47/40);
+  }
+
+  &__desc {
+    margin: 0 0 5.1rem;
+    color: $text-color;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    white-space: nowrap;
+  }
+
+  &__thumb {
+    flex: 0 1 55%;
+    padding-top: 6.4rem;
+    width: 55%;
+    max-width: 55%;
+    transform: translateX(11rem);
+  }
+
+  &__img {
+    display: block;
+  }
+}
+
+
+
+/* Steps
+------------------------------------ */
+
+.how-main-steps {
+  counter-reset: steps;
+
+  &__item {
+    position: relative;
+    margin-bottom: 4.5rem;
+    padding-left: 7rem;
+    counter-increment: steps;
+
+    &:last-of-type {
+      margin-bottom: 0;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    // Step number
+    &::before {
+      content: counter(steps);
+      position: absolute;
+      top: 1.6rem;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 4rem;
+      height: 4rem;
+      color: #b6beb8;
+      border: 0.2rem solid #d1d8d3;
+      border-radius: 50%;
+      font-size: 1.8rem;
+      font-weight: 600;
+      line-height: 1;
+    }
+
+    // Line
+    &::after {
+      content: "";
+      position: absolute;
+      top: 7.4rem;
+      bottom: -4.5rem;
+      left: 1.7rem;
+      width: 0.2rem;
+      background-color: #d1d8d3;
+    }
+  }
+
+  &__title {
+    margin: 0 0 1.4rem;
+    color: $main-color;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: (28/22);
+  }
+
+  &__desc {
+    margin: 0;
+    color: $text-color;
+    font-size: 1.6rem;
+    line-height: (28/16);
+  }
+}
+
+
+
+
+
+
+/* BENEFITS
+============================================================ */
+
+.how-benefits {
+  @include container-outer;
+  position: relative;
+  padding-top: 1rem;
+  padding-bottom: 11.7rem;
+  background-color: #fff;
+
+  // A hack to hide the above gap
+  &::before {
+    content: "";
+    position: absolute;
+    top: -1.3rem;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    height: 1.3rem;
+    background-color: #fff;
+  }
+
+  &__wrapper {
+    @include container;
+  }
+
+  &__header {
+    margin: 0 auto 5.2rem;
+    max-width: 75rem;
+    text-align: center;
+  }
+
+  &__title {
+    margin: 0 0 1.6rem;
+    color: $title-color;
+    font-size: 4rem;
+    font-weight: 300;
+    line-height: (50/40);
+  }
+
+  &__desc {
+    margin: 0 auto;
+    max-width: 70rem;
+    color: $text-color;
+    font-size: 1.8rem;
+    line-height: (28/18);
+
+    a {
+      color: $text-color;
+      text-decoration: none;
+
+      @include links-states-reverse;
+    }
+  }
+
+  &__container {
+    margin-bottom: 4rem;
+  }
+}
+
+
+
+/* Item
+------------------------------------ */
+
+.how-benefits-item {
+  display: flex;
+  margin: 0 auto 4.7rem;
+  max-width: 60rem;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  &__thumb {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-right: 4rem;
+    width: 6.4rem;
+    height: 6.4rem;
+  }
+
+  &__icon {
+    transform: translateZ(0);
+
+    &--1 {
+      width: 6.4rem;
+      height: 3.6rem;
+    }
+
+    &--2 {
+      width: 6.2rem;
+      height: 6.4rem;
+    }
+
+    &--3 {
+      width: 6.4rem;
+      height: 6.1rem;
+    }
+
+    &--4 {
+      width: 4.2rem;
+      height: 6.4rem;
+    }
+
+    &--5 {
+      width: 6.4rem;
+      height: 6.2rem;
+    }
+  }
+
+  &__info {
+    flex: 0 1 auto;
+  }
+
+  &__title {
+    margin: 0 0 1rem;
+    color: $title-color;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: (25/20);
+  }
+
+  &__desc {
+    margin: 0;
+    color: $text-color;
+    font-size: 1.6rem;
+    line-height: (28/16);
+  }
+}
+
+
+
+/* Link
+------------------------------------ */
+
+.how-benefits-link {
+  margin: 0 auto;
+  padding-left: 10.4rem;
+  max-width: 60rem;
+
+  &__wrapper {
+    display: inline-block;
+    font-size: 0;
+    text-decoration: none;
+
+    &:hover {
+      .how-benefits-link__icon {
+        fill: $main-color;
+        transform: translateX(0.5rem);
+      }
+    }
+  }
+
+  &__title {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.8rem;
+    color: $title-color;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: (18/15);
+    text-transform: uppercase;
+  }
+
+  &__icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 0.8rem;
+    height: 1.2rem;
+    fill: $title-color;
+    transform: translateZ(0);
+    transition: all 150ms ease;
+  }
+}
+
+
+
+
+
+
+
+/* Responsiveness
+================================================================================ */
+
+// Until 960px
+@include mq($until: tabletAlbum) {
+  .how-main {
+    &__info {
+      flex: 0 1 50%;
+      padding-top: 5rem;
+      width: 50%;
+    }
+
+    &__thumb {
+      flex: 0 1 50%;
+      padding-top: 0;
+      width: 50%;
+      max-width: 50%;
+    }
+  }
+}
+
+
+// Until 768px
+@include mq($until: tabletPortrait) {
+  .how-main {
+    &__info {
+      flex: 0 1 60%;
+      padding-top: 5rem;
+      width: 60%;
+    }
+
+    &__title {
+      font-size: 3.6rem;
+    }
+
+    &__thumb {
+      flex: 0 1 40%;
+      padding-top: 0;
+      width: 40%;
+      max-width: 40%;
+      transform: translateX(1rem);
+    }
+  }
+
+  .how-benefits {
+    margin-top: -4rem;
+    padding-top: 0;
+    padding-bottom: 10rem;
+
+    &__title {
+      font-size: 3.6rem;
+    }
+  }
+}
+
+
+// Until 568px
+@include mq($until: mobileAlbum) {
+  .how-main {
+    &__wrapper {
+      display: block;
+      padding-bottom: 5rem;
+    }
+
+    &__info {
+      margin: 0 auto 5rem;
+      padding-bottom: 0;
+      width: 100%;
+      max-width: 44rem;
+    }
+
+    &__title {
+      font-size: 3rem;
+    }
+
+    &__desc {
+      white-space: normal;
+    }
+
+    &__thumb {
+      padding-top: 0;
+      width: 100%;
+      max-width: none;
+      transform: translateX(0);
+    }
+
+    &__img {
+      max-width: 100%;
+    }
+  }
+
+  .how-benefits {
+    margin-top: 0;
+    padding-bottom: 6rem;
+
+    &__title {
+      font-size: 3rem;
+    }
+
+    &__desc {
+      font-size: 1.6rem;
+    }
+  }
+
+  .how-benefits-item {
+    &__thumb {
+      margin-right: 3rem;
+      width: 5rem;
+      height: 5rem;
+    }
+  }
+
+  .how-benefits-link {
+    margin: 0 auto;
+    padding-left: 0;
+    max-width: 29rem;
+
+    &__title {
+      font-size: 1.4rem;
+    }
+  }
+}

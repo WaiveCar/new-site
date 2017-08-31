@@ -1,0 +1,82 @@
+
+/* Questions component
+================================================================================ */
+
+.questions {
+  @include container-outer;
+  background-color: #fff;
+
+  &__wrapper {
+    @include container;
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
+
+  &__icon {
+    display: block;
+    margin: 0 auto 2.8rem;
+    width: 8rem;
+    height: 7.3rem;
+    transform: translateZ(0);
+  }
+
+  &__title {
+    margin: 0 0 1.5rem;
+    color: $title-color;
+    font-size: 4rem;
+    font-weight: 300;
+    line-height: (50/40);
+    text-align: center;
+  }
+
+  &__text {
+    margin: 0;
+    color: $text-color;
+    font-size: 1.8rem;
+    line-height: (23/18);
+    text-align: center;
+
+    a {
+      color: $main-color;
+      text-decoration: none;
+
+      @include links-states-reverse;
+    }
+  }
+}
+
+
+
+
+
+
+/* Responsiveness
+================================================================================ */
+
+// Until 768px
+@include mq($until: tabletPortrait) {
+  .questions {
+    &__wrapper {
+      padding-top: 8rem;
+      padding-bottom: 8rem;
+    }
+
+    &__title {
+      font-size: 3.6rem;
+    }
+  }
+}
+
+
+// Until 568px
+@include mq($until: mobileAlbum) {
+  .questions {
+    &__wrapper {
+      padding-bottom: 2rem;
+    }
+
+    &__title {
+      font-size: 3rem;
+    }
+  }
+}

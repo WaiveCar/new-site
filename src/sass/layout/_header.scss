@@ -1,0 +1,259 @@
+
+/* Header
+================================================================================ */
+
+.header {
+  @include container-outer;
+  background-color: #fff;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3rem $pad 0;
+    max-width: 135rem;
+    height: 10.8rem;
+
+    // Inner page's header
+    &--inner {
+      padding-top: 0;
+      height: 13.8rem;
+    }
+  }
+}
+
+
+
+
+
+/* LOGO
+============================================================ */
+
+.h-logo {
+  flex: 0 0 22.2rem;
+
+  &__icon {
+    width: 22.2rem;
+    height: 3.4rem;
+    fill: $title-color;
+    transform: translateZ(0);
+  }
+}
+
+
+
+
+
+/* MENU
+============================================================ */
+
+.h-menu {
+  flex: 0 1 auto;
+
+  &__item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5rem;
+
+    // Active link
+    &--active {
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: -6.1rem;
+        left: 0;
+        right: 0;
+        height: 0.3rem;
+        background-color: $main-color;
+      }
+    }
+  }
+
+  &__link {
+    color: $title-color;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1;
+    text-decoration: none;
+    transition: all 150ms ease;
+
+    &:hover {
+      color: $main-color;
+    }
+
+    &:active {
+      color: $title-color;
+    }
+
+    // Active link
+    &:not([href]) {
+      color: $main-color;
+      cursor: default;
+    }
+  }
+
+  &__login {
+    display: inline-block;
+    vertical-align: middle;
+    width: 9rem;
+    height: 4rem;
+    color: $main-color;
+    background-color: transparent;
+    border: 0.2rem solid $main-color;
+    border-radius: 10rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 3.6rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 150ms ease;
+
+    &:hover {
+      color: #fff;
+      background-color: $main-color;
+    }
+
+    &:active {
+      color: $main-color;
+      background-color: transparent;
+    }
+  }
+}
+
+
+
+
+
+
+/* HAMBURGER
+============================================================ */
+
+.h-hamburger {
+  flex: 0 0 auto;
+  display: none;
+  padding: 0;
+  width: 2.6rem;
+  height: 1.6rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &__icon {
+    width: 2.6rem;
+    height: 1.6rem;
+    fill: $title-color;
+    transform: translateZ(0);
+  }
+}
+
+
+
+
+
+
+/* Responsiveness
+================================================================================ */
+
+// Until 1480px
+@include mq($until: desktop) {
+  .header {
+    &__wrapper {
+      height: 7rem;
+
+      &--inner {
+        padding-top: 0;
+        height: 10rem;
+      }
+    }
+  }
+
+  .h-menu {
+    &__item {
+      &--active {
+        &::before {
+          top: -4.2rem;
+        }
+      }
+    }
+  }
+}
+
+
+// Until 960px
+@include mq($until: tabletAlbum) {
+  .header {
+    &__wrapper {
+      padding-top: 0;
+      height: 10rem;
+    }
+  }
+
+  .h-menu {
+    position: absolute;
+    top: 10rem;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: none;
+    padding: 2rem $pad 5rem;
+    background-color: #fff;
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+
+    &__item {
+      display: block;
+      margin-right: 0;
+      margin-bottom: 4rem;
+      text-align: center;
+
+      &--active {
+        &::before {
+          display: none;
+        }
+      }
+    }
+
+    &__login {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  .h-hamburger {
+    display: block;
+  }
+}
+
+
+// Until 568px
+@include mq($until: mobileAlbum) {
+  .header {
+    &__wrapper {
+      height: 7rem;
+
+      &--inner {
+        height: 7rem;
+      }
+    }
+  }
+
+  .h-logo {
+    flex: 0 0 18.3rem;
+
+    &__icon {
+      width: 18.3rem;
+      height: 2.8rem;
+    }
+  }
+
+  .h-menu {
+    top: 7rem;
+    padding-top: 4rem;
+    min-height: 100%;
+    min-height: calc(100% - 7rem);
+  }
+}

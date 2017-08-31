@@ -1,0 +1,60 @@
+
+/* Page wrapper
+================================================================================ */
+
+html, body {
+  height: 100%;
+}
+
+.page-wrapper {
+  margin-bottom: -88.2rem;
+  max-width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+
+  &::after {
+    content: "";
+    display: block;
+    height: 88.2rem;
+  }
+
+  // For a footer without "Download section"
+  &--no-download {
+    margin-bottom: -60rem;
+
+    &::after {
+      height: 60rem;
+    }
+  }
+}
+
+
+
+
+
+/* Responsiveness
+================================================================================ */
+
+// Until 960px
+@include mq($until: tabletAlbum) {
+  .page-wrapper {
+    margin-bottom: 0;
+    max-width: 100%;
+    min-height: 0;
+    overflow-x: hidden;
+
+    &::after {
+      display: none;
+    }
+
+    &--no-download {
+      .page-wrapper {
+        margin-bottom: 0;
+
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+}
