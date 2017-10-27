@@ -1,5 +1,5 @@
 <? 
-$PAGETITLE = 'How it works';
+$PAGETITLE = 'How it Works';
 include('header.php'); 
 ?>    
     
