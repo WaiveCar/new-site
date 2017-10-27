@@ -1,5 +1,6 @@
 <? 
 $PAGETITLE = 'Welcome';
+include('lib.php');
 include('header.php'); 
 ?>    
     
@@ -551,94 +552,7 @@ include('header.php');
       </div>
     </div>
     
-    <!-- Actual footer -->
-    <div class="footer__container">
-      
-      <!-- Logo -->
-      <div class="f-logo">
-        <svg class="f-logo__icon">
-          <use xlink:href="#logo"></use>
-        </svg>
-      </div>
-      
-      <!-- First Menu -->
-      <div class="f-menu">
-        <div class="f-menu__title">Company</div>
-        
-        <ul class="f-menu__wrapper">
-          <li class="f-menu__item">
-            <a class="f-menu__link" href="waive-work.html">Waive Work</a>
-          </li>
-          
-          <li class="f-menu__item">
-            <a class="f-menu__link" href="how-it-works.html">How it Works</a>
-          </li>
-  
-          <li class="f-menu__item">
-            <a class="f-menu__link" href="faq.html">FAQ</a>
-          </li>
-          
-          <li class="f-menu__item">
-            <a class="f-menu__link" href="about.html">About Us</a>
-          </li>
-        </ul>
-      </div>
-      
-      <!-- Second Menu -->
-      <div class="f-menu">
-        <div class="f-menu__title">More</div>
-        
-        <ul class="f-menu__wrapper">
-          <li class="f-menu__item">
-            <a class="f-menu__link" href="https://www.waivecar.com/login">Login</a>
-          </li>
-          
-          <li class="f-menu__item">
-            <a class="f-menu__link" href="mailto:advertise@waivecar.com">Advertise</a>
-          </li>
-          
-          <li class="f-menu__item">
-            <a class="f-menu__link" href="terms.html">Terms</a>
-          </li>
-          
-          <li class="f-menu__item">
-            <a class="f-menu__link" href="privacy.html">Privacy</a>
-          </li>
-          
-          <li class="f-menu__item">
-            <a class="f-menu__link" href="mailto:support@waivecar.com">Support</a>
-          </li>
-        </ul>
-      </div>
-      
-      <!-- Social -->
-      <div class="f-social">
-        <div class="f-social__title">Follow us</div>
-        
-        <div class="f-social__container">
-          
-          <a class="f-social__link" href="https://www.instagram.com/waivecar" target="_blank">
-            <svg class="f-social__icon f-social__icon--instagram">
-              <use xlink:href="#icon-instagram"></use>
-            </svg>
-          </a>
-          
-          <a class="f-social__link" href="https://www.facebook.com/waivecar" target="_blank">
-            <svg class="f-social__icon f-social__icon--facebook">
-              <use xlink:href="#icon-facebook"></use>1
-            </svg>
-          </a>
-          
-          <a class="f-social__link" href="https://twitter.com/waivecar" target="_blank">
-            <svg class="f-social__icon f-social__icon--twitter">
-              <use xlink:href="#icon-twitter"></use>
-            </svg>
-          </a>
-        
-        </div>
-      </div>
-    
-    </div>
+    <? footer_links(); ?>
   
   </footer>
   
