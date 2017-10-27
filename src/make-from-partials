@@ -1,0 +1,6 @@
+#!/bin/sh
+
+for i in about.html  faq.html  how-it-works.html  privacy.html  terms.html  waive-work.html; do
+  cat partials/$i partials/footer.html > $i
+done
+
