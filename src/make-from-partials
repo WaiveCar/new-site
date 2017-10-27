@@ -1,6 +1,6 @@
-#!/bin/sh
+#!/bin/bash
 
-for i in about.html  faq.html  how-it-works.html  privacy.html  terms.html  waive-work.html; do
-  cat partials/$i partials/footer.html > $i
+for i in about.php  faq.php  how-it-works.php  privacy.php  terms.php  waive-work.php; do
+  php partials/$i > ${i/php/html}
 done
 
