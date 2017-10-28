@@ -17,7 +17,7 @@ include('header.php');
           <div class="index-main-info">
             
             <!-- Title -->
-            <div class="index-main-info__title">4 Free Wheels 2 Free Hours</div>
+            <div class="index-main-info__title">We Waive the Fee You Drive for Free</div>
             
             <!-- Benefits -->
             <ul class="index-main-info__list">
@@ -420,7 +420,6 @@ include('header.php');
                 <li class="index-cars-item__list-item">Seats 5</li>
                 <li class="index-cars-item__list-item">124 Miles Per Charge</li>
                 <li class="index-cars-item__list-item">Bluetooth</li>
-                <li class="index-cars-item__list-item">Wireless phone charging pad</li>
               </ul>
             
             </div>

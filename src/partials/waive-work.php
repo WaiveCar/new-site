@@ -299,19 +299,14 @@ include('header.php');
     </section>
   
   
-    <!-- ==========================
-      DRIVER STORIES
-    =========================== -->
+    <!-- 
     <section class="stories">
       <div class="stories__wrapper">
       
-        <!-- Title -->
         <div class="stories__title">Driver Stories</div>
       
-        <!-- Container -->
         <div class="stories__container">
         
-          <!-- Item -->
           <div class="stories-item">
           
             <div class="stories-item__thumb">
@@ -328,7 +323,6 @@ include('header.php');
         
           </div>
         
-          <!-- Item -->
           <div class="stories-item">
           
             <div class="stories-item__thumb">
@@ -346,7 +340,6 @@ include('header.php');
         
           </div>
         
-          <!-- Item -->
           <div class="stories-item">
           
             <div class="stories-item__thumb">
@@ -368,6 +361,7 @@ include('header.php');
     
       </div>
     </section>
+    -->
     
     
     <!-- ==========================
@@ -406,8 +400,7 @@ include('header.php');
           <h2 class="work-question__title">Got Question?</h2>
           
           <!-- Description -->
-          <p class="work-question__desc">We’ve got answers. Head over to the WaiveWork FAQ page. We cover everything you could possibly want to
-            know- and more!</p>
+          <p class="work-question__desc">Feel free to <a href="mailto:support@waivecar.com">reach out</a> to us and we'll be happy to answer any questions you may have.</p>
           
           <!-- Link -->
           <a class="work-question-link" href="faq.html">
