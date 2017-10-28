@@ -23,7 +23,7 @@ include('header.php');
         </div>
         
         <!-- Get Started Now -->
-        <a class="work-main-btn" href="#">
+        <a class="work-main-btn" href="/work-signup.html">
           <span class="work-main-btn__title">Get Started Now</span>
           
           <svg class="work-main-btn__icon">
@@ -380,7 +380,7 @@ include('header.php');
           <p class="work-sign-up__desc">If accepted, we’ll reach out and set up a time for your interview and orientation.</p>
           
           <!-- Button -->
-          <a class="work-sign-up-btn" href="#">
+          <a class="work-sign-up-btn" href="/work-signup.html">
             <span class="work-sign-up-btn__title">Get Started Now</span>
     
             <svg class="work-sign-up-btn__icon">
