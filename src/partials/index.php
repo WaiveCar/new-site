@@ -59,7 +59,7 @@ include('header.php');
                       data-required="true" aria-label="Enter your location" aria-required="true">
                 </div>
                 
-                <input type='hidden' name='account-type' value='normal'>
+                <input type='hidden' name='accountType' value='normal'>
                 <button class="index-main-start-form__submit" type="submit">Get started</button>
               
               </form>

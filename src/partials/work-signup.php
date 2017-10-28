@@ -79,7 +79,6 @@ include('header.php');
                       data-required="true" aria-label="Enter your email" aria-required="true">
                 </div>
                 
-                <!-- Location -->
                 <div class="index-main-start-form__row">
                   
                   <input class="index-main-start-form__input" id="sign-up-location" name="placeName" type="text" placeholder="Location"
@@ -101,12 +100,11 @@ include('header.php');
                 <div class="index-main-start__title"> How many years have you been driving? </div>
                   <input class="index-main-start-form__input" id="sign-up-form-experience" name="year" type="experience" placeholder="3" data-required="true" aria-label="3" aria-required="true">
 
-                <input type='hidden' name='account-type' value='waivework'>
+                <input type='hidden' name='accountType' value='waivework'>
                 <button class="index-main-start-form__submit" type="submit">Get started</button>
               
               </form>
               
-              <!-- Terms -->
               <div class="index-main-start__terms">By clicking “Get Started”, you agree to WaiveCar’s <a href="https://www.waivecar.com/terms.pdf">Terms&nbsp;&&nbsp;Condition</a> and <a href="https://www.waivecar.com/privacy">Privacy&nbsp;Policy</a>.
               </div>
             

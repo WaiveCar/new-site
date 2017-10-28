@@ -299,69 +299,6 @@ include('header.php');
     </section>
   
   
-    <!-- 
-    <section class="stories">
-      <div class="stories__wrapper">
-      
-        <div class="stories__title">Driver Stories</div>
-      
-        <div class="stories__container">
-        
-          <div class="stories-item">
-          
-            <div class="stories-item__thumb">
-              <img class="stories-item__img" src="pic/stories-work-1.jpg" srcset="pic/stories-work-1@2x.jpg 2x" alt="Work Transportation">
-            </div>
-          
-            <div class="stories-item__info">
-              <div class="stories-item__title">
-                <a href="#">Pizza Delivery Driver </a>
-              </div>
-            
-              <div class="stories-item__desc">Yoga Teacher who uses the service once a week for her class.</div>
-            </div>
-        
-          </div>
-        
-          <div class="stories-item">
-          
-            <div class="stories-item__thumb">
-              <img class="stories-item__img" src="pic/stories-work-2.jpg" srcset="pic/stories-work-2@2x.jpg 2x"
-                  alt="Middle Aged Woman">
-            </div>
-          
-            <div class="stories-item__info">
-              <div class="stories-item__title">
-                <a href="#">Santa Monica College Student</a>
-              </div>
-            
-              <div class="stories-item__desc">Hip enough to use an app uses for short errands ( e.g. Grocery Store)</div>
-            </div>
-        
-          </div>
-        
-          <div class="stories-item">
-          
-            <div class="stories-item__thumb">
-              <img class="stories-item__img" src="pic/stories-work-3.jpg" srcset="pic/stories-work-3@2x.jpg 2x"
-                  alt="On-the-go Business Man">
-            </div>
-          
-            <div class="stories-item__info">
-              <div class="stories-item__title">
-                <a href="#">Real Estate Agent</a>
-              </div>
-            
-              <div class="stories-item__desc">Last minute important meeting? Lunch with the client?</div>
-            </div>
-        
-          </div>
-      
-        </div>
-    
-      </div>
-    </section>
-    -->
     
     
     <!-- ==========================
