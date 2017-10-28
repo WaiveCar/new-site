@@ -4,6 +4,12 @@ include('lib.php');
 include('header.php'); 
 ?>    
     
+<style>
+.index-main-start__title {
+  margin-bottom: 0;
+  margin-top: 3rem;
+}
+</style>
     <!-- ==========================
       MAIN
     =========================== -->
@@ -25,17 +31,6 @@ include('header.php');
               <li class="index-main-info__list-item">Help the environment with our fresh efficient hybrids</li>
               <li class="index-main-info__list-item">Take the car home with you</li>
             </ul>
-            
-            <!-- Links -->
-            <div class="index-main-info-links">
-              
-              <!-- AppStore -->
-              <a class="index-main-info-links__item index-main-info-links__item--app-store" href="https://itunes.apple.com/us/app/waivecar/id1051144802?ls=1&amp;mt=8" target="_blank"></a>
-              
-              <!-- Google Play -->
-              <a class="index-main-info-links__item index-main-info-links__item--google-play" href="https://play.google.com/store/apps/details?id=com.waivecar.app" target="_blank"></a>
-            
-            </div>
           
           </div>
           
