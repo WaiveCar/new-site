@@ -30,10 +30,10 @@ include('header.php');
             <div class="index-main-info-links">
               
               <!-- AppStore -->
-              <a class="index-main-info-links__item index-main-info-links__item--app-store" href="#" target="_blank"></a>
+              <a class="index-main-info-links__item index-main-info-links__item--app-store" href="https://itunes.apple.com/us/app/waivecar/id1051144802?ls=1&amp;mt=8" target="_blank"></a>
               
               <!-- Google Play -->
-              <a class="index-main-info-links__item index-main-info-links__item--google-play" href="#" target="_blank"></a>
+              <a class="index-main-info-links__item index-main-info-links__item--google-play" href="https://play.google.com/store/apps/details?id=com.waivecar.app" target="_blank"></a>
             
             </div>
           
@@ -85,9 +85,7 @@ include('header.php');
               </form>
               
               <!-- Terms -->
-              <div class="index-main-start__terms">By clicking “Get Started”, you agree to WaiveCar’s <a href="#">Terms&nbsp;&&nbsp;Condition</a> and
-                <a
-                    href="#">Privacy&nbsp;Policy</a>.
+              <div class="index-main-start__terms">By clicking “Get Started”, you agree to WaiveCar’s <a href="https://www.waivecar.com/terms.pdf">Terms&nbsp;&&nbsp;Condition</a> and <a href="https://www.waivecar.com/privacy">Privacy&nbsp;Policy</a>.
               </div>
             
             </div>
@@ -234,20 +232,14 @@ include('header.php');
       </div>
     </section>
     
-    
-    <!-- ==========================
-      HOW WE WAIVECAR
-    =========================== -->
+    <!-- 
     <section class="stories">
       <div class="stories__wrapper">
         
-        <!-- Title -->
         <div class="stories__title">How We WaiveCar</div>
         
-        <!-- Container -->
         <div class="stories__container">
           
-          <!-- Item -->
           <div class="stories-item">
             
             <div class="stories-item__thumb">
@@ -264,12 +256,10 @@ include('header.php');
           
           </div>
           
-          <!-- Item -->
           <div class="stories-item">
             
             <div class="stories-item__thumb">
-              <img class="stories-item__img" src="pic/stories-index-item-2.jpg" srcset="pic/stories-index-item-2@2x.jpg 2x"
-                  alt="Middle Aged Woman">
+              <img class="stories-item__img" src="pic/stories-index-item-2.jpg" srcset="pic/stories-index-item-2@2x.jpg 2x" alt="Middle Aged Woman">
             </div>
             
             <div class="stories-item__info">
@@ -282,12 +272,10 @@ include('header.php');
           
           </div>
           
-          <!-- Item -->
           <div class="stories-item">
             
             <div class="stories-item__thumb">
-              <img class="stories-item__img" src="pic/stories-index-item-3.jpg" srcset="pic/stories-index-item-3@2x.jpg 2x"
-                  alt="On-the-go Business Man">
+              <img class="stories-item__img" src="pic/stories-index-item-3.jpg" srcset="pic/stories-index-item-3@2x.jpg 2x" alt="On-the-go Business Man">
             </div>
             
             <div class="stories-item__info">
@@ -304,6 +292,7 @@ include('header.php');
       
       </div>
     </section>
+    -->
     
     
     <!-- ==========================
@@ -510,7 +499,7 @@ include('header.php');
         <div class="questions__title">Got Questions?</div>
         
         <!-- Text -->
-        <div class="questions__text">We’ve got answers. Visit our <a href="faq.html">FAQ&nbsp;page</a> to learn more.</div>
+        <div class="questions__text">We’ve got answers. Visit our <a href="https://www.waivecar.com/faq">FAQ&nbsp;page</a> to learn more.</div>
       
       </div>
     </section>
@@ -542,10 +531,10 @@ include('header.php');
         <div class="download-links">
           
           <!-- AppStore -->
-          <a class="download-links__item download-links__item--app-store" href="#" target="_blank"></a>
+          <a class="download-links__item download-links__item--app-store" href="https://itunes.apple.com/us/app/waivecar/id1051144802?ls=1&mt=8" target="_blank"></a>
           
           <!-- Google Play -->
-          <a class="download-links__item download-links__item--google-play" href="#" target="_blank"></a>
+          <a class="download-links__item download-links__item--google-play" href="https://play.google.com/store/apps/details?id=com.waivecar.app" target="_blank"></a>
         
         </div>
       
