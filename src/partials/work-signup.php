@@ -86,11 +86,11 @@ include('header.php');
                 </div>
                 
                 <div class="index-main-start__title"> How many hours a week do you drive for work? </div>
-                  <input class="index-main-start-form__input" id="sign-up-form-hours" name="hours" type="hours" placeholder="30"
+                  <input class="index-main-start-form__input" id="sign-up-form-hours" name="hours" type="number" placeholder="30"
                       data-required="true" aria-label="30" aria-required="true">
 
                 <div class="index-main-start__title"> How many days a week do you work? </div>
-                  <input class="index-main-start-form__input" id="sign-up-form-days" name="days" type="days" placeholder="4"
+                  <input class="index-main-start-form__input" id="sign-up-form-days" name="days" type="number" placeholder="4"
                       data-required="true" aria-label="4" aria-required="true">
 
                 <div class="index-main-start__title"> Best number to contact you? </div>
@@ -98,7 +98,7 @@ include('header.php');
                       data-required="true" aria-label="310 555 1212" aria-required="true">
 
                 <div class="index-main-start__title"> How many years have you been driving? </div>
-                  <input class="index-main-start-form__input" id="sign-up-form-experience" name="year" type="experience" placeholder="3" data-required="true" aria-label="3" aria-required="true">
+                  <input class="index-main-start-form__input" id="sign-up-form-experience" name="experience" type="number" placeholder="3" data-required="true" aria-label="3" aria-required="true">
 
                 <input type='hidden' name='accountType' value='waivework'>
                 <button class="index-main-start-form__submit" type="submit">Get started</button>
