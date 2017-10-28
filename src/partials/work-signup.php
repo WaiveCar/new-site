@@ -14,7 +14,7 @@ include('header.php');
 }
 .index-main__wrapper {
   max-height: 1000rem;
-  height: calc(400vh - 70px);
+  height: 100%;
 }
 
 .index-main-start__bg {
@@ -24,6 +24,10 @@ include('header.php');
 
 .index-main-start-form__submit {
   margin-top: 3rem;
+}
+.page-wrapper::after,
+.page-wrapper--no-download::after {
+  height: 0
 }
 </style>
     <div class="index-main">
