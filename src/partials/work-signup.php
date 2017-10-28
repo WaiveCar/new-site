@@ -23,7 +23,7 @@ include('header.php');
           <div class="index-main-info">
             
             <!-- Title -->
-            <div class="index-main-info__title">Tell us a bit more about yourself</div>
+            <div class="index-main-info__title">Sign up for WaiveWork</div>
             
             <!-- Benefits -->
             <ul class="index-main-info__list">
@@ -46,7 +46,7 @@ include('header.php');
               
               <!-- Form -->
               <form class="index-main-start-form" id="sign-up-form" action="javascript:void(0);" onsubmit="signup(this)">
-                
+                <div class="index-main-start__title"> Tell us a bit more about yourself</div>
                 <!-- First Name -->
                 <div class="index-main-start-form__row">
                   <input class="index-main-start-form__input" id="sign-up-form-first-name" name="firstName" type="text" placeholder="First Name"
@@ -104,9 +104,6 @@ include('header.php');
       
       </div>
       
-      <!-- Cover image -->
-      <img class="index-main-cover" src="img/index-main-bg.svg" alt="Waive Car">
-    
     </div>
     
     
@@ -126,21 +123,8 @@ include('header.php');
           <!-- Title -->
           <div class="download-info__title">We waive the fee, you drive for free.</div>
           
-          <!-- Description -->
-          <div class="download-info__desc">Get the WaiveCar App on iPhone and Android</div>
-        
         </div>
         
-        <!-- Links -->
-        <div class="download-links">
-          
-          <!-- AppStore -->
-          <a class="download-links__item download-links__item--app-store" href="https://itunes.apple.com/us/app/waivecar/id1051144802?ls=1&mt=8" target="_blank"></a>
-          
-          <!-- Google Play -->
-          <a class="download-links__item download-links__item--google-play" href="https://play.google.com/store/apps/details?id=com.waivecar.app" target="_blank"></a>
-        
-        </div>
       
       </div>
     </div>
