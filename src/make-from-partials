@@ -1,7 +1,0 @@
-#!/bin/bash
-
-for i in work-signup.php about.php index.php faq.php  how-it-works.php  privacy.php  terms.php  waive-work.php; do
-  echo $i
-  php partials/$i > ${i/php/html}
-done
-

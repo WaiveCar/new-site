@@ -5,6 +5,7 @@ include('header.php');
     
 <style>
 .index-main-start__title {
+  margin-bottom: 0;
   margin-top: 3rem;
 }
 
@@ -44,7 +45,6 @@ include('header.php');
           
           </div>
           
-          <!-- Get started -->
           <div class="index-main-start">
             
             <!-- Background -->
@@ -55,7 +55,7 @@ include('header.php');
               
               
               <!-- Form -->
-              <form class="index-main-start-form" id="sign-up-form" action="javascript:void(0);" onsubmit="signup(this)">
+              <form class="index-main-start-form" id="sign-up-form" action="javascript:void(0);" onsubmit="signup(this,'waivework')">
                 <div class="index-main-start__title"> Tell us a bit more about yourself</div>
                 <!-- First Name -->
                 <div class="index-main-start-form__row">
@@ -117,3 +117,4 @@ include('header.php');
     </div>
     
 <?  include('footer.php'); ?>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3Bf8BTFI_z00lrxWdReV4MpaqnQ8urzc&libraries=places&callback=initMap" async defer></script>

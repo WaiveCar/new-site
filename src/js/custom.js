@@ -1,31 +1,14 @@
 
 'use strict';
 
-
-/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
- *
- *  General
- *
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-
 //
 // Viewport width detection
 //
 var viewportWidth = document.documentElement.clientWidth;
 
 $(window).resize(function() {
-
   viewportWidth = document.documentElement.clientWidth;
-
 });
-
-
-
-/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
- *
- *  Helper functions
- *
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 //
 // Check for an empty required fields
@@ -274,7 +257,7 @@ function initContactsMap() {
   });
 
 }
-function signup(data) {
+function signup(data, ep) {
   // not that we are using a "globalish" object here whose values
   // are getting partially assigned in the listener callback for
   // the google place autocomplete.
@@ -282,7 +265,9 @@ function signup(data) {
     signup.postback[this.name] = this.value; 
   });
 
-  $.post('https://api.waivecar.com/waitlist/add', signup.postback, function(data, err) {
+  ep = ep || 'waitlist';
+
+  $.post('https://api.waivecar.com/' + ep + '/add', signup.postback, function(data, err) {
     window.location = 'https://waive.car/waitlist?' + $.param(data);
   });
 }
@@ -308,6 +293,7 @@ WebFont.load({
     families: ['Muli:300,400,600,700']
   }
 });
+
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
