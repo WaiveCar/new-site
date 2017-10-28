@@ -274,3 +274,41 @@ function initContactsMap() {
   });
 
 }
+function signup(data) {
+  // not that we are using a "globalish" object here whose values
+  // are getting partially assigned in the listener callback for
+  // the google place autocomplete.
+  $("#sign-up-form input").each(function() { 
+    signup.postback[this.name] = this.value; 
+  });
+
+  $.post('https://api.waivecar.com/waitlist/add', signup.postback, function(data, err) {
+    window.location = 'https://waive.car/waitlist?' + $.param(data);
+  });
+}
+
+// just avoiding polluting the global namespace
+signup.postback = {};
+
+function initMap() {
+  var input = document.getElementById('sign-up-location');
+  var autocomplete = new google.maps.places.Autocomplete(input, {types: ['(cities)']});
+
+  autocomplete.addListener('place_changed', function() {
+    var place = autocomplete.getPlace();
+
+    signup.postback.latitude = place.geometry.location.lat();
+    signup.postback.longitude = place.geometry.location.lng();
+    signup.postback.placeId = place.place_id;
+  });
+}
+
+WebFont.load({
+  google: {
+    families: ['Muli:300,400,600,700']
+  }
+});
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-72407446-1');

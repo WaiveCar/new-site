@@ -3,49 +3,33 @@ $PAGETITLE = 'Welcome';
 include('lib.php');
 include('header.php'); 
 ?>    
-    
-    <!-- ==========================
-      MAIN
-    =========================== -->
     <div class="index-main">
       <div class="index-main__wrapper">
         
-        <!-- Container -->
         <div class="index-main__container">
           
-          <!-- Information -->
           <div class="index-main-info">
             
-            <!-- Title -->
             <div class="index-main-info__title">We Waive the Fee You Drive for Free</div>
             
-            <!-- Benefits -->
             <ul class="index-main-info__list">
               <li class="index-main-info__list-item">2 Ad-Supported Hours of FREE Driving</li>
               <li class="index-main-info__list-item">100% Electric and Emission-Free</li>
               <li class="index-main-info__list-item">Available in Los Angeles</li>
             </ul>
             
-            <!-- Links -->
             <div class="index-main-info-links">
               
-              <!-- AppStore -->
               <a class="index-main-info-links__item index-main-info-links__item--app-store" href="https://itunes.apple.com/us/app/waivecar/id1051144802?ls=1&amp;mt=8" target="_blank"></a>
               
-              <!-- Google Play -->
               <a class="index-main-info-links__item index-main-info-links__item--google-play" href="https://play.google.com/store/apps/details?id=com.waivecar.app" target="_blank"></a>
             
             </div>
           
           </div>
           
-          <!-- Get started -->
           <div class="index-main-start">
-            
-            <!-- Background -->
             <div class="index-main-start__bg"></div>
-            
-            <!-- Content -->
             <div class="index-main-start__content">
               
               <!-- Title -->
@@ -101,10 +85,6 @@ include('header.php');
     
     </div>
     
-    
-    <!-- ===========================
-      RIDING WITH WAIVECAR
-    =========================== -->
     <section class="index-riding">
       <div class="index-riding__wrapper">
         
@@ -232,72 +212,6 @@ include('header.php');
       </div>
     </section>
     
-    <!-- 
-    <section class="stories">
-      <div class="stories__wrapper">
-        
-        <div class="stories__title">How We WaiveCar</div>
-        
-        <div class="stories__container">
-          
-          <div class="stories-item">
-            
-            <div class="stories-item__thumb">
-              <img class="stories-item__img" src="pic/stories-index-item-1.jpg" srcset="pic/stories-index-item-1@2x.jpg 2x" alt="Work Transportation">
-            </div>
-            
-            <div class="stories-item__info">
-              <div class="stories-item__title">
-                <a href="#">Work Transportation</a>
-              </div>
-              
-              <div class="stories-item__desc">Yoga Teacher who uses the service once a week for her class.</div>
-            </div>
-          
-          </div>
-          
-          <div class="stories-item">
-            
-            <div class="stories-item__thumb">
-              <img class="stories-item__img" src="pic/stories-index-item-2.jpg" srcset="pic/stories-index-item-2@2x.jpg 2x" alt="Middle Aged Woman">
-            </div>
-            
-            <div class="stories-item__info">
-              <div class="stories-item__title">
-                <a href="#">Middle Aged Woman</a>
-              </div>
-              
-              <div class="stories-item__desc">Hip enough to use an app uses for short errands (e.g. Grocery Store)</div>
-            </div>
-          
-          </div>
-          
-          <div class="stories-item">
-            
-            <div class="stories-item__thumb">
-              <img class="stories-item__img" src="pic/stories-index-item-3.jpg" srcset="pic/stories-index-item-3@2x.jpg 2x" alt="On-the-go Business Man">
-            </div>
-            
-            <div class="stories-item__info">
-              <div class="stories-item__title">
-                <a href="#">On-the-go Business Man</a>
-              </div>
-              
-              <div class="stories-item__desc">Last minute important meeting? Lunch with the client?</div>
-            </div>
-          
-          </div>
-        
-        </div>
-      
-      </div>
-    </section>
-    -->
-    
-    
-    <!-- ==========================
-      PRICING
-    =========================== -->
     <section class="index-pricing">
       <div class="index-pricing__wrapper">
         
@@ -322,10 +236,6 @@ include('header.php');
       </div>
     </section>
     
-    
-    <!-- ==========================
-      PARTNERSHIP
-    =========================== -->
     <section class="index-partner">
       <div class="index-partner__wrapper">
         
@@ -494,11 +404,8 @@ include('header.php');
           </g>
         </svg>
         
-        <!-- Title -->
         <div class="questions__title">Got Questions?</div>
-        
-        <!-- Text -->
-        <div class="questions__text">We’ve got answers. Visit our <a href="https://www.waivecar.com/faq">FAQ&nbsp;page</a> to learn more.</div>
+        <div class="questions__text">We’ve got answers. Visit our <a href="/faq.html">FAQ&nbsp;page</a> to learn more.</div>
       
       </div>
     </section>
@@ -506,35 +413,20 @@ include('header.php');
   </div>
   
   
-  <!-- ==========================
-    FOOTER
-  =========================== -->
   <footer class="footer">
-    
-    <!-- Download -->
     <div class="download">
       <div class="download__wrapper">
         
-        <!-- Info -->
         <div class="download-info">
           
-          <!-- Title -->
           <div class="download-info__title">We waive the fee, you drive for free.</div>
-          
-          <!-- Description -->
           <div class="download-info__desc">Get the WaiveCar App on iPhone and Android</div>
         
         </div>
         
-        <!-- Links -->
         <div class="download-links">
-          
-          <!-- AppStore -->
           <a class="download-links__item download-links__item--app-store" href="https://itunes.apple.com/us/app/waivecar/id1051144802?ls=1&mt=8" target="_blank"></a>
-          
-          <!-- Google Play -->
           <a class="download-links__item download-links__item--google-play" href="https://play.google.com/store/apps/details?id=com.waivecar.app" target="_blank"></a>
-        
         </div>
       
       </div>
@@ -544,61 +436,9 @@ include('header.php');
   
   </footer>
   
-  <script>
-
-  function signup(data) {
-    // not that we are using a "globalish" object here whose values
-    // are getting partially assigned in the listener callback for
-    // the google place autocomplete.
-    $("#sign-up-form input").each(function() { 
-      signup.postback[this.name] = this.value; 
-    });
-
-    $.post('https://api.waivecar.com/waitlist/add', signup.postback, function(data, err) {
-      window.location = 'https://waive.car/waitlist?' + $.param(data);
-    });
-  }
-
-  // just avoiding polluting the global namespace
-  signup.postback = {};
-
-  function initMap() {
-    var input = document.getElementById('sign-up-location');
-    var autocomplete = new google.maps.places.Autocomplete(input, {types: ['(cities)']});
-
-    autocomplete.addListener('place_changed', function() {
-      var place = autocomplete.getPlace();
-
-      signup.postback.latitude = place.geometry.location.lat();
-      signup.postback.longitude = place.geometry.location.lng();
-      signup.postback.placeId = place.place_id;
-    });
-  }
-
-  </script>
-  
-  
-  <!-- Google Fonts -->
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-  <script>
-    WebFont.load({
-      google: {
-        families: ['Muli:300,400,600,700']
-      }
-    });
-  </script>
-  
-  <!-- jQuery 3 -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  
-  <!-- Custom JS-code -->
   <script src="js/custom.js"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-72407446-1');
-  </script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3Bf8BTFI_z00lrxWdReV4MpaqnQ8urzc&libraries=places&callback=initMap" async defer></script>
 </body>
 </html>
