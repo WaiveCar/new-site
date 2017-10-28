@@ -95,9 +95,9 @@ include('header.php');
                       data-required="true" aria-label="310 555 1212" aria-required="true">
 
                 <div class="index-main-start__title"> How many years have you been driving? </div>
-                  <input class="index-main-start-form__input" id="sign-up-form-year" name="year" type="year" placeholder="3" data-required="true" aria-label="3" aria-required="true">
+                  <input class="index-main-start-form__input" id="sign-up-form-experience" name="year" type="experience" placeholder="3" data-required="true" aria-label="3" aria-required="true">
 
-                <!-- Submit -->
+                <input type='hidden' name='account-type' value='waivework'>
                 <button class="index-main-start-form__submit" type="submit">Get started</button>
               
               </form>

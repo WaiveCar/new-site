@@ -35,22 +35,18 @@ include('header.php');
               <!-- Title -->
               <div class="index-main-start__title">Find, book, and start using electric cars for free.</div>
               
-              <!-- Form -->
               <form class="index-main-start-form" id="sign-up-form" action="javascript:void(0);" onsubmit="signup(this)">
                 
-                <!-- First Name -->
                 <div class="index-main-start-form__row">
                   <input class="index-main-start-form__input" id="sign-up-form-first-name" name="firstName" type="text" placeholder="First Name"
                       data-required="true" aria-label="Enter your first name" aria-required="true">
                 </div>
                 
-                <!-- Last Name -->
                 <div class="index-main-start-form__row">
                   <input class="index-main-start-form__input" id="sign-up-form-last-name" name="lastName" type="text" placeholder="Last Name"
                       data-required="true" aria-label="Enter your last name" aria-required="true">
                 </div>
                 
-                <!-- Email Address -->
                 <div class="index-main-start-form__row">
                   <input class="index-main-start-form__input" id="sign-up-form-email" name="email" type="email" placeholder="Email Address"
                       data-required="true" aria-label="Enter your email" aria-required="true">
@@ -63,7 +59,7 @@ include('header.php');
                       data-required="true" aria-label="Enter your location" aria-required="true">
                 </div>
                 
-                <!-- Submit -->
+                <input type='hidden' name='account-type' value='normal'>
                 <button class="index-main-start-form__submit" type="submit">Get started</button>
               
               </form>
