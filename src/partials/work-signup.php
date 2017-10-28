@@ -1,6 +1,5 @@
 <? 
 $PAGETITLE = 'Welcome';
-include('lib.php');
 include('header.php'); 
 ?>    
     
@@ -9,10 +8,11 @@ include('header.php');
   margin-bottom: 0;
   margin-top: 3rem;
 }
+
+.page-wrapper {
+  overflow-x: visible;
+}
 </style>
-    <!-- ==========================
-      MAIN
-    =========================== -->
     <div class="index-main">
       <div class="index-main__wrapper">
         
@@ -22,10 +22,8 @@ include('header.php');
           <!-- Information -->
           <div class="index-main-info">
             
-            <!-- Title -->
             <div class="index-main-info__title">Sign up for WaiveWork</div>
             
-            <!-- Benefits -->
             <ul class="index-main-info__list">
               <li class="index-main-info__list-item">Enjoy a free car for work</li>
               <li class="index-main-info__list-item">Help the environment with our fresh efficient hybrids</li>
@@ -105,6 +103,5 @@ include('header.php');
       </div>
       
     </div>
-  
     
 <?  include('footer.php'); ?>
