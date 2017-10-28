@@ -8,6 +8,7 @@ pagelist="work-signup about index faq how-it-works privacy terms waive-work"
     echo $i
     php partials/$i.php > $i.html
   done
+  cd ..
 }
 gulp dist
 

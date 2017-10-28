@@ -35,6 +35,7 @@ const paths = {
   css: './src/css',
   js: './src/js/*.js',
   img: './src/img/*.{png,jpg,gif,svg}',
+  fav: './src/images/*/*',
   pic: './src/pic/**/*',
   fonts: './src/fonts/**/*',
   php: './src/php/**/*',
@@ -183,7 +184,7 @@ gulp.task('dist-js', () => {
 // Move everything else that don't need to be processed
 //
 gulp.task('dist-move', () => {
-  return gulp.src([paths.html, paths.img, paths.pic, paths.fonts, paths.php], { base: 'src' })
+  return gulp.src([paths.html, paths.img, paths.fav, paths.pic, paths.fonts, paths.php], { base: 'src' })
     .pipe(gulp.dest(paths.dist));
 });
 
