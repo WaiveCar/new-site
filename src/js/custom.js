@@ -266,7 +266,7 @@ function signup(data) {
   });
 
   $.post('https://api.waivecar.com/waitlist/add', signup.postback, function(data, err) {
-    window.location = 'https://waive.car/waitlist?' + $.param(data);
+    window.location = 'https://lb.waivecar.com/waitlist?' + $.param(data);
   });
 }
 
