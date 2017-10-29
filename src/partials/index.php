@@ -3,6 +3,9 @@ $PAGETITLE = 'Welcome';
 include('lib.php');
 include('header.php'); 
 ?>    
+<style>
+.index-main-info__title { white-space: nowrap; }
+</style>
     <div class="index-main">
       <div class="index-main__wrapper">
         
@@ -10,7 +13,7 @@ include('header.php');
           
           <div class="index-main-info">
             
-            <div class="index-main-info__title">We Waive the Fee You Drive for Free</div>
+            <div class="index-main-info__title">We Waive the Fee<br/>You Drive for Free</div>
             
             <ul class="index-main-info__list">
               <li class="index-main-info__list-item">2 Ad-Supported Hours of FREE Driving</li>
@@ -32,9 +35,7 @@ include('header.php');
             <div class="index-main-start__bg"></div>
             <div class="index-main-start__content">
               
-              <!-- Title -->
               <div class="index-main-start__title">Find, book, and start using electric cars for free.</div>
-              
               <form class="index-main-start-form" id="sign-up-form" action="javascript:void(0);" onsubmit="signup(this)">
                 
                 <div class="index-main-start-form__row">
@@ -52,7 +53,6 @@ include('header.php');
                       data-required="true" aria-label="Enter your email" aria-required="true">
                 </div>
                 
-                <!-- Location -->
                 <div class="index-main-start-form__row">
                   
                   <input class="index-main-start-form__input" id="sign-up-location" name="placeName" type="text" placeholder="Location"
@@ -64,21 +64,14 @@ include('header.php');
               
               </form>
               
-              <!-- Terms -->
               <div class="index-main-start__terms">By clicking “Get Started”, you agree to WaiveCar’s <a href="https://www.waivecar.com/terms.pdf">Terms&nbsp;&&nbsp;Condition</a> and <a href="https://www.waivecar.com/privacy">Privacy&nbsp;Policy</a>.
               </div>
-            
             </div>
-          
           </div>
-        
         </div>
-      
       </div>
       
-      <!-- Cover image -->
       <img class="index-main-cover" src="img/index-main-bg.svg" alt="Waive Car">
-    
     </div>
     
     <section class="index-riding">
@@ -90,10 +83,8 @@ include('header.php');
         <!-- Container -->
         <div class="index-riding__container">
           
-          <!-- Item -->
           <div class="index-riding-item">
             
-            <!-- Icon -->
             <div class="index-riding-item__icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="80" height="82" viewBox="0 0 80 82">
                 <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
