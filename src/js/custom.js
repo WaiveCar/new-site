@@ -257,7 +257,7 @@ function initContactsMap() {
   });
 
 }
-function signup(data, ep) {
+function signup(data) {
   // not that we are using a "globalish" object here whose values
   // are getting partially assigned in the listener callback for
   // the google place autocomplete.
@@ -265,9 +265,7 @@ function signup(data, ep) {
     signup.postback[this.name] = this.value; 
   });
 
-  ep = ep || 'waitlist';
-
-  $.post('https://api.waivecar.com/' + ep + '/add', signup.postback, function(data, err) {
+  $.post('https://api.waivecar.com/waitlist/add', signup.postback, function(data, err) {
     window.location = 'https://waive.car/waitlist?' + $.param(data);
   });
 }
