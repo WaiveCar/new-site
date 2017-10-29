@@ -99,7 +99,7 @@
               <a class="h-menu__link" href="<?= $href ?>"><?= $text ?></a>
             </span>
           <? } ?>
-          <a class="h-menu__login" href="https://www.waivecar.com/login">Login</a>
+          <a class="h-menu__login" href="https://lb.waivecar.com/login">Login</a>
         </nav>
   
         <button class="h-hamburger" id="hamburger" type="button" aria-label="Open menu">

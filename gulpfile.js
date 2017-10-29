@@ -31,6 +31,7 @@ const runSequence = require('run-sequence');
 
 const paths = {
   html: './src/*.html',
+  faq: './src/faq',
   sass: './src/sass/**/*.scss',
   css: './src/css',
   js: './src/js/*.js',
@@ -184,7 +185,7 @@ gulp.task('dist-js', () => {
 // Move everything else that don't need to be processed
 //
 gulp.task('dist-move', () => {
-  return gulp.src([paths.html, paths.img, paths.fav, paths.pic, paths.fonts, paths.php], { base: 'src' })
+  return gulp.src([paths.faq, paths.html, paths.img, paths.fav, paths.pic, paths.fonts, paths.php], { base: 'src' })
     .pipe(gulp.dest(paths.dist));
 });
 

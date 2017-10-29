@@ -36,7 +36,7 @@ function footer_links() {
     
         <ul class="f-menu__wrapper">
           <li class="f-menu__item">
-            <a class="f-menu__link" href="https://www.waivecar.com/login">Login</a>
+            <a class="f-menu__link" href="https://lb.waivecar.com/login">Login</a>
           </li>
       
           <li class="f-menu__item">
@@ -44,11 +44,11 @@ function footer_links() {
           </li>
       
           <li class="f-menu__item">
-            <a class="f-menu__link" href="https://www.waivecar.com/terms.pdf">Terms</a>
+            <a class="f-menu__link" href="https://lb.waivecar.com/terms.pdf">Terms</a>
           </li>
       
           <li class="f-menu__item">
-            <a class="f-menu__link" href="https://www.waivecar.com/privacy">Privacy</a>
+            <a class="f-menu__link" href="https://lb.waivecar.com/privacy">Privacy</a>
           </li>
       
           <li class="f-menu__item">
