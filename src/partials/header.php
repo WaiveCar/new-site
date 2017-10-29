@@ -50,7 +50,7 @@
   <meta property="og:url" content="https://waivecar.com" />
   <meta property="fb:app_id" content="1022704731082512" />
   
-<? if (defined('PAGEFULLTITLE')) { ?>
+<? if (isset($PAGEFULLTITLE)) { ?>
   <title><?= $PAGEFULLTITLE ?></title>
 <? } else { ?>
   <title><?= $PAGETITLE ?> | WaiveCar</title>
