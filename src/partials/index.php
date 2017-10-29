@@ -1,4 +1,5 @@
 <? 
+$PAGEFULLTITLE = 'WaiveCar - The worlds first all electric and FREE car-sharing service.';
 $PAGETITLE = 'Welcome';
 include('lib.php');
 include('header.php'); 
