@@ -231,13 +231,10 @@ include('header.php');
           </g>
         </svg>
         
-        <!-- Title -->
         <div class="index-partner__title">Our Partnership with Hyundai</div>
         
-        <!-- Description -->
         <div class="index-partner__desc">Hyundai teams up with WaiveCar to offer IONIQ electric vehicles as part of our free car-sharing program.</div>
         
-        <!-- Link -->
         <a class="index-partner__link" href="https://medium.com/@WaiveCar/announcing-our-partnership-with-hyundai-e5b070812738" target="_blank">
           <svg>
             <use xlink:href="#icon-medium"></use>
@@ -252,17 +249,14 @@ include('header.php');
     <section class="index-cars">
       <div class="index-cars__wrapper">
         
-        <!-- Header -->
         <header class="index-cars__header">
           <div class="index-cars__title">Our Cars</div>
           
           <div class="index-cars__desc">Modern, zippy and compact for easy parking.</div>
         </header>
         
-        <!-- Chevrolet -->
         <div class="index-cars-item">
           
-          <!-- Photo -->
           <div class="index-cars-item__thumb">
             <img class="index-cars-item__img" src="pic/index-cars-1.jpg" srcset="pic/index-cars-1@2x.jpg 2x" alt="Chevrolet Spark">
           </div>
@@ -332,7 +326,7 @@ include('header.php');
         
         <div class="index-zones-thumb">
           
-          <img class="index-zones-thumb__img" id="driving-zone" _src="pic/driving-zone.png" alt="WaiveCar Driving Zone">
+          <img class="index-zones-thumb__img" style="height:751px" id="driving-zone" _src="pic/driving-zone.png" alt="WaiveCar Driving Zone">
   
           <img class="index-zones-thumb__img js-active" id="parking-zone" src="pic/parking-zone.png" alt="WaiveCar Parking Zone">
           
