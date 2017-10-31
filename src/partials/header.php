@@ -73,9 +73,8 @@
     <header class="header">
       <div class="header__wrapper header__wrapper--inner">
         
-        <!-- Logo -->
-        <a class="h-logo" href="index.html">
-          <svg class="h-logo__icon">
+        <a class="h-logo" title='WaveCar' href="index.html">
+          <svg title="WaveCar" class="h-logo__icon">
             <use xlink:href="#logo"></use>
           </svg>
         </a>
