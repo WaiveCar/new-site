@@ -98,10 +98,8 @@ include('header.php');
               </svg>
             </div>
             
-            <!-- Title -->
             <div class="index-riding-item__title">Book</div>
             
-            <!-- Description -->
             <div class="index-riding-item__desc">Use the app to locate a WaiveCar near you. To reserve one for 15 minutes, tap ‘Book WaiveCar’.</div>
           
           </div>
@@ -185,10 +183,8 @@ include('header.php');
               </svg>
             </div>
             
-            <!-- Title -->
             <div class="index-riding-item__title">Return</div>
             
-            <!-- Description -->
             <div class="index-riding-item__desc">Finish by tapping ‘End Ride’ and&nbsp;following the in app step-by-step exit checklist. Your ride is
               now complete.
             </div>
@@ -254,10 +250,6 @@ include('header.php');
       </div>
     </section>
     
-    
-    <!-- ==========================
-      OUR CARS
-    =========================== -->
     <section class="index-cars">
       <div class="index-cars__wrapper">
         
@@ -280,10 +272,8 @@ include('header.php');
           <div class="index-cars-item__info">
             <div class="index-cars-item__info-wrapper">
               
-              <!-- Title -->
               <div class="index-cars-item__title">Chevrolet Spark</div>
               
-              <!-- Benefits -->
               <ul class="index-cars-item__list">
                 <li class="index-cars-item__list-item">4 Doors</li>
                 <li class="index-cars-item__list-item">Seats 4</li>
@@ -330,19 +320,13 @@ include('header.php');
     </section>
     
     
-    <!-- ==========================
-      ZONES
-    =========================== -->
     <section class="index-zones">
       <div class="index-zones__wrapper">
         
-        <!-- Information -->
         <div class="index-zones-info">
           
-          <!-- Title -->
           <div class="index-zones-info__title">WaiveCar Parking Zone and Driving Zone</div>
           
-          <!-- Text -->
           <div class="index-zones-info__text">
             <p>All WaiveCar journeys must start and end in Santa Monica, but you can leave the area once the car is booked. We allow a
               20-mile travel radius from our HQ at 1547 7th Street.</p>
@@ -354,16 +338,12 @@ include('header.php');
         
         </div>
         
-        <!-- Thumbnail -->
         <div class="index-zones-thumb">
           
-          <!-- Driving Zone -->
           <img class="index-zones-thumb__img" id="driving-zone" src="pic/driving-zone.png" alt="WaiveCar Driving Zone">
   
-          <!-- Parking Zone -->
           <img class="index-zones-thumb__img js-active" id="parking-zone" src="pic/parking-zone.png" alt="WaiveCar Parking Zone">
           
-          <!-- Toggle -->
           <div class="index-zones-toggle">
             <button class="index-zones-toggle__btn" id="driving-zone-btn">Driving Zone</button>
             
@@ -376,13 +356,9 @@ include('header.php');
     </section>
     
     
-    <!-- ==========================
-      GOT A QUESTION
-    =========================== -->
     <section class="questions">
       <div class="questions__wrapper">
         
-        <!-- Icon -->
         <svg class="questions__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 75">
           <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
             <path stroke="#56665A" d="M54 25.007A3 3 0 0 0 50.999 22H4A2.997 2.997 0 0 0 1 25.001V74h1l14.58-14.58C17.364 58.636 18.89 58 20 58h30.993A3.007 3.007 0 0 0 54 54.993V25.007zM42.387 30h-18.94M46 35H23.452m-16 15h27.096M7.452 45h40"/>
