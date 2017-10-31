@@ -19,7 +19,7 @@ include('header.php');
 
 .index-main-start__bg {
   height: 100%;
-  background: url(../img/index-main-start-bg.jpg) 50% 50% repeat;
+  background: url(../img/index-main-start-bg.png) 50% 50% repeat;
 }
 
 .index-main-start-form__submit {

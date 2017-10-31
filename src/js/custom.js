@@ -47,13 +47,6 @@ function hasBlankRequiredFields(form) {
 
 
 
-
-/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
- *
- *  Mobile menu
- *
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-
 //
 // Opening/Closing
 //
@@ -79,25 +72,11 @@ $('#hamburger').click(function() {
 // and then the window had been resized to a larger width
 //
 $(window).resize(function() {
-
   if (viewportWidth > 960) {
-
     var $menu = $('.h-menu');
-
     $menu.css('display', '');
-
   }
-
 });
-
-
-
-
-/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
- *
- *  "Home" page
- *
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 
 //
@@ -109,6 +88,12 @@ $('#driving-zone-btn').click(function() {
   var $parkingZoneButton = $('#parking-zone-btn');
 
   var $drivingZonePicture = $('#driving-zone');
+
+  if($drivingZonePicture.attr('_src')) {
+    $drivingZonePicture.attr('src', $drivingZonePicture.attr('_src'));
+    $drivingZonePicture.removeAttr('_src');
+  }
+
   var $parkingZonePicture = $('#parking-zone');
 
   $parkingZoneButton.removeClass('js-active');
