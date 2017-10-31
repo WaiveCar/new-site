@@ -222,7 +222,6 @@ include('header.php');
     <section class="index-partner">
       <div class="index-partner__wrapper">
         
-        <!-- Icon -->
         <svg class="index-partner__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 46">
           <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
             <path stroke="#56665A" d="M52.598 39.842c-.268 1.157-1.23 2.072-2.023 2.529-1.901 1.096-4.425.78-5.592-1.109L41 34m4 8.107c-.752 1.503-1.204 1.652-1.918 2.085-1.854 1.126-4.557 1.24-5.691-.725L34 37m24.093-2.743c.745 1.585 1.168 4.705-.723 6.007-1.616 1.11-3.963.96-4.772-.422L48 30.79M14.333 36H5.798a2.677 2.677 0 0 1-2.623-2.225C1.231 22.715.985 13.178 1.001 8.708 1.006 7.205 2.199 6 3.668 6h10.665C15.805 6 17 7.222 17 8.727v24.546C17 34.778 15.805 36 14.333 36zM37 43.259c-.388.445-.743.667-1.578 1.128-2.018 1.116-5.547.928-7.576-2.432C25.08 37.374 22.436 32 22.436 32H18"/>
@@ -326,10 +325,8 @@ include('header.php');
         
         <div class="index-zones-thumb">
           
-          <img class="index-zones-thumb__img" style="height:751px" id="driving-zone" _src="pic/driving-zone.png" alt="WaiveCar Driving Zone">
-  
+          <img class="index-zones-thumb__img" id="driving-zone" _src="pic/driving-zone.png" alt="WaiveCar Driving Zone">
           <img class="index-zones-thumb__img js-active" id="parking-zone" src="pic/parking-zone.png" alt="WaiveCar Parking Zone">
-          
           <div class="index-zones-toggle">
             <button class="index-zones-toggle__btn" id="driving-zone-btn">Driving Zone</button>
             <button class="index-zones-toggle__btn js-active" id="parking-zone-btn">Parking Zone</button>

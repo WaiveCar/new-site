@@ -79,20 +79,11 @@ $(window).resize(function() {
 });
 
 
-//
-// Driving Zone Button
-//
-$('#driving-zone-btn').click(function() {
-
+function swap() {
   var $drivingZoneButton = $(this);
   var $parkingZoneButton = $('#parking-zone-btn');
 
   var $drivingZonePicture = $('#driving-zone');
-
-  if($drivingZonePicture.attr('_src')) {
-    $drivingZonePicture.attr('src', $drivingZonePicture.attr('_src'));
-    $drivingZonePicture.removeAttr('_src');
-  }
 
   var $parkingZonePicture = $('#parking-zone');
 
@@ -101,7 +92,22 @@ $('#driving-zone-btn').click(function() {
 
   $parkingZonePicture.removeClass('js-active');
   $drivingZonePicture.addClass('js-active');
+}
 
+//
+// Driving Zone Button
+//
+$('#driving-zone-btn').click(function() {
+
+  var $drivingZonePicture = $('#driving-zone');
+
+  if($drivingZonePicture.attr('_src')) {
+    $drivingZonePicture.load(swap);
+    $drivingZonePicture.attr('src', $drivingZonePicture.attr('_src'));
+    $drivingZonePicture.removeAttr('_src');
+  } else {
+    swap();
+  }
 });
 
 
