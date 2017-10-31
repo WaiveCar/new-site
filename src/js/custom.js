@@ -80,7 +80,7 @@ $(window).resize(function() {
 
 
 function swap() {
-  var $drivingZoneButton = $(this);
+  var $drivingZoneButton = $("#driving-zone-btn");
   var $parkingZoneButton = $('#parking-zone-btn');
 
   var $drivingZonePicture = $('#driving-zone');
