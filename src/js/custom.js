@@ -102,7 +102,7 @@ $('#driving-zone-btn').click(function() {
   var $drivingZonePicture = $('#driving-zone');
 
   if($drivingZonePicture.attr('_src')) {
-    $drivingZonePicture.load(swap);
+    $drivingZonePicture.on('load',swap);
     $drivingZonePicture.attr('src', $drivingZonePicture.attr('_src'));
     $drivingZonePicture.removeAttr('_src');
   } else {

@@ -78,10 +78,8 @@ include('header.php');
     <section class="index-riding">
       <div class="index-riding__wrapper">
         
-        <!-- Title -->
         <div class="index-riding__title">Riding with WaiveCar</div>
         
-        <!-- Container -->
         <div class="index-riding__container">
           
           <div class="index-riding-item">
@@ -103,10 +101,8 @@ include('header.php');
           
           </div>
           
-          <!-- Item -->
           <div class="index-riding-item">
             
-            <!-- Icon -->
             <div class="index-riding-item__icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="82" height="79" viewBox="0 0 82 79">
                 <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
