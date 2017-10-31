@@ -3,8 +3,8 @@
 function footer_links() {
   ?><div class="footer__container">
       
-      <a class="f-logo" href="index.html">
-        <svg class="f-logo__icon">
+      <a title="WaveCar" class="f-logo" href="index.html">
+        <svg title="WaveCar" class="f-logo__icon">
           <use xlink:href="#logo"></use>
         </svg>
       </a>
