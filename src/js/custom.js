@@ -249,7 +249,7 @@ function initContactsMap() {
 
 }
 function signup(data) {
-  $("index-main-start-form__submit").html("Submitting...");
+  $(".index-main-start-form__submit").css({background: 'grey'}).html("Working...please wait.");
   // not that we are using a "globalish" object here whose values
   // are getting partially assigned in the listener callback for
   // the google place autocomplete.
