@@ -60,7 +60,7 @@ include('header.php');
 
                 <div class="index-main-start-form__row">
                   <input class="index-main-start-form__input" id="promo-code" name="promoCode" type="text" placeholder="Promo Code (Optional)"
-                      data-required="true" aria-label="Promo Code" aria-required="true">
+                      aria-label="Promo Code">
                 </div>
 
                 <input type='hidden' name='accountType' value='normal'>
