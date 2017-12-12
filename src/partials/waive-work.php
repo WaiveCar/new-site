@@ -33,17 +33,11 @@ include('header.php');
       
       </div>
       
-      <!-- Picture -->
       <div class="work-main-picture">
-        <img src="pic/work-main.jpg" alt="Hyundai IONIQ">
+        <img src="pic/work-main-whitewrap.jpg" alt="Hyundai IONIQ">
       </div>
     
     </section>
-    
-    
-    <!-- ==========================
-      WHY
-    =========================== -->
     <section class="work-why">
       <div class="work-why__wrapper">
         
