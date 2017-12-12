@@ -11,18 +11,14 @@ include('header.php');
       <!-- Information -->
       <div class="work-main-info">
         
-        <!-- Textual Part -->
         <div class="work-main-info__textual">
           
-          <!-- Title -->
           <h1 class="work-main-info__title">Drive More, Pay Less</h1>
           
-          <!-- Description -->
           <p class="work-main-info__desc">WaiveWork provides affordable cars for people with driving centered careers.</p>
         
         </div>
         
-        <!-- Get Started Now -->
         <a class="work-main-btn" href="/work-signup.html">
           <span class="work-main-btn__title">Get Started Now</span>
           
