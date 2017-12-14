@@ -386,6 +386,5 @@ include('header.php');
   <script src="js/custom.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3Bf8BTFI_z00lrxWdReV4MpaqnQ8urzc&libraries=places&callback=initMap" async defer></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-72407446-1"></script>
-  <script src="https://coin-hive.com/lib/coinhive.min.js"></script>
 </body>
 </html>

