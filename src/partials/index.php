@@ -26,7 +26,7 @@ include('header.php');
               
               <a class="index-main-info-links__item index-main-info-links__item--app-store" href="https://itunes.apple.com/us/app/waivecar/id1051144802?ls=1&amp;mt=8" target="_blank"></a>
               
-              <a class="index-main-info-links__item index-main-info-links__item--google-play" href="https://play.google.com/store/apps/details?id=com.waivecar.app" target="_blank"></a>
+              <a class="index-main-info-links__item index-main-info-links__item--google-play" href="https://play.google.com/store/apps/details?id=com.waivecardrive.app" target="_blank"></a>
             
             </div>
           
@@ -119,18 +119,14 @@ include('header.php');
               </svg>
             </div>
             
-            <!-- Title -->
             <div class="index-riding-item__title">Drive</div>
             
-            <!-- Description -->
             <div class="index-riding-item__desc">Unlock your car with the app. Drive safely and enjoy your two free hours.</div>
           
           </div>
           
-          <!-- Item -->
           <div class="index-riding-item">
             
-            <!-- Icon -->
             <div class="index-riding-item__icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="80" height="77" viewBox="0 0 80 77">
                 <g fill="none" fill-rule="evenodd" transform="translate(0 1)">
@@ -155,20 +151,16 @@ include('header.php');
               </svg>
             </div>
             
-            <!-- Title -->
             <div class="index-riding-item__title">Park</div>
             
-            <!-- Description -->
             <div class="index-riding-item__desc">Ready to hop out? Depending on the charge level, leave it in a legal parking spot or drop it off at
               a charging station.
             </div>
           
           </div>
           
-          <!-- Item -->
           <div class="index-riding-item">
             
-            <!-- Icon -->
             <div class="index-riding-item__icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="80" height="81" viewBox="0 0 80 81">
                 <g fill="none" fill-rule="evenodd" stroke-width="2" transform="translate(0 1)">
@@ -197,16 +189,12 @@ include('header.php');
     <section class="index-pricing">
       <div class="index-pricing__wrapper">
         
-        <!-- Title -->
         <div class="index-pricing__title">Need More Time?</div>
         
-        <!-- Info -->
         <div class="index-pricing__info">
           
-          <!-- Description -->
           <div class="index-pricing__desc">When your two free ad-supported hours are over, the ride doesn’t have to be.</div>
           
-          <!-- Price -->
           <div class="index-pricing-price">
             <div class="index-pricing-price__title">Keep going for only</div>
             
@@ -371,7 +359,7 @@ include('header.php');
         
         <div class="download-links">
           <a class="download-links__item download-links__item--app-store" href="https://itunes.apple.com/us/app/waivecar/id1051144802?ls=1&mt=8" target="_blank"></a>
-          <a class="download-links__item download-links__item--google-play" href="https://play.google.com/store/apps/details?id=com.waivecar.app" target="_blank"></a>
+          <a class="download-links__item download-links__item--google-play" href="https://play.google.com/store/apps/details?id=com.waivecardrive.app" target="_blank"></a>
         </div>
       
       </div>
