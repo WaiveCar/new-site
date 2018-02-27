@@ -1,10 +1,7 @@
-<? 
+<?
 $PAGETITLE = 'Privacy';
 include('header.php'); 
 ?>    
-    <!-- ==========================
-      CONTENT
-    =========================== -->
     <main class="article">
       <article class="article__wrapper">
     

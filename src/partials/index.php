@@ -19,7 +19,7 @@ include('header.php');
             <ul class="index-main-info__list">
               <li class="index-main-info__list-item">2 Ad-Supported Hours of FREE Driving</li>
               <li class="index-main-info__list-item">100% Electric and Emission-Free</li>
-              <li class="index-main-info__list-item">Available in Los Angeles</li>
+              <li class="index-main-info__list-item">Available in Los Angeles and selected regions</li>
             </ul>
             
             <div class="index-main-info-links">
@@ -61,6 +61,10 @@ include('header.php');
                 <div class="index-main-start-form__row">
                   <input class="index-main-start-form__input" id="promo-code" name="promoCode" type="text" placeholder="Promo Code (Optional)"
                       aria-label="Promo Code">
+                </div>
+
+                <div class="index-main-start-form__row apartment">
+                  <input class="index-main-start-form__input" id="apartment" name="apartment" type="text" placeholder="Apartment Number" aria-label="Apartment Number">
                 </div>
 
                 <input type='hidden' name='accountType' value='normal'>

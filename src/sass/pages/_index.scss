@@ -1156,6 +1156,10 @@
 }
 
 
+.apartment { 
+  display: none;
+}
+
 // Until 414px
 @include mq($until: iPhone6Plus) {
   .index-main-start {

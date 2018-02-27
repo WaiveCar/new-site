@@ -1,4 +1,4 @@
-<? 
+<?
 $PAGETITLE = 'Welcome';
 include('header.php'); 
 ?>    
@@ -56,19 +56,16 @@ include('header.php');
               
               <form class="index-main-start-form" id="sign-up-form" action="javascript:void(0);" onsubmit="signup(this)">
                 <div class="index-main-start__title"> Tell us a bit more about yourself</div>
-                <!-- First Name -->
                 <div class="index-main-start-form__row">
                   <input class="index-main-start-form__input" id="sign-up-form-first-name" name="firstName" type="text" placeholder="First Name"
                       data-required="true" aria-label="Enter your first name" aria-required="true">
                 </div>
                 
-                <!-- Last Name -->
                 <div class="index-main-start-form__row">
                   <input class="index-main-start-form__input" id="sign-up-form-last-name" name="lastName" type="text" placeholder="Last Name"
                       data-required="true" aria-label="Enter your last name" aria-required="true">
                 </div>
                 
-                <!-- Email Address -->
                 <div class="index-main-start-form__row">
                   <input class="index-main-start-form__input" id="sign-up-form-email" name="email" type="email" placeholder="Email Address"
                       data-required="true" aria-label="Enter your email" aria-required="true">

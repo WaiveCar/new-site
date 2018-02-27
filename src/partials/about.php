@@ -3,9 +3,6 @@ $PAGETITLE = 'About us';
 include('header.php'); 
 ?>    
     
-    <!-- ==========================
-      ARTICLE
-    =========================== -->
     <section class="about-article">
       <article class="about-article__wrapper">
         
@@ -34,9 +31,6 @@ include('header.php');
     </section>
     
     
-    <!-- ==========================
-      MAP
-    =========================== -->
     <section class="about-map">
       
       <!-- Map's container -->
@@ -115,7 +109,6 @@ include('header.php');
                 </svg>
               </div>
           
-              <!-- Information -->
               <div class="about-map-contacts-item__info">
             
                 <!-- Title -->
