@@ -64,7 +64,7 @@ include('header.php');
                 </div>
 
                 <div class="index-main-start-form__row apartment">
-                  <input class="index-main-start-form__input" id="apartment" name="apartment" type="text" placeholder="Apartment Number" aria-label="Apartment Number">
+                  <input class="index-main-start-form__input" id="account" name="account" type="text" placeholder="Unit/Account Number" aria-label="Unit/Account Number">
                 </div>
 
                 <input type='hidden' name='accountType' value='normal'>
