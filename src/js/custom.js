@@ -129,12 +129,6 @@ $('#parking-zone-btn').click(function() {
 
 
 
-/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
- *
- *  "FAQ" page
- *
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-
 //
 // Tabs switching
 //
@@ -268,7 +262,7 @@ signup.postback = {};
 
 function initMap() {
   var input = document.getElementById('sign-up-location');
-  var autocomplete = new google.maps.places.Autocomplete(input, {types: ['(cities)']});
+  var autocomplete = new google.maps.places.Autocomplete(input, {types: ['(regions)']});
 
   autocomplete.addListener('place_changed', function() {
     var place = autocomplete.getPlace();
