@@ -82,6 +82,7 @@
         <nav class="h-menu">
         <?
           $header = [
+            [ '//waivecar.adomni.com/', 'Advertise Now' ],
             [ 'waive-work.html', 'Waive Work' ],
             [ "how-it-works.html", 'How it Works' ],
             [ "faq.html", 'FAQ' ],
