@@ -3,9 +3,6 @@ $PAGETITLE = 'FAQ';
 include('header.php'); 
 ?>    
 
-    <!-- ==========================
-      COVER
-    =========================== -->
     <section class="faq-cover">
       <div class="faq-cover__wrapper">
         
@@ -657,7 +654,7 @@ include('header.php');
               <!-- Answer (Content) -->
               <article class="faq-content-item__content">
                 <p>If the battery is over 25% charged (20 miles), you can park at any 3 hour public parking spot in Santa Monica without paying the
-                  meter. If the battery is under 25% charged (20 miles) you MUST return it to headquarters (1547 7th Street).</p>
+                  meter. If the battery is under 25% charged (20 miles) you MUST return it to headquarters (2102 Pico Blvd).</p>
                 <p>However after midnight, parking must be valid until 10:00 AM that morning.</p>
               </article>
     

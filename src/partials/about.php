@@ -61,20 +61,16 @@ include('header.php');
                 </svg>
               </div>
           
-              <!-- Information -->
               <div class="about-map-contacts-item__info">
             
-                <!-- Title -->
                 <div class="about-map-contacts-item__title">Address</div>
             
-                <!-- Data -->
-                <div class="about-map-contacts-item__link">1547 7th St, Santa Monica, CA 90401</div>
+                <div class="about-map-contacts-item__link">2102 Pico Blvd, Santa Monica, CA 90401</div>
           
               </div>
         
             </div>
         
-            <!-- Phone -->
             <div class="about-map-contacts-item">
           
               <!-- Icon -->
