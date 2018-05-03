@@ -297,38 +297,6 @@ include('header.php');
     </section>
     
     
-    <section class="index-zones">
-      <div class="index-zones__wrapper">
-        <div class="index-zones-info">
-          
-          <div class="index-zones-info__title">WaiveCar Parking Zone and Driving Zone</div>
-          
-          <div class="index-zones-info__text">
-            <p>All WaiveCar journeys must start and end in Santa Monica, but you can leave the area once the car is booked. We allow a
-              20-mile travel radius from our HQ at 2102 Pico Blvd.</p>
-            
-            <p>We wouldn’t want you to end up stranded. If you’re returning the car with less than 25% battery, we ask that you park it at a charging
-              station or at WaiveCar HQ. The WaiveCar app will direct you to the nearest one. If the battery is over 25% full upon return, please make
-              sure you park it somewhere legal, that’s valid for at least the next three hours.</p>
-          </div>
-        
-        </div>
-        
-        <div class="index-zones-thumb">
-          
-          <img class="index-zones-thumb__img" id="driving-zone" _src="pic/driving-zone.png" alt="WaiveCar Driving Zone">
-          <img class="index-zones-thumb__img js-active" id="parking-zone" src="pic/parking-zone.png" alt="WaiveCar Parking Zone">
-          <div class="index-zones-toggle">
-            <button class="index-zones-toggle__btn" id="driving-zone-btn">Driving Zone</button>
-            <button class="index-zones-toggle__btn js-active" id="parking-zone-btn">Parking Zone</button>
-          </div>
-          
-        </div>
-      
-      </div>
-    </section>
-    
-    
     <section class="questions">
       <div class="questions__wrapper">
         
