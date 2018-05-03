@@ -17,7 +17,7 @@ include('header.php');
             <div class="index-main-info__title">We Waive the Fee<br/>You Drive for Free</div>
             
             <ul class="index-main-info__list">
-              <li class="index-main-info__list-item">2 Ad-Supported Hours of FREE Driving</li>
+              <li class="index-main-info__list-item">At least 2 Ad-Supported Hours of FREE Driving</li>
               <li class="index-main-info__list-item">100% Electric and Emission-Free</li>
               <li class="index-main-info__list-item">Available in Los Angeles and selected regions</li>
             </ul>
@@ -125,7 +125,7 @@ include('header.php');
             
             <div class="index-riding-item__title">Drive</div>
             
-            <div class="index-riding-item__desc">Unlock your car with the app. Drive safely and enjoy your two free hours.</div>
+            <div class="index-riding-item__desc">Unlock your car with the app. Drive safely and enjoy your two or more free hours.</div>
           
           </div>
           
@@ -197,7 +197,7 @@ include('header.php');
         
         <div class="index-pricing__info">
           
-          <div class="index-pricing__desc">When your two free ad-supported hours are over, the ride doesn’t have to be.</div>
+          <div class="index-pricing__desc">When your free hours are over, the ride doesn’t have to be.</div>
           
           <div class="index-pricing-price">
             <div class="index-pricing-price__title">Keep going for only</div>
