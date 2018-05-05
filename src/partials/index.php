@@ -104,7 +104,7 @@ include('header.php');
             </div>
             
             <div class="index-riding-item__title">Book</div>
-            <div class="index-riding-item__desc">Use the app to locate a WaiveCar near you. To reserve one for 15 minutes, tap ‘Book WaiveCar’.</div>
+            <div class="index-riding-item__desc">Use the app to locate a WaiveCar near you. To reserve one, tap ‘Book WaiveCar’.</div>
           
           </div>
           

@@ -5,10 +5,8 @@ include('header.php');
     <section class="how-main">
       <div class="how-main__wrapper">
         
-        <!-- Information -->
         <div class="how-main__info">
           
-          <!-- Title -->
           <h1 class="how-main__title">How it Works</h1>
           
           <!-- Description -->
@@ -28,10 +26,8 @@ include('header.php');
             
             </div>
             
-            <!-- Second step - Drive -->
             <div class="how-main-steps__item">
               
-              <!-- Title -->
               <div class="how-main-steps__title">Drive</div>
               
               <!-- Description -->
@@ -76,9 +72,6 @@ include('header.php');
     </section>
     
     
-    <!-- ==========================
-      BENEFITS
-    =========================== -->
     <section class="how-benefits">
       <div class="how-benefits__wrapper">
         
@@ -117,10 +110,10 @@ include('header.php');
             <div class="how-benefits-item__info">
               
               <!-- Title -->
-              <h3 class="how-benefits-item__title">Two free hours</h3>
+              <h3 class="how-benefits-item__title">At least two free hours</h3>
               
               <!-- Description -->
-              <p class="how-benefits-item__desc">WaiveCar is free for the first two hours because advertisers pay us to display their ads on our
+              <p class="how-benefits-item__desc">WaiveCar is free for at least the first two hours because advertisers pay us to display their ads on our
                 cars. Need more time? Our rate is just $5.99/hr.</p>
             
             </div>
@@ -199,14 +192,11 @@ include('header.php');
               </svg>
             </div>
             
-            <!-- Information -->
             <div class="how-benefits-item__info">
               
-              <!-- Title -->
               <h3 class="how-benefits-item__title">Safe and secure for your convenience</h3>
               
-              <!-- Description -->
-              <p class="how-benefits-item__desc">Only your mobile account can unlock your reserved WaiveCar. Once booked, you’ll have 15 minutes to
+              <p class="how-benefits-item__desc">Only your mobile account can unlock your reserved WaiveCar. Once booked, you’ll have at least 15 minutes to
                 reach it before it’s made available to someone else.</p>
             
             </div>

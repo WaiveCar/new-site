@@ -22,7 +22,6 @@ include('header.php');
         
         </div>
         
-        <!-- Picture -->
         <div class="about-article__thumb">
           <img class="about-article__img" src="pic/about-article-img.svg" alt="About WaiveCar">
         </div>
@@ -33,10 +32,8 @@ include('header.php');
     
     <section class="about-map">
       
-      <!-- Map's container -->
       <div class="about-map__container" id="map"></div>
   
-      <!-- Content -->
       <div class="about-map__wrapper">
     
         <!-- Get in Touch -->

@@ -194,13 +194,14 @@ $("#promo-code").on('keyup keydown change', function() {
 //
 function initContactsMap() {
 
+  var loc = [34.019926, -118.468216];
   if (viewportWidth > 568) {
 
     // Initialization
     var contactsMap = new google.maps.Map(document.getElementById('map'), {
 
       zoom: 15,
-      center: { lat: 34.0167081, lng: -118.4967472 },
+      center: { lat: loc[0], lng: loc[1] },
       disableDefaultUI: true,
       scrollwheel: false
 
@@ -212,7 +213,7 @@ function initContactsMap() {
     var contactsMap = new google.maps.Map(document.getElementById('map'), {
 
       zoom: 15,
-      center: { lat: 34.0167081, lng: -118.4897472 },
+      center: { lat: loc[0], lng: loc[1] },
       disableDefaultUI: true,
       scrollwheel: false
 
@@ -237,7 +238,7 @@ function initContactsMap() {
   var mapMarker = new google.maps.Marker({
 
     map: contactsMap,
-    position: { lat: 34.0167081, lng: -118.4897472 },
+    position: { lat: loc[0], lng: loc[1] },
     icon: contactsMapIcon
 
   });
