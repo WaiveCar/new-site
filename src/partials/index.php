@@ -59,7 +59,7 @@ include('header.php');
                 </div>
 
                 <div class="index-main-start-form__row password">
-                  <input class="index-main-start-form__input" required id="password" name="password" type="password" placeholder="password" aria-label="password">
+                  <input class="index-main-start-form__input" required id="password" name="password" type="password" placeholder="Password" aria-label="Password">
                 </div>
 
                 <div class="index-main-start-form__row">
