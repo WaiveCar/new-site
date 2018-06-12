@@ -58,6 +58,10 @@ include('header.php');
                   <input class="index-main-start-form__input" id="sign-up-location" name="placeName" type="text" placeholder="Location" aria-label="Enter your location" >
                 </div>
 
+                <div class="index-main-start-form__row password">
+                  <input class="index-main-start-form__input" required id="password" name="password" type="password" placeholder="password" aria-label="password">
+                </div>
+
                 <div class="index-main-start-form__row">
                   <input class="index-main-start-form__input" id="promo-code" name="promoCode" type="text" placeholder="Promo Code (Optional)"
                       aria-label="Promo Code">
