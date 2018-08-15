@@ -6,7 +6,6 @@ include('header.php');
     <section class="faq-cover">
       <div class="faq-cover__wrapper">
         
-        <!-- Information -->
         <div class="faq-cover-info">
           <h1 class="faq-cover-info__title">Got Questions? Awesome, we’re here to help you. Check our FAQ below.</h1>
         </div>
@@ -14,10 +13,6 @@ include('header.php');
       </div>
     </section>
     
-    
-    <!-- ==========================
-      CONTENT WRAPPER
-    =========================== -->
     <main class="faq-wrapper">
       <div class="faq-wrapper__container">
         
@@ -91,10 +86,8 @@ include('header.php');
             
             </div>
             
-            <!-- Item -->
             <div class="faq-content-item">
               
-              <!-- Question (Header) -->
               <button class="faq-content-item__header">
                 <span class="faq-content-item__question">What do I need to sign up?</span>
                 
@@ -103,7 +96,7 @@ include('header.php');
               
               <!-- Answer (Content) -->
               <article class="faq-content-item__content">
-                <p>All you need to sign up with WaiveCar is a smart phone, credit/debit card, a valid driver's license, and a good driving record.
+                <p>All you need to sign up with WaiveCar is a smart phone, credit card, a valid driver's license, and a good driving record.
                   Simply download the app from your app store!</p>
               </article>
             
@@ -150,19 +143,16 @@ include('header.php');
             
             </div>
             
-            <!-- Item -->
             <div class="faq-content-item">
-              
-              <!-- Question (Header) -->
               <button class="faq-content-item__header">
-                <span class="faq-content-item__question">Why do I need a credit/debit card to sign up if it's free?</span>
+                <span class="faq-content-item__question">Why do I need a credit card to sign up if it's free?</span>
                 
                 <span class="faq-content-item__icon"></span>
               </button>
               
               <!-- Answer (Content) -->
               <article class="faq-content-item__content">
-                <p>We charge a temporary $1 hold on your card when you book a car. It will be refunded as soon as your ride is over, and exists
+                <p>We charge a temporary $20 hold on your card when you book a car. It will be refunded as soon as your ride is over, and exists
                   just to make sure there are available funds in case you choose to keep driving past two hours.</p>
               </article>
             
@@ -332,10 +322,7 @@ include('header.php');
     
             </div>
     
-            <!-- Item -->
             <div class="faq-content-item">
-      
-              <!-- Question (Header) -->
               <button class="faq-content-item__header">
                 <span class="faq-content-item__question">Where can I get a WaiveCar?</span>
         
