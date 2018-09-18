@@ -263,7 +263,7 @@ include('header.php');
               <ul class="index-cars-item__list">
                 <li class="index-cars-item__list-item">4 Doors</li>
                 <li class="index-cars-item__list-item">Seats 4</li>
-                <li class="index-cars-item__list-item">80 Miles Per Charge</li>
+                <li class="index-cars-item__list-item">70 Miles Per Charge</li>
                 <li class="index-cars-item__list-item">Bluetooth</li>
               </ul>
             
@@ -287,7 +287,7 @@ include('header.php');
               <ul class="index-cars-item__list">
                 <li class="index-cars-item__list-item">4 Doors</li>
                 <li class="index-cars-item__list-item">Seats 5</li>
-                <li class="index-cars-item__list-item">124 Miles Per Charge</li>
+                <li class="index-cars-item__list-item">140 Miles Per Charge</li>
                 <li class="index-cars-item__list-item">Bluetooth</li>
               </ul>
             

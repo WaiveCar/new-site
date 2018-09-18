@@ -16,10 +16,8 @@ include('header.php');
     <main class="faq-wrapper">
       <div class="faq-wrapper__container">
         
-        <!-- Sidebar -->
         <aside class="faq-sidebar">
           
-          <!-- Signing Up -->
           <button class="faq-sidebar-btn js-active" data-tab="1">
             <svg class="faq-sidebar-btn__icon faq-sidebar-btn__icon--user" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
               <path fill-rule="evenodd" d="M10 0C4.48 0 0 4.48 0 10s4.48 10 10 10 10-4.48 10-10S15.52 0 10 0zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2a7.2 7.2 0 0 1-6-3.22c.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08a7.2 7.2 0 0 1-6 3.22z"/>
@@ -28,7 +26,6 @@ include('header.php');
             <span class="faq-sidebar-btn__title">Signing Up</span>
           </button>
           
-          <!-- Booking Cars -->
           <button class="faq-sidebar-btn" data-tab="2">
             <svg class="faq-sidebar-btn__icon faq-sidebar-btn__icon--booking" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 16">
               <path fill-rule="evenodd" d="M15.92 1.01C15.72.42 15.16 0 14.5 0h-11c-.66 0-1.21.42-1.42 1.01L0 7v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1V7l-2.08-5.99zM3.5 11C2.67 11 2 10.33 2 9.5S2.67 8 3.5 8 5 8.67 5 9.5 4.33 11 3.5 11zm11 0c-.83 0-1.5-.67-1.5-1.5S13.67 8 14.5 8s1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM2 6l1.5-4.5h11L16 6H2z"/>
@@ -37,7 +34,6 @@ include('header.php');
             <span class="faq-sidebar-btn__title">Booking Cars</span>
           </button>
           
-          <!-- Driving Cars -->
           <button class="faq-sidebar-btn" data-tab="3">
             <svg class="faq-sidebar-btn__icon faq-sidebar-btn__icon--driving" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 20">
               <g fill="none" fill-rule="evenodd">
@@ -49,7 +45,6 @@ include('header.php');
             <span class="faq-sidebar-btn__title">Driving Cars</span>
           </button>
           
-          <!-- Ending Your Ride -->
           <button class="faq-sidebar-btn" data-tab="4">
             <svg class="faq-sidebar-btn__icon faq-sidebar-btn__icon--ending" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 17">
               <path fill-rule="evenodd" d="M8 10h1.99C11.65 10 13 8.657 13 7c0-1.653-1.347-3-3.01-3H7.004A.99.99 0 0 0 6 4.99v7.013c0 .544.448.997 1 .997.556 0 1-.447 1-.998V10zM2 0h14c1.1 0 2 .85 2 1.889V15.11c0 1.04-.9 1.89-2 1.89H2c-1.1 0-2-.85-2-1.889V1.89C0 .85.9 0 2 0zm6 6h2.001c.552 0 .999.444.999 1 0 .552-.443 1-.999 1H8V6z"/>
@@ -60,23 +55,16 @@ include('header.php');
         
         </aside>
         
-        <!-- Content -->
         <div class="faq-content">
-          
-          <!-- Signing Up -->
           <div class="faq-content__container js-active" data-tab="1">
-            
-            <!-- Item -->
             <div class="faq-content-item">
               
-              <!-- Question (Header) -->
               <button class="faq-content-item__header">
                 <span class="faq-content-item__question">What is WaiveCar?</span>
                 
                 <span class="faq-content-item__icon"></span>
               </button>
               
-              <!-- Answer (Content) -->
               <article class="faq-content-item__content">
                 <p>WaiveCar is the first ever ad-supported and 100% electric car sharing program. Businesses pay us to display their ads on our
                   roof-mounted screens and body wraps. We use those funds to give you 2 FREE hours of driving for every WaiveCar reservation!</p>
@@ -146,7 +134,6 @@ include('header.php');
             <div class="faq-content-item">
               <button class="faq-content-item__header">
                 <span class="faq-content-item__question">Why do I need a credit card to sign up if it's free?</span>
-                
                 <span class="faq-content-item__icon"></span>
               </button>
               
@@ -158,24 +145,19 @@ include('header.php');
             
             </div>
             
-            <!-- Item -->
             <div class="faq-content-item">
               
-              <!-- Question (Header) -->
               <button class="faq-content-item__header">
                 <span class="faq-content-item__question">How old do I need to be to drive WaiveCar?</span>
-                
                 <span class="faq-content-item__icon"></span>
               </button>
               
-              <!-- Answer (Content) -->
               <article class="faq-content-item__content">
                 <p>You need to be 21 years old.</p>
               </article>
             
             </div>
             
-            <!-- Item -->
             <div class="faq-content-item">
               
               <!-- Question (Header) -->
