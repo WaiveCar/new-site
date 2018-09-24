@@ -1,5 +1,7 @@
 #!/bin/bash
 
+base=`pwd`
+mv $base/dist/guide /tmp
 pagelist="work-signup about index faq how-it-works privacy terms waive-work"
 . "$HOME/.nvm/nvm.sh"
 {
@@ -19,3 +21,4 @@ gulp dist
     rm $i.html
   done
 }
+mv /tmp/guide $base/dist
