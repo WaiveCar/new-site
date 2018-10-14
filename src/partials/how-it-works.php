@@ -9,8 +9,7 @@ include('header.php');
           
           <h1 class="how-main__title">How it Works</h1>
           
-          <!-- Description -->
-          <p class="how-main__desc">WaiveCar is a new and unique mobility experience.</p>
+          <p class="how-main__desc">Waive is a new and unique mobility experience.</p>
           
           <!-- Steps -->
           <div class="how-main-steps">
@@ -21,7 +20,6 @@ include('header.php');
               <!-- Title -->
               <div class="how-main-steps__title">Book</div>
               
-              <!-- Description -->
               <p class="how-main-steps__desc">Use the app to locate a WaiveCar near you. To reserve one for 15 minutes, tap ‘Book WaiveCar’.</p>
             
             </div>
@@ -113,7 +111,7 @@ include('header.php');
               <h3 class="how-benefits-item__title">At least two free hours</h3>
               
               <!-- Description -->
-              <p class="how-benefits-item__desc">WaiveCar is free for at least the first two hours because advertisers pay us to display their ads on our
+              <p class="how-benefits-item__desc">WaiveCars are free for at least the first two hours because advertisers pay us to display their ads on our
                 cars. Need more time? Our rate is just $5.99/hr.</p>
             
             </div>
@@ -169,7 +167,7 @@ include('header.php');
               
               <h3 class="how-benefits-item__title">24/7 electric car rental</h3>
               
-              <p class="how-benefits-item__desc">Reserve and drive a WaiveCar any time- day or night. Need to contact us? Our Pico Blvd HQ is open
+              <p class="how-benefits-item__desc">Reserve and drive a WaiveCar any time - day or night. Need to contact us? Our Pico Blvd HQ is open
                 daily from 9am - 10pm and our customer care line is open 9am - midnight.</p>
             
             </div>
@@ -225,7 +223,7 @@ include('header.php');
               <h3 class="how-benefits-item__title">First come first serve</h3>
               
               <!-- Description -->
-              <p class="how-benefits-item__desc">Unlike a rental company, you can’t reserve a car in advance. WaiveCar believes in the convenience
+              <p class="how-benefits-item__desc">Unlike a rental company, you can’t reserve a car in advance. Waive believes in the convenience
                 of giving you a free car NOW! Get it while it's hot!</p>
             
             </div>

@@ -148,7 +148,7 @@ include('header.php');
             <div class="faq-content-item">
               
               <button class="faq-content-item__header">
-                <span class="faq-content-item__question">How old do I need to be to drive WaiveCar?</span>
+                <span class="faq-content-item__question">How old do I need to be to use WaiveCar?</span>
                 <span class="faq-content-item__icon"></span>
               </button>
               
@@ -196,7 +196,7 @@ include('header.php');
               
               <!-- Question (Header) -->
               <button class="faq-content-item__header">
-                <span class="faq-content-item__question">Can I use an out of state drivers license to drive with WaiveCar?</span>
+                <span class="faq-content-item__question">Can I use an out of state drivers license to use WaiveCar?</span>
                 
                 <span class="faq-content-item__icon"></span>
               </button>
@@ -272,14 +272,14 @@ include('header.php');
       
               <!-- Question (Header) -->
               <button class="faq-content-item__header">
-                <span class="faq-content-item__question">What are WaiveCar's hours?</span>
+                <span class="faq-content-item__question">What are Waive's hours?</span>
         
                 <span class="faq-content-item__icon"></span>
               </button>
       
               <!-- Answer (Content) -->
               <article class="faq-content-item__content">
-                <p>Our cars are available 24/7. However, WaiveCar HQ is open from 9am-10pm and our customer service line is open from 9am-12am. If
+                <p>Our cars are available 24/7. However, Waive HQ is open from 9am-10pm and our customer service line is open from 9am-12am. If
                   you need assistance at other hours, simply send us an email at <a href="mailto:support@waive.car">support@waive.car</a> and we’ll
                   reach out to you ASAP!</p>
               </article>
@@ -350,7 +350,7 @@ include('header.php');
       
               <!-- Answer (Content) -->
               <article class="faq-content-item__content">
-                <p>Unlike a rental company, you cannot reserve a car in advance. WaiveCar believes in the convenience of giving you a free car at a
+                <p>Unlike a rental company, you cannot reserve a car in advance. Waive believes in the convenience of giving you a free car at a
                   moment's notice.  Get them while they’re hot!</p>
               </article>
     
@@ -436,7 +436,7 @@ include('header.php');
     
               <!-- Answer (Content) -->
               <article class="faq-content-item__content">
-                <p>We currently have 20 in Santa Monica and will be expanding very soon!</p>
+                <p>We have over 100 on LA's west side!</p>
               </article>
   
             </div>
@@ -743,7 +743,7 @@ include('header.php');
                 <p>There are some modest fees in order to keep our fleet bright and shiny.</p>
                 
                 <ul>
-                  <li>Ending with under 20% charge and not brought back to WaiveCar's lot $20</li>
+                  <li>Ending with under 20% charge and not brought back to Waive's lot $20</li>
                   <li>Dead Battery / Lights Left On $100</li>
                   <li>Missing Key (Failure to return equipment) $300</li>
                   <li>Parking Violation (any violation of our parking rules) $40</li>
