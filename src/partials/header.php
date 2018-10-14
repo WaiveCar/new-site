@@ -28,8 +28,8 @@
   <meta name="theme-color" content="#ffffff">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="#021207">
-  <meta name="apple-mobile-web-app-title" content="WaiveCar">
-  <meta name="author" content="WaiveCar">
+  <meta name="apple-mobile-web-app-title" content="Waive">
+  <meta name="author" content="Waive">
   <meta name="description" content="The free electric car sharing program. Join the Waive!" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:creator" content="@WaiveCar" />
@@ -45,7 +45,7 @@
   <meta property="og:title" content="We Waive the Fee, You Drive for Free!" />
   <meta property="og:description" content="The free electric car sharing program. Join the Waive!" />
   <meta property="og:image" content="https://waivecar.com/images/site/fb-image.jpg" />
-  <meta property="og:site_name" content="WaiveCar" />
+  <meta property="og:site_name" content="Waive" />
   <meta property="og:type" content="product" />
   <meta property="og:url" content="https://waivecar.com" />
   <meta property="fb:app_id" content="1022704731082512" />
@@ -53,7 +53,7 @@
 <? if (isset($PAGEFULLTITLE)) { ?>
   <title><?= $PAGEFULLTITLE ?></title>
 <? } else { ?>
-  <title><?= $PAGETITLE ?> | WaiveCar</title>
+  <title><?= $PAGETITLE ?> | Waive</title>
 <? } ?>
   <link rel="stylesheet" href="css/styles.css">
   <script>
@@ -82,7 +82,6 @@
         <nav class="h-menu">
         <?
           $header = [
-            [ '//waivecar.adomni.com/', 'Advertise Now' ],
             [ 'waive-work.html', 'Waive Work' ],
             [ "how-it-works.html", 'How it Works' ],
             [ "faq.html", 'FAQ' ],

@@ -1,5 +1,5 @@
 <? 
-$PAGEFULLTITLE = 'WaiveCar - The worlds first all electric and FREE car-sharing service.';
+$PAGEFULLTITLE = "Waive - The world's first all electric and FREE car-sharing service.";
 $PAGETITLE = 'Welcome';
 include('lib.php');
 include('header.php'); 
@@ -76,7 +76,7 @@ include('header.php');
               
               </form>
               
-              <div class="index-main-start__terms">By clicking “Get Started”, you agree to WaiveCar’s <a href="https://lb.waivecar.com/terms.pdf">Terms&nbsp;&&nbsp;Condition</a> and <a href="https://lb.waivecar.com/privacy">Privacy&nbsp;Policy</a>.
+              <div class="index-main-start__terms">By clicking “Get Started”, you agree to Waive’s <a href="https://lb.waivecar.com/terms.pdf">Terms&nbsp;&&nbsp;Condition</a> and <a href="https://lb.waivecar.com/privacy">Privacy&nbsp;Policy</a>.
               </div>
             </div>
           </div>
@@ -89,7 +89,7 @@ include('header.php');
     <section class="index-riding">
       <div class="index-riding__wrapper">
         
-        <div class="index-riding__title">Riding with WaiveCar</div>
+        <div class="index-riding__title">Riding with Waive</div>
         
         <div class="index-riding__container">
           
@@ -227,9 +227,9 @@ include('header.php');
         
         <div class="index-partner__title">Our Partnership with Hyundai</div>
         
-        <div class="index-partner__desc">Hyundai teams up with WaiveCar to offer IONIQ electric vehicles as part of our free car-sharing program.</div>
+        <div class="index-partner__desc">Hyundai teams up with Waive to offer IONIQ electric vehicles as part of our free car-sharing program.</div>
         
-        <a class="index-partner__link" href="https://medium.com/@WaiveCar/announcing-our-partnership-with-hyundai-e5b070812738" target="_blank">
+        <a class="index-partner__link" href="https://medium.com/@Waive/announcing-our-partnership-with-hyundai-e5b070812738" target="_blank">
           <svg>
             <use xlink:href="#icon-medium"></use>
           </svg>
