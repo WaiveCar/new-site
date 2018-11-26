@@ -20,5 +20,7 @@ gulp dist
     echo "x $i"
     rm $i.html
   done
-}
+} 
+cp $base/src/.htaccess $base/dist
 mv /tmp/guide $base/dist
+

@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteBase /
+
+RewriteRule ^csula$ http://www.calstatela.edu/parking/waivecar [R=301,L]
