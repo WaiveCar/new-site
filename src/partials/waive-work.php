@@ -3,12 +3,8 @@ $PAGETITLE = 'Waive Work';
 include('header.php'); 
 ?>    
     
-    <!-- ==========================
-      MAIN
-    =========================== -->
     <section class="work-main">
       
-      <!-- Information -->
       <div class="work-main-info">
         
         <div class="work-main-info__textual">
@@ -37,34 +33,24 @@ include('header.php');
     <section class="work-why">
       <div class="work-why__wrapper">
         
-        <!-- Title -->
         <h2 class="work-why__title">Why WaiveWork?</h2>
         
-        <!-- Description -->
         <p class="work-why__desc"> Opportunities to make money driving are increasing. The problem? So are the costs of car ownership. Our solution
           is WaiveWork: the world’s first car rental service funded by advertising!</p>
       
       </div>
     </section>
     
-    
-    <!-- ==========================
-      WORK FOR ME
-    =========================== -->
     <section class="work-for-me">
       <div class="work-for-me__wrapper">
         
-        <!-- Title -->
         <h2 class="work-for-me__title">Is WaiveWork For Me?</h2>
         
-        <!-- Description -->
         <p class="work-for-me__desc">Whether you don’t have a car, or are simply searching for a more cost efficient work vehicle - WaiveWork is for
           you.</p>
         
-        <!-- Container -->
         <div class="work-for-me__container">
           
-          <!-- Item -->
           <div class="work-for-me-item">
             
             <!-- Icon -->
@@ -84,10 +70,8 @@ include('header.php');
           
           </div>
           
-          <!-- Item -->
           <div class="work-for-me-item">
             
-            <!-- Icon -->
             <div class="work-for-me-item__icon work-for-me-item__icon--2">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66 38">
                 <g fill="none" fill-rule="evenodd" stroke="#56665A" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
@@ -104,10 +88,8 @@ include('header.php');
           
           </div>
           
-          <!-- Item -->
           <div class="work-for-me-item">
             
-            <!-- Icon -->
             <div class="work-for-me-item__icon work-for-me-item__icon--3">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47 48">
                 <g fill="none" fill-rule="evenodd" stroke="#56665A" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
@@ -124,10 +106,8 @@ include('header.php');
           
           </div>
           
-          <!-- Item -->
           <div class="work-for-me-item">
             
-            <!-- Icon -->
             <div class="work-for-me-item__icon work-for-me-item__icon--4">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 48">
                 <g fill="#56665A" fill-rule="evenodd">
@@ -145,7 +125,6 @@ include('header.php');
           <!-- Item -->
           <div class="work-for-me-item">
             
-            <!-- Icon -->
             <div class="work-for-me-item__icon work-for-me-item__icon--5">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 44">
                 <g fill="#56665A" fill-rule="evenodd">
@@ -167,9 +146,6 @@ include('header.php');
     </section>
     
     
-    <!-- ==========================
-      HOW IT WORKS
-    =========================== -->
     <section class="work-how">
       <div class="work-how__wrapper">
         
@@ -193,18 +169,14 @@ include('header.php');
               </svg>
             </div>
             
-            <!-- Title -->
             <h3 class="work-how-item__title">Apply</h3>
             
-            <!-- Description -->
             <p class="work-how-item__desc">Apply to become a WaiveWork driver. After your interview and orientation, the keys are yours!</p>
           
           </div>
           
-          <!-- Drive -->
           <div class="work-how-item">
             
-            <!-- Icon -->
             <div class="work-how-item__icon work-how-item__icon--2">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 82">
                 <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
@@ -215,7 +187,6 @@ include('header.php');
               </svg>
             </div>
             
-            <!-- Title -->
             <h3 class="work-how-item__title">Drive</h3>
             
             <!-- Description -->
@@ -224,10 +195,8 @@ include('header.php');
           
           </div>
           
-          <!-- Return -->
           <div class="work-how-item">
             
-            <!-- Icon -->
             <div class="work-how-item__icon work-how-item__icon--3">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 67">
                 <g fill="none" fill-rule="evenodd">
@@ -242,10 +211,8 @@ include('header.php');
               </svg>
             </div>
             
-            <!-- Title -->
             <h3 class="work-how-item__title">Return</h3>
             
-            <!-- Description -->
             <p class="work-how-item__desc">When your rental contract is over, you can start a new one or return the car. It’s up to you!</p>
           
           </div>
@@ -256,14 +223,10 @@ include('header.php');
     </section>
     
     
-    <!-- ==========================
-      PRICING
-    =========================== -->
     <section class="work-pricing">
       <div class="work-pricing__wrapper">
         <div class="work-pricing__container">
           
-          <!-- Icon -->
           <div class="work-pricing__icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 58">
               <g fill="none" fill-rule="evenodd" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
@@ -273,15 +236,9 @@ include('header.php');
             </svg>
           </div>
           
-          <!-- Textual -->
           <div class="work-pricing__textual">
-            
-            <!-- Title -->
             <h2 class="work-pricing__title">Pricing</h2>
-            
-            <!-- Description -->
-            <p class="work-pricing__desc">All you have to pay for is Insurance and Gas. Good thing we use hybrids huh?</p>
-          
+            <p class="work-pricing__desc">Just <b>$22/day</b> covers the 60mpg car, insurance (individual and ride-share) and maintenance. We're the best deal around. Check for yourself.</p>
           </div>
         
         </div>
@@ -290,23 +247,15 @@ include('header.php');
   
   
     
-    
-    <!-- ==========================
-      SIGN UP / GOT QUESTION
-    =========================== -->
     <section class="work-bottom">
       <div class="work-bottom__wrapper">
       
-        <!-- Driver Sign Up -->
         <div class="work-sign-up">
           
-          <!-- Title -->
           <h2 class="work-sign-up__title">Driver Sign Up</h2>
           
-          <!-- Description -->
           <p class="work-sign-up__desc">If accepted, we’ll reach out and set up a time for your interview and orientation.</p>
           
-          <!-- Button -->
           <a class="work-sign-up-btn" href="/work-signup.html">
             <span class="work-sign-up-btn__title">Get Started Now</span>
     
@@ -317,16 +266,12 @@ include('header.php');
           
         </div>
         
-        <!-- The Line -->
         <div class="work-bottom__line"></div>
         
-        <!-- Got Question? -->
         <div class="work-question">
           
-          <!-- Title -->
           <h2 class="work-question__title">Got Questions?</h2>
           
-          <!-- Description -->
           <p class="work-question__desc">Feel free to <a href="mailto:support@waivecar.com">reach out</a> to us and we'll be happy to answer any questions you may have.</p>
           
         </div>

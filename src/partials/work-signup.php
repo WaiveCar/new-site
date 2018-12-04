@@ -36,7 +36,6 @@ include('header.php');
         <!-- Container -->
         <div class="index-main__container">
           
-          <!-- Information -->
           <div class="index-main-info">
             
             <div class="index-main-info__title">Sign up for WaiveWork</div>
