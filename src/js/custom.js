@@ -254,7 +254,7 @@ function signup(data) {
   });
 
   var base = 'https://api.waivecar.com/';
-  if (window.location.href.search(/local.name/) !== false) {
+  if (window.location.href.search(/local.name/) !== -1) {
     base = 'http://api-local.waivecar.com:3080/';
   }
   $.post(base + 'waitlist/add', signup.postback, function(data, err) {
