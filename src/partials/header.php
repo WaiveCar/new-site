@@ -84,7 +84,7 @@
           $header = [
             [ 'waive-work.html', 'Waive Work' ],
             [ "how-it-works.html", 'How it Works' ],
-            [ "faq.html", 'FAQ' ],
+            [ "faq", 'FAQ' ],
             [ 'about.html', 'About us' ]
           ];
           foreach($header as $row) {
