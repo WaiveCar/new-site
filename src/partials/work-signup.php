@@ -110,4 +110,4 @@ include('header.php');
     </div>
     
 <?  include('footer.php'); ?>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3Bf8BTFI_z00lrxWdReV4MpaqnQ8urzc&libraries=places&callback=initMap" async defer></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQysUfVLDsR8aYHZBQ9epqpGAQ-LZ1bTw&libraries=places&callback=initMap" async defer></script>
