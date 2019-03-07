@@ -140,6 +140,16 @@
     box-shadow: 0 0.2rem 0.1rem rgba(191, 208, 196, 0.45);
   }
 
+  &__waivework {
+    position: relative;
+    z-index: 10;
+    padding: 4.5rem 4rem;
+    width: 70rem;
+    background-color: #fff;
+    border-radius: 0.6rem;
+    box-shadow: 0 0.2rem 0.1rem rgba(191, 208, 196, 0.45);
+  }
+
   &__title {
     margin-bottom: 3.1rem;
     max-width: 27rem;
