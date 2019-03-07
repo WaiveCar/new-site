@@ -84,12 +84,34 @@ include('header.php');
                   <input class="index-main-start-form__input" id="sign-up-form-days" name="days" type="number" placeholder="4"
                       data-required="true" aria-label="4" aria-required="true">
 
+                <div class="index-main-start__title"> How many years have you been driving? </div>
+                  <input class="index-main-start-form__input" id="sign-up-form-experience" name="experience" type="number" placeholder="3" 
+                    data-required="true" aria-label="3" aria-required="true">
+
                 <div class="index-main-start__title"> Best number to contact you? </div>
                   <input class="index-main-start-form__input" id="sign-up-form-phone" name="phone" type="phone" placeholder="310 555 1212"
                       data-required="true" aria-label="310 555 1212" aria-required="true">
 
-                <div class="index-main-start__title"> How many years have you been driving? </div>
-                  <input class="index-main-start-form__input" id="sign-up-form-experience" name="experience" type="number" placeholder="3" data-required="true" aria-label="3" aria-required="true">
+                <div class="index-main-start__title"> Address Line 1</div>
+                  <input class="index-main-start-form__input" id="sign-up-form-address-1" name="address-1" type="text" placeholder="2102 Pico Blvd"
+                      data-required="true" aria-label="2102 Pico Blvd" aria-required="true">
+
+                <div class="index-main-start__title"> Address Line 2</div>
+                  <input class="index-main-start-form__input" id="sign-up-form-address-2" name="address-2" type="text" placeholder="Unit 1"
+                      data-required="true" aria-label="Unit 1" aria-required="false">
+
+                <div class="index-main-start__title"> City</div>
+                  <input class="index-main-start-form__input" id="sign-up-form-city" name="city" type="text" placeholder="Los Angeles"
+                      data-required="true" aria-label="Los Angeles" aria-required="true">
+
+                <div class="index-main-start__title"> State</div>
+                  <input class="index-main-start-form__input" id="sign-up-form-state" name="state" type="text" placeholder="California"
+                      data-required="true" aria-label="California" aria-required="true">
+
+                <div class="index-main-start__title"> Zip Code</div>
+                  <input class="index-main-start-form__input" id="sign-up-form-zip" name="zip" type="number" placeholder="90401"
+                      data-required="true" aria-label="90401" aria-required="true">
+    
 
                 <input type='hidden' name='accountType' value='waivework'>
                 <button class="index-main-start-form__submit" type="submit">Get started</button>
