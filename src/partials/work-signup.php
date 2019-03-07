@@ -100,29 +100,30 @@ include('header.php');
                     <input type='hidden' name='accountType' value='waivework'>
                   </div>
                   <div class="float-left"> 
-                    <div class="index-main-start__title"> Address Line 1</div>
-                      <input class="index-main-start-form__input" id="sign-up-form-address-1" name="address-1" type="text" placeholder="2102 Pico Blvd"
-                          data-required="true" aria-label="2102 Pico Blvd" aria-required="true">
-
-                    <div class="index-main-start__title"> Address Line 2</div>
-                      <input class="index-main-start-form__input" id="sign-up-form-address-2" name="address-2" type="text" placeholder="Unit 1"
-                          data-required="true" aria-label="Unit 1" aria-required="false">
-
-                    <div class="index-main-start__title"> City</div>
-                      <input class="index-main-start-form__input" id="sign-up-form-city" name="city" type="text" placeholder="Los Angeles"
-                          data-required="true" aria-label="Los Angeles" aria-required="true">
-
-                    <div class="index-main-start__title"> State</div>
-                      <input class="index-main-start-form__input" id="sign-up-form-state" name="state" type="text" placeholder="California"
-                          data-required="true" aria-label="California" aria-required="true">
-
-                    <div class="index-main-start__title"> Zip Code</div>
-                      <input class="index-main-start-form__input" id="sign-up-form-zip" name="zip" type="number" placeholder="90401"
-                          data-required="true" aria-label="90401" aria-required="true">
+                    <div class="index-main-start__title"> Please provide your license information</div>
+                    <div class="index-main-start-form__row">
+                      <input class="index-main-start-form__input" id="sign-up-form-address-1" name="address-1" type="text" placeholder="Address Line 1"
+                          data-required="true" aria-label="Address Line 1" aria-required="true">
+                    </div>
+                    <div class="index-main-start-form__row">
+                      <input class="index-main-start-form__input" id="sign-up-form-address-2" name="address-2" type="text" placeholder="Address Line 2"
+                          data-required="true" aria-label="Address Line 2" aria-required="false">
+                    </div>
+                    <div class="index-main-start-form__row">
+                      <input class="index-main-start-form__input" id="sign-up-form-city" name="city" type="text" placeholder="City"
+                          data-required="true" aria-label="City" aria-required="true">
+                    </div>
+                    <div class="index-main-start-form__row">
+                      <input class="index-main-start-form__input" id="sign-up-form-state" name="state" type="text" placeholder="State"
+                          data-required="true" aria-label="State" aria-required="true">
+                    </div>
+                    <div class="index-main-start-form__row">
+                      <input class="index-main-start-form__input" id="sign-up-form-zip" name="zip" type="number" placeholder="Zip Code"
+                          data-required="true" aria-label="Zip Code" aria-required="true">
+                    </div>
                   </div>
                 </div>
                 <button class="index-main-start-form__submit" type="submit">Get started</button>
-                
               </form>
               
               <div class="index-main-start__terms">By clicking “Get Started”, you agree to WaiveCar’s <a href="https://lb.waivecar.com/terms.pdf">Terms&nbsp;&&nbsp;Condition</a> and <a href="https://lb.waivecar.com/privacy">Privacy&nbsp;Policy</a>.
