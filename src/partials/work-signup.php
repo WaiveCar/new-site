@@ -29,9 +29,29 @@ include('header.php');
 .page-wrapper--no-download::after {
   height: 0
 }
-.float-left {
-  float: left;
+.flex-cols {
+  display: flex;
+  flex-direction: row;
+}
+.waivework-column{
   margin-right: 3rem;
+  width: 28rem;
+}
+::-webkit-datetime-edit {
+  color: #606060;
+}
+
+.licensedate {
+  width: 100%;
+}
+.licensedate.placeholderclass::before {
+  width:100%;
+  content:attr(placeholder);
+  background-color:#FFFFFF;
+}
+.licensedate.placeholderclass:hover::before {
+  width:0%;
+  content:"";
 }
 </style>
     <div class="index-main">
@@ -57,8 +77,8 @@ include('header.php');
             <div class="index-main-start__bg"></div>
             <div class="index-main-start__waivework">
               <form class="index-main-start-form" id="sign-up-form" action="javascript:void(0);" onsubmit="signup(this)">
-                <div>
-                  <div class="float-left">
+                <div class="flex-cols">
+                  <div class="waivework-column">
                     <div class="index-main-start__title"> Tell us a bit more about yourself</div>
                     <div class="index-main-start-form__row">
                       <input class="index-main-start-form__input" id="sign-up-form-first-name" name="firstName" type="text" placeholder="First Name"
@@ -100,7 +120,7 @@ include('header.php');
                     <input type='hidden' name='accountType' value='waivework'>
                   </div>
                   <div class="float-left"> 
-                    <div class="index-main-start__title"> Please provide your license information</div>
+                    <div class="index-main-start__title"> Please provide your current address</div>
                     <div class="index-main-start-form__row">
                       <input class="index-main-start-form__input" id="sign-up-form-address-1" name="address-1" type="text" placeholder="Address Line 1"
                           data-required="true" aria-label="Address Line 1" aria-required="true">
@@ -120,6 +140,31 @@ include('header.php');
                     <div class="index-main-start-form__row">
                       <input class="index-main-start-form__input" id="sign-up-form-zip" name="zip" type="number" placeholder="Zip Code"
                           data-required="true" aria-label="Zip Code" aria-required="true">
+                    </div>
+                    <div class="index-main-start__title"> Please provide your license information</div>
+                    <div class="index-main-start-form__row">
+                      <input class="index-main-start-form__input" id="sign-up-form-license-number" name="licenseNumber" 
+                          type="text" placeholder="License Number"
+                          data-required="true" aria-label="License Number" aria-required="true">
+                    </div>
+                    <div class="index-main-start-form__row">
+                      <input class="index-main-start-form__input" id="sign-up-form-license-state" name="licenseState" 
+                          type="text" placeholder="License State"
+                          data-required="true" aria-label="License State" aria-required="true">
+                    </div>
+                    <div class="index-main-start-form__row">
+                      <input class="index-main-start-form__input licensedate placeholderclass" id="sign-up-form-birth-date" 
+                          name="birthDate" type="date" placeholder="Birthday"
+                          data-required="true" aria-label="Birthday" aria-required="true"
+                          onclick="$(this).removeClass('placeholderclass')"
+                      >
+                    </div>
+                    <div class="index-main-start-form__row">
+                      <input class="index-main-start-form__input licensedate placeholderclass" id="sign-up-form-expiration" 
+                          name="expiration" type="date" placeholder="Expiration"
+                          data-required="true" aria-label="expiration" aria-required="true"
+                          onclick="$(this).removeClass('placeholderclass')"
+                      >
                     </div>
                   </div>
                 </div>
