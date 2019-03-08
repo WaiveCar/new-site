@@ -142,7 +142,7 @@ include('header.php');
                   <div class="index-main-start__title"> Will you be driving for rideshare services?</div>
                   <div class="radio-holder">
                     <div>
-                      <input type="radio" id="yes" name="rideshare" value="true">
+                      <input type="radio" id="yes" name="rideshare" value="true" checked>
                       <label for="yes">Yes</label>
                     </div>
                     <div>
