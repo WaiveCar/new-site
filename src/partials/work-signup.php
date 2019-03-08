@@ -29,30 +29,6 @@ include('header.php');
 .page-wrapper--no-download::after {
   height: 0
 }
-.flex-cols {
-  display: flex;
-  flex-direction: row;
-}
-.waivework-column{
-  margin-right: 3rem;
-  width: 28rem;
-}
-::-webkit-datetime-edit {
-  color: #606060;
-}
-
-.licensedate {
-  width: 100%;
-}
-.licensedate.placeholderclass::before {
-  width:100%;
-  content:attr(placeholder);
-  background-color:#FFFFFF;
-}
-.licensedate.placeholderclass:hover::before {
-  width:0%;
-  content:"";
-}
 </style>
     <div class="index-main">
       <div class="index-main__wrapper">
