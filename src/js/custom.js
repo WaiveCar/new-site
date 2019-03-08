@@ -250,8 +250,13 @@ function signup(data) {
   // are getting partially assigned in the listener callback for
   // the google place autocomplete.
   $("#sign-up-form input").each(function() { 
-    signup.postback[this.name] = this.value; 
+    if (this.type !== 'radio') {
+      signup.postback[this.name] = this.value; 
+    } else if (this.checked) {
+      signup.postback[this.name] = this.value;
+    }
   });
+
 
   var base = 'https://api.waivecar.com/';
   if (window.location.href.search(/local.name/) !== -1) {
@@ -261,6 +266,7 @@ function signup(data) {
     base = 'http://127.0.0.1:3000/';
   }
   $.post(base + 'waitlist/add', signup.postback, function(data, err) {
+    console.log('postback: ', signup.postback);
     window.location = 'https://lb.waivecar.com/waitlist?' + $.param(data);
   });
 }

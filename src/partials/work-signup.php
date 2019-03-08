@@ -95,11 +95,11 @@ include('header.php');
                   <input type='hidden' name='accountType' value='waivework'>
                   <div class="index-main-start__title"> Please provide your current address</div>
                   <div class="index-main-start-form__row">
-                    <input class="index-main-start-form__input" id="sign-up-form-address-1" name="address-1" type="text" placeholder="Address Line 1"
+                    <input class="index-main-start-form__input" id="sign-up-form-address-1" name="address1" type="text" placeholder="Address Line 1"
                         data-required="true" aria-label="Address Line 1" aria-required="true">
                   </div>
                   <div class="index-main-start-form__row">
-                    <input class="index-main-start-form__input" id="sign-up-form-address-2" name="address-2" type="text" placeholder="Address Line 2"
+                    <input class="index-main-start-form__input" id="sign-up-form-address-2" name="address2" type="text" placeholder="Address Line 2"
                         data-required="true" aria-label="Address Line 2" aria-required="false">
                   </div>
                   <div class="index-main-start-form__row">
@@ -142,12 +142,11 @@ include('header.php');
                   <div class="index-main-start__title"> Will you be driving for rideshare services?</div>
                   <div class="radio-holder">
                     <div>
-                      <input type="radio" id="yes" name="forRideshare" value="true"
-                             checked>
+                      <input type="radio" id="yes" name="rideshare" value="true">
                       <label for="yes">Yes</label>
                     </div>
                     <div>
-                      <input type="radio" id="No" name="forRideshare" value="false">
+                      <input type="radio" id="No" name="rideshare" value="false">
                       <label for="no">No</label>
                     </div>
                   </div>
