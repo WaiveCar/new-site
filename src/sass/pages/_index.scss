@@ -138,43 +138,26 @@
     background-color: #fff;
     border-radius: 0.6rem;
     box-shadow: 0 0.2rem 0.1rem rgba(191, 208, 196, 0.45);
-  }
-
-  ::-webkit-datetime-edit {
-    color: $text-color;
-  }
-  &__waivework {
-    position: relative;
-    z-index: 10;
-    padding: 4.5rem 4rem;
-    width: 70rem;
-    background-color: #fff;
-    border-radius: 0.6rem;
-    box-shadow: 0 0.2rem 0.1rem rgba(191, 208, 196, 0.45);
-    .flex-cols {
-      display: flex;
-      flex-direction: row;
-    }
-    .waivework-column{
-      margin-right: 3rem;
-      width: 28rem;
-    }
     ::-webkit-datetime-edit {
-      color: #606060;
+      color: $text-color;
     }
-    
     .licensedate {
       width: 100%;
     }
     .licensedate.placeholderclass::before {
-      width:100%;
-      content:attr(placeholder);
-      background-color:#FFFFFF;
+      width: 100%;
+      content: attr(placeholder);
+      background-color: #FFFFFF;
+      color: $text-color;
     }
     .licensedate.placeholderclass:hover::before {
-      width:0%;
-      content:"";
+      width: 0%;
+      content: "";
     }
+  }
+
+  ::-webkit-datetime-edit {
+    color: $text-color;
   }
 
   &__title {
