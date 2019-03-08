@@ -154,6 +154,20 @@
       width: 0%;
       content: "";
     }
+    .radio-holder {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      margin-top: 2rem;
+      label {
+        margin-left: 1rem;
+        font-size: 1.6rem;
+      }
+      input[type=radio] {
+        height: 1.6rem;
+        width: 1.6rem;
+      }
+    }
   }
 
   ::-webkit-datetime-edit {

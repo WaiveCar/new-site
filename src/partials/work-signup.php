@@ -139,15 +139,17 @@ include('header.php');
                         onclick="$(this).removeClass('placeholderclass')"
                     >
                   </div>
-                  <div class="index-main-start__title"> Will you be driving for rideshare?</div>
-                  <div>
-                    <input type="radio" id="yes" name="forRideshare" value="true"
-                           checked>
-                    <label for="yes">Yes</label>
-                  </div>
-                  <div>
-                    <input type="radio" id="No" name="forRideshare" value="false">
-                    <label for="no">No</label>
+                  <div class="index-main-start__title"> Will you be driving for rideshare services?</div>
+                  <div class="radio-holder">
+                    <div>
+                      <input type="radio" id="yes" name="forRideshare" value="true"
+                             checked>
+                      <label for="yes">Yes</label>
+                    </div>
+                    <div>
+                      <input type="radio" id="No" name="forRideshare" value="false">
+                      <label for="no">No</label>
+                    </div>
                   </div>
                 </div>
                 <button class="index-main-start-form__submit" type="submit">Get started</button>
