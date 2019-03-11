@@ -266,7 +266,6 @@ function signup(data) {
     base = 'http://127.0.0.1:3000/';
   }
   $.post(base + 'waitlist/add', signup.postback, function(data, err) {
-    console.log('postback: ', signup.postback);
     window.location = 'https://lb.waivecar.com/waitlist?' + $.param(data);
   });
 }
