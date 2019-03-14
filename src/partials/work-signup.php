@@ -57,23 +57,23 @@ include('header.php');
                   <div class="index-main-start__title"> Tell us a bit more about yourself</div>
                   <div class="index-main-start-form__row">
                     <input class="index-main-start-form__input" id="sign-up-form-first-name" name="firstName" type="text" placeholder="First Name"
-                        data-required="true" aria-label="Enter your first name" aria-required="true">
+                        data-required="true" aria-label="Enter your first name" aria-required="true" required>
                   </div>
                   
                   <div class="index-main-start-form__row">
                     <input class="index-main-start-form__input" id="sign-up-form-last-name" name="lastName" type="text" placeholder="Last Name"
-                        data-required="true" aria-label="Enter your last name" aria-required="true">
+                        data-required="true" aria-label="Enter your last name" aria-required="true" required>
                   </div>
                   
                   <div class="index-main-start-form__row">
                     <input class="index-main-start-form__input" id="sign-up-form-email" name="email" type="email" placeholder="Email Address"
-                        data-required="true" aria-label="Enter your email" aria-required="true">
+                        data-required="true" aria-label="Enter your email" aria-required="true" required>
                   </div>
                   
                   <div class="index-main-start-form__row">
                     
                     <input class="index-main-start-form__input" id="sign-up-location" name="placeName" type="text" placeholder="Location"
-                        data-required="true" aria-label="Enter your location" aria-required="true">
+                        data-required="true" aria-label="Enter your location" aria-required="true" required>
                   </div>
                   
                   <div class="index-main-start__title"> How many hours a week do you drive for work? </div>
@@ -90,13 +90,13 @@ include('header.php');
 
                   <div class="index-main-start__title"> Best number to contact you? </div>
                     <input class="index-main-start-form__input" id="sign-up-form-phone" name="phone" type="phone" placeholder="310 555 1212"
-                        data-required="true" aria-label="310 555 1212" aria-required="true">
+                        data-required="true" aria-label="310 555 1212" aria-required="true" required>
 
                   <input type='hidden' name='accountType' value='waivework'>
                   <div class="index-main-start__title"> Please provide your current address</div>
                   <div class="index-main-start-form__row">
                     <input class="index-main-start-form__input" id="sign-up-form-address-1" name="address1" type="text" placeholder="Address Line 1"
-                        data-required="true" aria-label="Address Line 1" aria-required="true">
+                        data-required="true" aria-label="Address Line 1" aria-required="true" required>
                   </div>
                   <div class="index-main-start-form__row">
                     <input class="index-main-start-form__input" id="sign-up-form-address-2" name="address2" type="text" placeholder="Address Line 2"
@@ -104,38 +104,38 @@ include('header.php');
                   </div>
                   <div class="index-main-start-form__row">
                     <input class="index-main-start-form__input" id="sign-up-form-city" name="city" type="text" placeholder="City"
-                        data-required="true" aria-label="City" aria-required="true">
+                        data-required="true" aria-label="City" aria-required="true" required>
                   </div>
                   <div class="index-main-start-form__row">
                     <input class="index-main-start-form__input" id="sign-up-form-state" name="state" type="text" placeholder="State"
-                        data-required="true" aria-label="State" aria-required="true">
+                        data-required="true" aria-label="State" aria-required="true" required>
                   </div>
                   <div class="index-main-start-form__row">
                     <input class="index-main-start-form__input" id="sign-up-form-zip" name="zip" type="number" placeholder="Zip Code"
-                        data-required="true" aria-label="Zip Code" aria-required="true">
+                        data-required="true" aria-label="Zip Code" aria-required="true" required>
                   </div>
                   <div class="index-main-start__title"> Please provide your license information</div>
                   <div class="index-main-start-form__row">
                     <input class="index-main-start-form__input" id="sign-up-form-license-number" name="licenseNumber" 
                         type="text" placeholder="License Number"
-                        data-required="true" aria-label="License Number" aria-required="true">
+                        data-required="true" aria-label="License Number" aria-required="true" required>
                   </div>
                   <div class="index-main-start-form__row">
                     <input class="index-main-start-form__input" id="sign-up-form-license-state" name="licenseState" 
                         type="text" placeholder="License State"
-                        data-required="true" aria-label="License State" aria-required="true">
+                        data-required="true" aria-label="License State" aria-required="true" required>
                   </div>
                   <div class="index-main-start-form__row">
                     <input class="index-main-start-form__input licensedate placeholderclass" id="sign-up-form-birth-date" 
                         name="birthDate" type="date" placeholder="Birth Date"
-                        data-required="true" aria-label="Birthday" aria-required="true"
+                        data-required="true" aria-label="Birthday" aria-required="true" required
                         onclick="$(this).removeClass('placeholderclass')"
                     >
                   </div>
                   <div class="index-main-start-form__row">
                     <input class="index-main-start-form__input licensedate placeholderclass" id="sign-up-form-expiration" 
                         name="expiration" type="date" placeholder="Expiration"
-                        data-required="true" aria-label="expiration" aria-required="true"
+                        data-required="true" aria-label="expiration" aria-required="true" required
                         onclick="$(this).removeClass('placeholderclass')"
                     >
                   </div>
