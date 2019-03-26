@@ -138,6 +138,40 @@
     background-color: #fff;
     border-radius: 0.6rem;
     box-shadow: 0 0.2rem 0.1rem rgba(191, 208, 196, 0.45);
+    ::-webkit-datetime-edit {
+      color: $text-color;
+    }
+    .licensedate {
+      width: 100%;
+    }
+    .licensedate.placeholderclass::before {
+      width: 100%;
+      content: attr(placeholder);
+      background-color: #FFFFFF;
+      color: $text-color;
+    }
+    .licensedate.placeholderclass:hover::before {
+      width: 0%;
+      content: "";
+    }
+    .radio-holder {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      margin-top: 2rem;
+      label {
+        margin-left: 1rem;
+        font-size: 1.6rem;
+      }
+      input[type=radio] {
+        height: 1.6rem;
+        width: 1.6rem;
+      }
+    }
+  }
+
+  ::-webkit-datetime-edit {
+    color: $text-color;
   }
 
   &__title {
