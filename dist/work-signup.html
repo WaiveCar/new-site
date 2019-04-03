@@ -154,48 +154,106 @@
             
             <div class="index-main-start__bg"></div>
             <div class="index-main-start__content">
-              
               <form class="index-main-start-form" id="sign-up-form" action="javascript:void(0);" onsubmit="signup(this)">
-                <div class="index-main-start__title"> Tell us a bit more about yourself</div>
-                <div class="index-main-start-form__row">
-                  <input class="index-main-start-form__input" id="sign-up-form-first-name" name="firstName" type="text" placeholder="First Name"
-                      data-required="true" aria-label="Enter your first name" aria-required="true">
-                </div>
-                
-                <div class="index-main-start-form__row">
-                  <input class="index-main-start-form__input" id="sign-up-form-last-name" name="lastName" type="text" placeholder="Last Name"
-                      data-required="true" aria-label="Enter your last name" aria-required="true">
-                </div>
-                
-                <div class="index-main-start-form__row">
-                  <input class="index-main-start-form__input" id="sign-up-form-email" name="email" type="email" placeholder="Email Address"
-                      data-required="true" aria-label="Enter your email" aria-required="true">
-                </div>
-                
-                <div class="index-main-start-form__row">
+                <div class="flex-cols">
+                  <div class="index-main-start__title"> Tell us a bit more about yourself</div>
+                  <div class="index-main-start-form__row">
+                    <input class="index-main-start-form__input" id="sign-up-form-first-name" name="firstName" type="text" placeholder="First Name"
+                        data-required="true" aria-label="Enter your first name" aria-required="true" required>
+                  </div>
                   
-                  <input class="index-main-start-form__input" id="sign-up-location" name="placeName" type="text" placeholder="Location"
-                      data-required="true" aria-label="Enter your location" aria-required="true">
+                  <div class="index-main-start-form__row">
+                    <input class="index-main-start-form__input" id="sign-up-form-last-name" name="lastName" type="text" placeholder="Last Name"
+                        data-required="true" aria-label="Enter your last name" aria-required="true" required>
+                  </div>
+                  
+                  <div class="index-main-start-form__row">
+                    <input class="index-main-start-form__input" id="sign-up-form-email" name="email" type="email" placeholder="Email Address"
+                        data-required="true" aria-label="Enter your email" aria-required="true" required>
+                  </div>
+                  
+                  <div class="index-main-start-form__row">
+                    
+                    <input class="index-main-start-form__input" id="sign-up-location" name="placeName" type="text" placeholder="Location"
+                        data-required="true" aria-label="Enter your location" aria-required="true" required>
+                  </div>
+                  
+                  <div class="index-main-start__title"> How many hours a week do you drive for work? </div>
+                    <input class="index-main-start-form__input" id="sign-up-form-hours" name="hours" type="number" placeholder="30"
+                        data-required="true" aria-label="30" aria-required="true">
+
+                  <div class="index-main-start__title"> How many days a week do you work? </div>
+                    <input class="index-main-start-form__input" id="sign-up-form-days" name="days" type="number" placeholder="4"
+                        data-required="true" aria-label="4" aria-required="true">
+
+                  <div class="index-main-start__title"> How many years have you been driving? </div>
+                    <input class="index-main-start-form__input" id="sign-up-form-experience" name="experience" type="number" placeholder="3" 
+                      data-required="true" aria-label="3" aria-required="true">
+
+                  <div class="index-main-start__title"> Best number to contact you? </div>
+                    <input class="index-main-start-form__input" id="sign-up-form-phone" name="phone" type="phone" placeholder="310 555 1212"
+                        data-required="true" aria-label="310 555 1212" aria-required="true" required>
+
+                  <input type='hidden' name='accountType' value='waivework'>
+                  <div class="index-main-start__title"> Please provide your current address</div>
+                  <div class="index-main-start-form__row">
+                    <input class="index-main-start-form__input" id="sign-up-form-address-1" name="address1" type="text" placeholder="Address Line 1"
+                        data-required="true" aria-label="Address Line 1" aria-required="true" required>
+                  </div>
+                  <div class="index-main-start-form__row">
+                    <input class="index-main-start-form__input" id="sign-up-form-address-2" name="address2" type="text" placeholder="Address Line 2"
+                        data-required="true" aria-label="Address Line 2" aria-required="false">
+                  </div>
+                  <div class="index-main-start-form__row">
+                    <input class="index-main-start-form__input" id="sign-up-form-city" name="city" type="text" placeholder="City"
+                        data-required="true" aria-label="City" aria-required="true" required>
+                  </div>
+                  <div class="index-main-start-form__row">
+                    <input class="index-main-start-form__input" id="sign-up-form-state" name="state" type="text" placeholder="State"
+                        data-required="true" aria-label="State" aria-required="true" required>
+                  </div>
+                  <div class="index-main-start-form__row">
+                    <input class="index-main-start-form__input" id="sign-up-form-zip" name="zip" type="number" placeholder="Zip Code"
+                        data-required="true" aria-label="Zip Code" aria-required="true" required>
+                  </div>
+                  <div class="index-main-start__title"> Please provide your license information</div>
+                  <div class="index-main-start-form__row">
+                    <input class="index-main-start-form__input" id="sign-up-form-license-number" name="licenseNumber" 
+                        type="text" placeholder="License Number"
+                        data-required="true" aria-label="License Number" aria-required="true" required>
+                  </div>
+                  <div class="index-main-start-form__row">
+                    <input class="index-main-start-form__input" id="sign-up-form-license-state" name="licenseState" 
+                        type="text" placeholder="License State"
+                        data-required="true" aria-label="License State" aria-required="true" required>
+                  </div>
+                  <div class="index-main-start-form__row">
+                    <input class="index-main-start-form__input licensedate placeholderclass" id="sign-up-form-birth-date" 
+                        name="birthDate" type="date" placeholder="Birth Date"
+                        data-required="true" aria-label="Birthday" aria-required="true" required
+                        onclick="$(this).removeClass('placeholderclass')"
+                    >
+                  </div>
+                  <div class="index-main-start-form__row">
+                    <input class="index-main-start-form__input licensedate placeholderclass" id="sign-up-form-expiration" 
+                        name="expiration" type="date" placeholder="Expiration"
+                        data-required="true" aria-label="expiration" aria-required="true" required
+                        onclick="$(this).removeClass('placeholderclass')"
+                    >
+                  </div>
+                  <div class="index-main-start__title"> Will you be driving for rideshare services?</div>
+                  <div class="radio-holder">
+                    <div>
+                      <input type="radio" id="yes" name="rideshare" value="true" checked>
+                      <label for="yes">Yes</label>
+                    </div>
+                    <div>
+                      <input type="radio" id="No" name="rideshare" value="false">
+                      <label for="no">No</label>
+                    </div>
+                  </div>
                 </div>
-                
-                <div class="index-main-start__title"> How many hours a week do you drive for work? </div>
-                  <input class="index-main-start-form__input" id="sign-up-form-hours" name="hours" type="number" placeholder="30"
-                      data-required="true" aria-label="30" aria-required="true">
-
-                <div class="index-main-start__title"> How many days a week do you work? </div>
-                  <input class="index-main-start-form__input" id="sign-up-form-days" name="days" type="number" placeholder="4"
-                      data-required="true" aria-label="4" aria-required="true">
-
-                <div class="index-main-start__title"> Best number to contact you? </div>
-                  <input class="index-main-start-form__input" id="sign-up-form-phone" name="phone" type="phone" placeholder="310 555 1212"
-                      data-required="true" aria-label="310 555 1212" aria-required="true">
-
-                <div class="index-main-start__title"> How many years have you been driving? </div>
-                  <input class="index-main-start-form__input" id="sign-up-form-experience" name="experience" type="number" placeholder="3" data-required="true" aria-label="3" aria-required="true">
-
-                <input type='hidden' name='accountType' value='waivework'>
                 <button class="index-main-start-form__submit" type="submit">Get started</button>
-              
               </form>
               
               <div class="index-main-start__terms">By clicking “Get Started”, you agree to WaiveCar’s <a href="https://lb.waivecar.com/terms.pdf">Terms&nbsp;&&nbsp;Condition</a> and <a href="https://lb.waivecar.com/privacy">Privacy&nbsp;Policy</a>.
