@@ -81,7 +81,7 @@ include('header.php');
                         data-required="true" aria-label="310 555 1212" aria-required="true" required>
 
                   <input type='hidden' name='accountType' value='waivework'>
-                  <div class="index-main-start__title"> Please provide your home address</div>
+                  <div class="index-main-start__title"> What is your home address?</div>
                   <div class="index-main-start-form__row">
                     <input class="index-main-start-form__input" id="sign-up-form-address-1" name="address1" type="text" placeholder="Address Line 1"
                         data-required="true" aria-label="Address Line 1" aria-required="true" required>
@@ -102,7 +102,7 @@ include('header.php');
                     <input class="index-main-start-form__input" id="sign-up-form-zip" name="zip" type="number" placeholder="Zip Code"
                         data-required="true" aria-label="Zip Code" aria-required="true" required>
                   </div>
-                  <div class="index-main-start__title"> Please provide your license information</div>
+                  <div class="index-main-start__title"> What is your license information?</div>
                   <div class="index-main-start-form__row">
                     <input class="index-main-start-form__input" id="sign-up-form-license-number" name="licenseNumber" 
                         type="text" placeholder="License Number"
