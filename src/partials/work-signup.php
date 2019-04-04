@@ -127,6 +127,10 @@ include('header.php');
                         onclick="$(this).removeClass('placeholderclass')"
                     >
                   </div>
+                  <div class="index-main-start__title"> How many years have you been driving? </div>
+                    <input class="index-main-start-form__input" id="sign-up-form-experience" name="experience" type="number" placeholder="3"
+                      data-required="true" aria-label="3" aria-required="true">
+
                   <div class="index-main-start__title"> Will you be driving for rideshare services?</div>
                   <div class="radio-holder">
                     <div>
