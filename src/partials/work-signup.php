@@ -29,6 +29,10 @@ include('header.php');
 .page-wrapper--no-download::after {
   height: 0
 }
+.work-subtitle {
+  color: grey;
+  font-size: 14px;
+}
 </style>
     <div class="index-main">
       <div class="index-main__wrapper">
@@ -129,6 +133,11 @@ include('header.php');
                   </div>
                   <div class="index-main-start__title"> How many years have you been driving? </div>
                     <input class="index-main-start-form__input" id="sign-up-form-experience" name="experience" type="number" placeholder="3"
+                      data-required="true" aria-label="3" aria-required="true">
+
+                  <div class="index-main-start__title"> How much would you be willing to pay per week?<div> 
+                  <div class="work-subtitle">We prioritize our long waitlist and guide our offer by this amount.</div>
+                    <input class="index-main-start-form__input" id="sign-up-form-offer-per-week" name="offerPerWeek" type="number" placeholder="dollars per day you're able to pay"
                       data-required="true" aria-label="3" aria-required="true">
 
                   <div class="index-main-start__title"> Will you be driving for rideshare services?</div>
