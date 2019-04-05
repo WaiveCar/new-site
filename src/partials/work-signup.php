@@ -137,7 +137,7 @@ include('header.php');
 
                   <div class="index-main-start__title"> How much would you be willing to pay per week?<div> 
                   <div class="work-subtitle">We prioritize our long waitlist and guide our offer by this amount.</div>
-                    <input class="index-main-start-form__input" id="sign-up-form-offer-per-week" name="offerPerWeek" type="number" placeholder="dollars per day you're able to pay"
+                    <input class="index-main-start-form__input" id="sign-up-form-offer-per-week" name="offerPerWeek" type="number" placeholder="dollars per day"
                       data-required="true" aria-label="3" aria-required="true">
 
                   <div class="index-main-start__title"> Will you be driving for rideshare services?</div>
@@ -148,6 +148,17 @@ include('header.php');
                     </div>
                     <div>
                       <input type="radio" id="No" name="rideshare" value="false">
+                      <label for="no">No</label>
+                    </div>
+                  </div>
+                  <div class="index-main-start__title"> Are you interested in using an electric car?</div>
+                  <div class="radio-holder">
+                    <div>
+                      <input type="radio" id="yes" name="wantsElectric" value="true" checked>
+                      <label for="yes">Yes</label>
+                    </div>
+                    <div>
+                      <input type="radio" id="No" name="wantsElectric" value="false">
                       <label for="no">No</label>
                     </div>
                   </div>
