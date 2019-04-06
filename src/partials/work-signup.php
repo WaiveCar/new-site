@@ -151,6 +151,22 @@ include('header.php');
                       <label for="no">No</label>
                     </div>
                   </div>
+                  <div>
+                    We have a fleet of Hyundai Ioniqs which are otherwise identical except some are hybrid and electric.
+                    <ol class="work-subtitle">
+                      <li>Electric</li>
+                        <ul>
+                          <li>140 mile range</li>
+                          <li>5mi charge/hr slow charger included</li>
+                          <li>20 minutes to fast charge to 75% ($.25/minute)</li>
+                        </ul>
+                      <li>Hybrid</li>
+                        <ul>
+                          <li>55mpg</li>
+                          <li>600 miles/tank</li>
+                        </ul>
+                    </ol>
+                  </div>
                   <div class="index-main-start__title"> Are you interested in using an electric car?</div>
                   <div class="radio-holder">
                     <div>
