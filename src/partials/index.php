@@ -6,12 +6,32 @@ include('header.php');
 ?>    
 <style>
 .index-main-info__title { white-space: nowrap; }
+.work-jumbotron {
+  background-color: #eef9f9;
+  color: #1dbb3e;
+  margin: 0 2rem;
+  border-radius: 5px;
+  text-align: center;
+  padding: 2rem;
+  font-size: 22px;
+}
+.work-button-holder {
+  display: flex;
+  justify-content: center;
+}
+.work-button {
+  width: 50rem;
+}
 </style>
     <div class="index-main">
+     <div class="work-jumbotron">
+       <h3>Drive for work? Why not use the most economical option? Get a long term WaiveWork car now.</h3>
+       <div class="work-button-holder">
+         <button class="index-main-start-form__submit work-button" onclick="window.location='work-signup.html'">Sign up here</button>
+       </div>
+     </div>
       <div class="index-main__wrapper">
-        
         <div class="index-main__container">
-          
           <div class="index-main-info">
             
             <div class="index-main-info__title">We Waive the Fee<br/>You Drive for Free</div>
