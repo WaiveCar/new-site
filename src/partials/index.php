@@ -9,7 +9,7 @@ include('header.php');
 .work-jumbotron {
   background-color: #eef9f9;
   color: #1dbb3e;
-  margin: 0 2rem;
+  margin: 0 2rem 5rem;
   border-radius: 5px;
   text-align: center;
   padding: 2rem;

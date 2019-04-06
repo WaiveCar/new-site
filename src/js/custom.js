@@ -262,9 +262,10 @@ function signup(data) {
   if (window.location.href.search(/local.name/) !== -1) {
     base = 'http://api-local.waivecar.com:3080/';
   }
-  if (window.location.href.includes('127.0.0.1:3100')) {
+  if (window.location.href.includes('127.0.0.1:3100') || window.location.href.includes('staging')) {
     base = 'http://127.0.0.1:3000/';
   }
+  
   $.post(base + 'waitlist/add', signup.postback, function(data, err) {
     window.location = 'https://lb.waivecar.com/waitlist?' + $.param(data);
   });
