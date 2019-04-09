@@ -162,7 +162,7 @@ include('header.php');
                         </ul>
                       <li>Hybrid</li>
                         <ul>
-                          <li>55mpg</li>
+                          <li>60mpg</li>
                           <li>600 miles/tank</li>
                         </ul>
                     </ol>

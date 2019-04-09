@@ -255,7 +255,7 @@ include('header.php');
               <ul class="index-cars-item__list">
                 <li class="index-cars-item__list-item">4 Doors</li>
                 <li class="index-cars-item__list-item">Seats 5</li>
-                <li class="index-cars-item__list-item">55mpg</li>
+                <li class="index-cars-item__list-item">60mpg</li>
                 <li class="index-cars-item__list-item">600 miles/tank</li>
                 <li class="index-cars-item__list-item">Bluetooth</li>
               </ul>
