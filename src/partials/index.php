@@ -1,333 +1,171 @@
-<? 
-$PAGEFULLTITLE = "Waive - The world's first all electric and FREE car-sharing service.";
+<?
 $PAGETITLE = 'Welcome';
-include('lib.php');
 include('header.php'); 
 ?>    
+    
 <style>
-.index-main-info__title { white-space: nowrap; }
+.index-main-start__title {
+  margin-bottom: 0;
+  margin-top: 3rem;
+}
+
+.page-wrapper {
+  overflow-x: visible;
+}
+.index-main__wrapper {
+  max-height: 1000rem;
+  height: 100%;
+}
+
+.index-main-start__bg {
+  height: 100%;
+  background: url(../img/index-main-start-bg.png) 50% 50% repeat;
+}
+
+.index-main-start-form__submit {
+  margin-top: 3rem;
+}
+.page-wrapper::after,
+.page-wrapper--no-download::after {
+  height: 0
+}
 </style>
     <div class="index-main">
       <div class="index-main__wrapper">
         
+        <!-- Container -->
         <div class="index-main__container">
           
           <div class="index-main-info">
             
-            <div class="index-main-info__title">We Waive the Fee<br/>You Drive for Free</div>
+            <div class="index-main-info__title">Sign up for WaiveWork</div>
             
             <ul class="index-main-info__list">
-              <li class="index-main-info__list-item">At least 2 Ad-Supported Hours of FREE Driving</li>
-              <li class="index-main-info__list-item">100% Electric and Emission-Free</li>
-              <li class="index-main-info__list-item">Available in Los Angeles and selected regions</li>
+              <li class="index-main-info__list-item">Help the environment with our fresh efficient hybrids or electric cars</li>
+              <li class="index-main-info__list-item">Take the car home with you</li>
             </ul>
-            
-            <div class="index-main-info-links">
-              
-              <a class="index-main-info-links__item index-main-info-links__item--app-store" href="https://itunes.apple.com/us/app/waivecar/id1051144802?ls=1&amp;mt=8" target="_blank"></a>
-              
-              <a class="index-main-info-links__item index-main-info-links__item--google-play" href="https://play.google.com/store/apps/details?id=com.waivecardrive.app" target="_blank"></a>
-            
-            </div>
-          
+            <a class='work-main-btn' href="/work-info.html"><span class="work-main-btn__title">Explore WaiveWork</span>
+          </a>
           </div>
           
           <div class="index-main-start">
+            
             <div class="index-main-start__bg"></div>
             <div class="index-main-start__content">
-              
-              <div class="index-main-start__title">Find, book, and start using electric cars for free.</div>
               <form class="index-main-start-form" id="sign-up-form" action="javascript:void(0);" onsubmit="signup(this)">
-                
-                <div class="index-main-start-form__row">
-                  <input class="index-main-start-form__input" id="sign-up-form-first-name" name="firstName" type="text" placeholder="First Name"
-                      data-required="true" aria-label="Enter your first name" aria-required="true">
-                </div>
-                
-                <div class="index-main-start-form__row">
-                  <input class="index-main-start-form__input" id="sign-up-form-last-name" name="lastName" type="text" placeholder="Last Name"
-                      data-required="true" aria-label="Enter your last name" aria-required="true">
-                </div>
-                
-                <div class="index-main-start-form__row">
-                  <input class="index-main-start-form__input" id="sign-up-form-email" name="email" type="email" placeholder="Email Address"
-                      data-required="true" aria-label="Enter your email" aria-required="true">
-                </div>
-                
-                <div class="index-main-start-form__row">
-                  <input class="index-main-start-form__input" id="sign-up-location" name="placeName" type="text" placeholder="Location" aria-label="Enter your location" >
-                </div>
+                <div class="flex-cols">
+                  <div class="index-main-start__title"> Tell us a bit more about yourself</div>
+                  <div class="index-main-start-form__row">
+                    <input class="index-main-start-form__input" id="sign-up-form-first-name" name="firstName" type="text" placeholder="First Name"
+                        data-required="true" aria-label="Enter your first name" aria-required="true" required>
+                  </div>
+                  
+                  <div class="index-main-start-form__row">
+                    <input class="index-main-start-form__input" id="sign-up-form-last-name" name="lastName" type="text" placeholder="Last Name"
+                        data-required="true" aria-label="Enter your last name" aria-required="true" required>
+                  </div>
+                  
+                  <div class="index-main-start-form__row">
+                    <input class="index-main-start-form__input" id="sign-up-form-email" name="email" type="email" placeholder="Email Address"
+                        data-required="true" aria-label="Enter your email" aria-required="true" required>
+                  </div>
+                  
+                  <div class="index-main-start-form__row">
+                    
+                    <input class="index-main-start-form__input" id="sign-up-location" name="placeName" type="text" placeholder="Location"
+                        data-required="true" aria-label="Enter your location" aria-required="true" required>
+                  </div>
+                  
+                  <div class="index-main-start__title"> How many hours a week do you drive for work? </div>
+                    <input class="index-main-start-form__input" id="sign-up-form-hours" name="hours" type="number" placeholder="30"
+                        data-required="true" aria-label="30" aria-required="true">
 
-                <div class="index-main-start-form__row password">
-                  <input class="index-main-start-form__input" required id="password" name="password" type="password" placeholder="Password" aria-label="Password">
-                </div>
+                  <div class="index-main-start__title"> How many days a week do you work? </div>
+                    <input class="index-main-start-form__input" id="sign-up-form-days" name="days" type="number" placeholder="4"
+                        data-required="true" aria-label="4" aria-required="true">
 
-                <div class="index-main-start-form__row">
-                  <input class="index-main-start-form__input" id="promo-code" name="promoCode" type="text" placeholder="Promo Code (Optional)"
-                      aria-label="Promo Code">
-                </div>
+                  <div class="index-main-start__title"> How many years have you been driving? </div>
+                    <input class="index-main-start-form__input" id="sign-up-form-experience" name="experience" type="number" placeholder="3" 
+                      data-required="true" aria-label="3" aria-required="true">
 
-                <div class="index-main-start-form__row apartment">
-                  <input class="index-main-start-form__input" id="account" name="account" type="text" placeholder="Unit/Account Number" aria-label="Unit/Account Number">
-                </div>
+                  <div class="index-main-start__title"> Best number to contact you? </div>
+                    <input class="index-main-start-form__input" id="sign-up-form-phone" name="phone" type="phone" placeholder="310 555 1212"
+                        data-required="true" aria-label="310 555 1212" aria-required="true" required>
 
-                <input type='hidden' name='accountType' value='normal'>
+                  <input type='hidden' name='accountType' value='waivework'>
+                  <div class="index-main-start__title"> Please provide your current address</div>
+                  <div class="index-main-start-form__row">
+                    <input class="index-main-start-form__input" id="sign-up-form-address-1" name="address1" type="text" placeholder="Address Line 1"
+                        data-required="true" aria-label="Address Line 1" aria-required="true" required>
+                  </div>
+                  <div class="index-main-start-form__row">
+                    <input class="index-main-start-form__input" id="sign-up-form-address-2" name="address2" type="text" placeholder="Address Line 2"
+                        data-required="true" aria-label="Address Line 2" aria-required="false">
+                  </div>
+                  <div class="index-main-start-form__row">
+                    <input class="index-main-start-form__input" id="sign-up-form-city" name="city" type="text" placeholder="City"
+                        data-required="true" aria-label="City" aria-required="true" required>
+                  </div>
+                  <div class="index-main-start-form__row">
+                    <input class="index-main-start-form__input" id="sign-up-form-state" name="state" type="text" placeholder="State"
+                        data-required="true" aria-label="State" aria-required="true" required>
+                  </div>
+                  <div class="index-main-start-form__row">
+                    <input class="index-main-start-form__input" id="sign-up-form-zip" name="zip" type="number" placeholder="Zip Code"
+                        data-required="true" aria-label="Zip Code" aria-required="true" required>
+                  </div>
+                  <div class="index-main-start__title"> Please provide your license information</div>
+                  <div class="index-main-start-form__row">
+                    <input class="index-main-start-form__input" id="sign-up-form-license-number" name="licenseNumber" 
+                        type="text" placeholder="License Number"
+                        data-required="true" aria-label="License Number" aria-required="true" required>
+                  </div>
+                  <div class="index-main-start-form__row">
+                    <input class="index-main-start-form__input" id="sign-up-form-license-state" name="licenseState" 
+                        type="text" placeholder="License State"
+                        data-required="true" aria-label="License State" aria-required="true" required>
+                  </div>
+                  <div class="index-main-start-form__row">
+                    <input class="index-main-start-form__input licensedate placeholderclass" id="sign-up-form-birth-date" 
+                        name="birthDate" type="date" placeholder="Birth Date"
+                        data-required="true" aria-label="Birthday" aria-required="true" required
+                        onclick="$(this).removeClass('placeholderclass')"
+                    >
+                  </div>
+                  <div class="index-main-start-form__row">
+                    <input class="index-main-start-form__input licensedate placeholderclass" id="sign-up-form-expiration" 
+                        name="expiration" type="date" placeholder="Expiration"
+                        data-required="true" aria-label="expiration" aria-required="true" required
+                        onclick="$(this).removeClass('placeholderclass')"
+                    >
+                  </div>
+                  <div class="index-main-start__title"> Will you be driving for rideshare services?</div>
+                  <div class="radio-holder">
+                    <div>
+                      <input type="radio" id="yes" name="rideshare" value="true" checked>
+                      <label for="yes">Yes</label>
+                    </div>
+                    <div>
+                      <input type="radio" id="No" name="rideshare" value="false">
+                      <label for="no">No</label>
+                    </div>
+                  </div>
+                </div>
                 <button class="index-main-start-form__submit" type="submit">Get started</button>
-              
               </form>
               
-              <div class="index-main-start__terms">By clicking “Get Started”, you agree to Waive’s <a href="https://lb.waivecar.com/terms.pdf">Terms&nbsp;&&nbsp;Condition</a> and <a href="https://lb.waivecar.com/privacy">Privacy&nbsp;Policy</a>.
+              <div class="index-main-start__terms">By clicking “Get Started”, you agree to WaiveCar’s <a href="https://lb.waivecar.com/terms.pdf">Terms&nbsp;&&nbsp;Condition</a> and <a href="https://lb.waivecar.com/privacy">Privacy&nbsp;Policy</a>.
               </div>
+            
             </div>
+          
           </div>
+        
         </div>
+      
       </div>
       
-      <img class="index-main-cover" src="img/index-main-bg.svg" alt="Waive Car">
     </div>
     
-    <section class="index-riding">
-      <div class="index-riding__wrapper">
-        
-        <div class="index-riding__title">Riding with Waive</div>
-        
-        <div class="index-riding__container">
-          
-          <div class="index-riding-item">
-            
-            <div class="index-riding-item__icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="80" height="82" viewBox="0 0 80 82">
-                <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-      <path
-         d="M 1172.3722,1213.402 866.86014,974.8282 870.29319,1058.929 698.6566,925.05269 703.80575,1029.7511 600.82346,976.54423 v 1.71527 l 190.51627,183.6509 -22.31188,-104.6984 173.35186,133.8773 -6.86527,-82.3857 205.96286,164.7705 z"
-         style="opacity:1;vector-effect:none;fill:#2eab42;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.84164053;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-                  <path stroke="#566659" d="M44 25V6c0-2.13-2.482-5-5-5H6C3.398 1 1 3.87 1 6v69c0 2.13 2.398 5 5 5h33c2.517 0 4.999-2.87 5-5v-9M24.103 6h-2.714M1.831 70h41.38M1.93 11H43.21M27.975 75H16.6"/>
-                  <path stroke="#566659" d="M60.649 30h-6.83 1.93-5.131c-2 0-3.785 1.438-3.974 3.447a3.808 3.808 0 0 0 3.45 4.175l2.887.037h-2.528c-.124 0-.24-.027-.36-.037l-1.92-.026c-1.999 0-3.784 1.475-3.974 3.485-.218 2.304 1.571 4.244 3.81 4.244h4.972-4.929c-1.999 0-3.784 1.475-3.974 3.484-.216 2.304 1.572 4.384 3.81 4.384h5.092-18.988c-1.999 0-3.784 1.57-3.974 3.579-.218 2.304 1.57 4.244 3.81 4.244H59.644c.722 0 1.729.422 2.24.937L63.2 63.28c.509.516.509 1.36 0 1.876l-6.759 7.18a5.246 5.246 0 0 0-.128 7.03l1.09 1.248c.51.515 1.346.515 1.856 0l17.666-18.515C78.07 60.9 79 58.572 79 56.931V37.383c0-2.21-1.73-4.473-3.864-5.017 0 0-7.975-2.366-14.487-2.366z"/>
-                  <path stroke="#1DBB3E" d="M27.463 41.45L38.09 44.93m-30.34.038l10.655-3.477"/>
-                  <path stroke="#1DBB3E" stroke-dasharray="1 4" d="M22 51.753v13.11"/>
-                  <path stroke="#1DBB3E" d="M23 33c-2.986 0-5-2.238-5-5s2.014-5 5-5c1.986 0 4 2.238 4 5s-2.014 5-4 5zm0-15c-5.523 0-10 4.561-10 10 0 2.211.586 4.09 2 6l8 13 8-13c1.414-1.91 2-3.789 2-6 0-5.439-4.477-10-10-10z"/>
-                </g>
-              </svg>
-            </div>
-            
-            <div class="index-riding-item__title">Book</div>
-            <div class="index-riding-item__desc">Use the app to locate a WaiveCar near you. To reserve one, tap ‘Book WaiveCar’.</div>
-          
-          </div>
-          
-          <div class="index-riding-item">
-            
-            <div class="index-riding-item__icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="82" height="79" viewBox="0 0 82 79">
-                <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                  <path stroke="#56665A" d="M81 31c-12.467-1.93-26.014-3-40.197-3-6.763 0-12.376.25-18.803.715M8 30c-2.365.182-4.707.376-7 .595M81 8C69.717 3.598 55.917 1 41 1 26.083 1 12.283 3.598 1 8m23 70c11.436-25.92 23.337-43.8 31-49"/>
-                  <path stroke="#56665A" stroke-dasharray="2 9" d="M41 77c7.176-20.203 15.756-36.112 25.045-47.716"/>
-                  <path stroke="#56665A" d="M56 78c6.25-24.963 14.17-37 21-47m-25-3C48.268 15.002 44.025 7.308 36.457 1.14"/>
-                  <path stroke="#56665A" stroke-dasharray="2 6" d="M43 28c-.445-8.387-5.28-21.701-13-27"/>
-                  <path stroke="#56665A" d="M31.554 28c1.648-9.325-1.197-19.58-7.396-25.81"/>
-                  <path stroke="#1DBB3E" d="M15 48v14m9-22.182C24 44.336 20.193 48 15.5 48S7 44.336 7 39.818C7 35.3 10.807 18 15.5 18S24 35.3 24 39.818zM11 40c.181 1.194.927 1.775 2 2m3-13.053c-.849-.86-1.872-1.065-3-.89"/>
-                </g>
-              </svg>
-            </div>
-            
-            <div class="index-riding-item__title">Drive</div>
-            
-            <div class="index-riding-item__desc">Unlock your car with the app. Drive safely and enjoy your two or more free hours.</div>
-          
-          </div>
-          
-          <div class="index-riding-item">
-            
-            <div class="index-riding-item__icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="80" height="77" viewBox="0 0 80 77">
-                <g fill="none" fill-rule="evenodd" transform="translate(0 1)">
-                  <path stroke="#56665A" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.286A7.899 7.899 0 0 1 3.083 5a7.887 7.887 0 0 1 7.383 5.112 4.205 4.205 0 0 1 6.823 3.288c0 .121-.008.24-.018.36 2.46.86 4.227 3.191 4.227 5.94 0 3.48-2.826 6.3-6.313 6.3H1"/>
-                  <path stroke="#56665A" stroke-width="2" d="M78.61 3.788a6.005 6.005 0 0 0-11.204.107A3.204 3.204 0 0 0 62.207 6.4c0 .093.006.183.014.274A4.799 4.799 0 0 0 59 11.2c0 2.651 2.154 4.8 4.81 4.8h13.63c.406 0 .794-.065 1.17-.16"/>
-                  <path fill="#1DBB3E" d="M43 76h-4c-.553 0-1-.522-1-1.167v-4.666c0-.645.447-1.167 1-1.167h4c.553 0 1 .522 1 1.167v4.666c0 .645-.447 1.167-1 1.167zm-3.078-3H42v-2h-2.078v2z"/>
-                  <path fill="#56665A" d="M78.667 76H1.333C.597 76 0 75.553 0 75c0-.553.597-1 1.333-1h77.334c.737 0 1.333.447 1.333 1 0 .553-.596 1-1.333 1"/>
-                  <path fill="#1DBB3E" d="M49 25H33c-2.206 0-4-1.794-4-4V5c0-2.206 1.794-4 4-4h16c2.206 0 4 1.794 4 4v16c0 2.206-1.794 4-4 4zM32.429 3A1.43 1.43 0 0 0 31 4.429V21.57c0 .789.64 1.429 1.429 1.429H49.57A1.43 1.43 0 0 0 51 21.571V4.43A1.43 1.43 0 0 0 49.571 3H32.43z"/>
-                  <path fill="#1DBB3E" d="M41.5 15h-3.214C37.575 15 37 14.425 37 13.714V7.286C37 6.575 37.575 6 38.286 6H41.5C43.98 6 46 8.019 46 10.5S43.981 15 41.5 15zM39 13h2.5c1.379 0 2.5-1.121 2.5-2.5S42.879 8 41.5 8H39v5zm1 56.694V24.306c0-.722.447-1.306 1-1.306.553 0 1 .584 1 1.306v45.388c0 .722-.447.306-1 .306-.553 0-1 .416-1-.306z"/>
-                  <rect width="2" height="12" x="37" y="7" fill="#1DBB3E" rx="1"/>
-                  <g stroke="#56665A" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M1 67h12m14.724-1.655h.808a7.468 7.468 0 0 0 1.228-14.833l-6.622-1.104a13.789 13.789 0 0 1-6.563-3.01l-9.843-8.2C4.254 36.13 4.228 35 1 35"/>
-                    <path d="M8.5 40H3.01C1.9 40 1 40.887 1 41.998v4.004C1 47.105 1.892 48 3.007 48H18.5m11.983 9.069h5.38m-13.656 9.655a1.38 1.38 0 1 1-2.76 0 1.38 1.38 0 0 1 2.76 0z"/>
-                    <path d="M28 67a7 7 0 1 1-14.002-.002A7 7 0 0 1 28 67z"/>
-                  </g>
-                  <g stroke="#56665A" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M79 67H69m-14.724-1.655h-.808C49.47 65.345 46 64 46 59.877a7.466 7.466 0 0 1 6.24-7.365l6.622-1.104a13.789 13.789 0 0 0 6.563-3.01l7.843-7.2C75.746 39.13 75.772 38 79 38"/>
-                    <path d="M71.5 43h5.49c1.11 0 2.01.887 2.01 1.998v4.004A1.996 1.996 0 0 1 77.003 51H60.5m-7.983 8.069h-5.38m12.656 7.655a1.38 1.38 0 1 0 2.76 0 1.38 1.38 0 0 0-2.76 0z"/>
-                    <path d="M54 67a7 7 0 1 0 14.002-.002A7 7 0 0 0 54 67z"/>
-                  </g>
-                </g>
-              </svg>
-            </div>
-            
-            <div class="index-riding-item__title">Park</div>
-            
-            <div class="index-riding-item__desc">Ready to hop out? Depending on the charge level, leave it in a legal parking spot or drop it off at
-              a charging station.
-            </div>
-          
-          </div>
-          
-          <div class="index-riding-item">
-            
-            <div class="index-riding-item__icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="80" height="81" viewBox="0 0 80 81">
-                <g fill="none" fill-rule="evenodd" stroke-width="2" transform="translate(0 1)">
-                  <path stroke="#566659" stroke-linecap="round" stroke-linejoin="round" d="M19 54v20c0 2.13 2.398 5 5 5h33c2.517 0 4.999-2.87 5-5V54m0-29V5c0-2.13-2.482-5-5-5H24c-2.602 0-5 2.87-5 5v20.005M42.103 5h-2.714M19.831 69h41.38M19.93 10H61.21M45.975 74H34.6"/>
-                  <rect width="78" height="29" x="1" y="25" stroke="#56665A" rx="4"/>
-                  <path stroke="#1DBB3E" stroke-linecap="round" stroke-linejoin="round" d="M25 39.5a8.5 8.5 0 1 1-17 0 8.5 8.5 0 0 1 17 0z"/>
-                  <path stroke="#1DBB3E" stroke-linecap="round" stroke-linejoin="round" d="M13 40.278L15.2 43l3.8-7M48 39.5a8.5 8.5 0 1 1-17 0 8.5 8.5 0 0 1 17 0z"/>
-                  <path stroke="#1DBB3E" stroke-linecap="round" stroke-linejoin="round" d="M36 40.278L38.2 43l3.8-7M72 39.5a8.5 8.5 0 1 1-17 0 8.5 8.5 0 0 1 17 0zM59 39h9m-4 4l4-4m-4-4l4 4"/>
-                </g>
-              </svg>
-            </div>
-            
-            <div class="index-riding-item__title">Return</div>
-            
-            <div class="index-riding-item__desc">Finish by tapping ‘End Ride’ and&nbsp;following the in app step-by-step exit checklist. Your ride is
-              now complete.
-            </div>
-          
-          </div>
-        
-        </div>
-      
-      </div>
-    </section>
-    
-    <section class="index-pricing">
-      <div class="index-pricing__wrapper">
-        
-        <div class="index-pricing__title">Need More Time?</div>
-        
-        <div class="index-pricing__info">
-          
-          <div class="index-pricing__desc">When your free hours are over, the ride doesn’t have to be.</div>
-          
-          <div class="index-pricing-price">
-            <div class="index-pricing-price__title">Keep going for only</div>
-            
-            <div class="index-pricing-price__value">$5.99/hr</div>
-          </div>
-        
-        </div>
-      
-      </div>
-    </section>
-    
-    <section class="index-partner">
-      <div class="index-partner__wrapper">
-        
-        <svg class="index-partner__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 46">
-          <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-            <path stroke="#56665A" d="M52.598 39.842c-.268 1.157-1.23 2.072-2.023 2.529-1.901 1.096-4.425.78-5.592-1.109L41 34m4 8.107c-.752 1.503-1.204 1.652-1.918 2.085-1.854 1.126-4.557 1.24-5.691-.725L34 37m24.093-2.743c.745 1.585 1.168 4.705-.723 6.007-1.616 1.11-3.963.96-4.772-.422L48 30.79M14.333 36H5.798a2.677 2.677 0 0 1-2.623-2.225C1.231 22.715.985 13.178 1.001 8.708 1.006 7.205 2.199 6 3.668 6h10.665C15.805 6 17 7.222 17 8.727v24.546C17 34.778 15.805 36 14.333 36zM37 43.259c-.388.445-.743.667-1.578 1.128-2.018 1.116-5.547.928-7.576-2.432C25.08 37.374 22.436 32 22.436 32H18"/>
-            <path stroke="#1DBB3E" d="M65.667 36C64.195 36 63 34.778 63 33.273V8.727C63 7.222 64.195 6 65.667 6h10.665c1.469 0 2.662 1.205 2.667 2.708.015 4.47-.23 14.006-2.174 25.067A2.677 2.677 0 0 1 74.202 36h-8.535zM63 9.25V34h-5.062l-10.98-20.532a2.88 2.88 0 0 0-4.383-.775l-5.459 4.68a5.504 5.504 0 0 1-6.887.225l-.551-.413a1.695 1.695 0 0 1-.296-2.428L38.03 4.186A8.685 8.685 0 0 1 44.749 1h4.591c1.493 0 2.953.441 4.195 1.27L63 9.25z"/>
-            <path stroke="#56665A" d="M17 9h7.948l3.034-1.873A7.404 7.404 0 0 1 31.883 6H36"/>
-          </g>
-        </svg>
-        
-        <div class="index-partner__title">Our Partnership with Hyundai</div>
-        
-        <div class="index-partner__desc">Hyundai teams up with Waive to offer IONIQ electric vehicles as part of our free car-sharing program.</div>
-        
-        <a class="index-partner__link" href="https://medium.com/@Waive/announcing-our-partnership-with-hyundai-e5b070812738" target="_blank">
-          <svg>
-            <use xlink:href="#icon-medium"></use>
-          </svg>
-          
-          <span>Read More On Medium</span>
-        </a>
-        
-      </div>
-    </section>
-    
-    <section class="index-cars">
-      <div class="index-cars__wrapper">
-        
-        <header class="index-cars__header">
-          <div class="index-cars__title">Our Cars</div>
-          
-          <div class="index-cars__desc">More cars coming soon!</div>
-        </header>
-        
-        <div class="index-cars-item index-cars-item--reverse">
-          
-          <div class="index-cars-item__thumb">
-            <img class="index-cars-item__img" src="pic/index-cars-2-nobg.jpg" srcset="pic/index-cars-2-nobg@2x.jpg 2x" alt="Hyundai IONIQ">
-          </div>
-          
-          <div class="index-cars-item__info">
-            <div class="index-cars-item__info-wrapper">
-              
-              <div class="index-cars-item__title">Hyundai IONIQ</div>
-              
-              <ul class="index-cars-item__list">
-                <li class="index-cars-item__list-item">4 Doors</li>
-                <li class="index-cars-item__list-item">Seats 5</li>
-                <li class="index-cars-item__list-item">140 Miles Per Charge</li>
-                <li class="index-cars-item__list-item">Bluetooth</li>
-              </ul>
-            
-            </div>
-          </div>
-        
-        
-        </div>
-      
-      </div>
-    </section>
-    
-    
-    <section class="questions">
-      <div class="questions__wrapper">
-        
-        <svg class="questions__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 75">
-          <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-            <path stroke="#56665A" d="M54 25.007A3 3 0 0 0 50.999 22H4A2.997 2.997 0 0 0 1 25.001V74h1l14.58-14.58C17.364 58.636 18.89 58 20 58h30.993A3.007 3.007 0 0 0 54 54.993V25.007zM42.387 30h-18.94M46 35H23.452m-16 15h27.096M7.452 45h40"/>
-            <path stroke="#56665A" d="M17 33a5 5 0 1 1-10 0 5 5 0 0 1 10 0zm-4 1l5 5"/>
-            <path stroke="#1DBB3E" d="M23 18V4c0-1.657 1.348-3 2.996-3h52.008A2.995 2.995 0 0 1 81 4.001V53h-1L65.42 38.42c-.784-.784-2.318-1.42-3.418-1.42H58"/>
-            <path stroke="#1DBB3E" d="M67 17v-2l4-8 4 8v2M73.875 13H68m6.548 10h-13.77m13.77 5h-13.77M33 13h27.548M43 18h17.548"/>
-          </g>
-        </svg>
-        
-        <div class="questions__title">Got Questions?</div>
-        <div class="questions__text">We’ve got answers. Visit our <a href="/faq.html">FAQ&nbsp;page</a> to learn more.</div>
-      
-      </div>
-    </section>
-  
-  </div>
-  
-  
-  <footer class="footer">
-    <div class="download">
-      <div class="download__wrapper">
-        
-        <div class="download-info">
-          
-          <div class="download-info__title">We waive the fee, you drive for free.</div>
-          <div class="download-info__desc">Get the WaiveCar App on iPhone and Android</div>
-        
-        </div>
-        
-        <div class="download-links">
-          <a class="download-links__item download-links__item--app-store" href="https://itunes.apple.com/us/app/waivecar/id1051144802?ls=1&mt=8" target="_blank"></a>
-          <a class="download-links__item download-links__item--google-play" href="https://play.google.com/store/apps/details?id=com.waivecardrive.app" target="_blank"></a>
-        </div>
-      
-      </div>
-    </div>
-    
-    <? footer_links(); ?>
-  
-  </footer>
-  
-  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="js/custom.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQysUfVLDsR8aYHZBQ9epqpGAQ-LZ1bTw&libraries=places&callback=initMap" async defer></script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-72407446-1"></script>
-</body>
-</html>
+<?  include('footer.php'); ?>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQysUfVLDsR8aYHZBQ9epqpGAQ-LZ1bTw&libraries=places&callback=initMap" async defer></script>

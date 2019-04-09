@@ -50,7 +50,7 @@
   <meta property="og:url" content="https://waivecar.com" />
   <meta property="fb:app_id" content="1022704731082512" />
   
-  <title>About us | Waive</title>
+  <title>Welcome | Waive</title>
   <link rel="stylesheet" href="css/styles.css">
   <script>
     var ajax = new XMLHttpRequest();
@@ -85,8 +85,8 @@
               <a class="h-menu__link" href="faq">FAQ</a>
             </span>
             
-            <span class="h-menu__item h-menu__item--active">
-              <a class="h-menu__link" href="#">About us</a>
+            <span class="h-menu__item">
+              <a class="h-menu__link" href="about.html">About us</a>
             </span>
                     <a class="h-menu__login" href="https://lb.waivecar.com/login">Login</a>
         </nav>
@@ -101,129 +101,111 @@
     </header>
     
     
-    <section class="about-article">
-      <article class="about-article__wrapper">
+<style>
+.index-main-start__title {
+  margin-bottom: 0;
+  margin-top: 3rem;
+}
+
+.page-wrapper {
+  overflow-x: visible;
+}
+.index-main__wrapper {
+  max-height: 1000rem;
+  height: 100%;
+}
+
+.index-main-start__bg {
+  height: 100%;
+  background: url(../img/index-main-start-bg.png) 50% 50% repeat;
+}
+
+.index-main-start-form__submit {
+  margin-top: 3rem;
+}
+.page-wrapper::after,
+.page-wrapper--no-download::after {
+  height: 0
+}
+</style>
+    <div class="index-main">
+      <div class="index-main__wrapper">
         
-        <!-- Textual -->
-        <div class="about-article__info">
+        <!-- Container -->
+        <div class="index-main__container">
           
-          <h1 class="about-article__title">About Us</h1>
-          
-          <div class="about-article__desc">
-            <p>We believe there are smarter ways for communities to benefit from cars. Our contribution is WaiveCar, a revolutionary transportation
-              system that connects users with ad-displaying electric cars for free, anywhere in their city. Together, drivers and companies can make a
-              positive impact on the environment.</p>
+          <div class="index-main-info">
             
-            <p>WaiveCar is a car sharing startup currently operating in the Los Angeles area. Our electric fleet is completely free to drive for the
-              first 2 hours.</p>
+            <div class="index-main-info__title">Sign up for WaiveWork</div>
+            
+            <ul class="index-main-info__list">
+              <li class="index-main-info__list-item">Help the environment with our fresh efficient hybrids or electric cars</li>
+              <li class="index-main-info__list-item">Take the car home with you</li>
+            </ul>
+          
+          </div>
+          
+          <div class="index-main-start">
+            
+            <div class="index-main-start__bg"></div>
+            <div class="index-main-start__content">
+              
+              <form class="index-main-start-form" id="sign-up-form" action="javascript:void(0);" onsubmit="signup(this)">
+                <div class="index-main-start__title"> Tell us a bit more about yourself</div>
+                <div class="index-main-start-form__row">
+                  <input class="index-main-start-form__input" id="sign-up-form-first-name" name="firstName" type="text" placeholder="First Name"
+                      data-required="true" aria-label="Enter your first name" aria-required="true">
+                </div>
+                
+                <div class="index-main-start-form__row">
+                  <input class="index-main-start-form__input" id="sign-up-form-last-name" name="lastName" type="text" placeholder="Last Name"
+                      data-required="true" aria-label="Enter your last name" aria-required="true">
+                </div>
+                
+                <div class="index-main-start-form__row">
+                  <input class="index-main-start-form__input" id="sign-up-form-email" name="email" type="email" placeholder="Email Address"
+                      data-required="true" aria-label="Enter your email" aria-required="true">
+                </div>
+                
+                <div class="index-main-start-form__row">
+                  
+                  <input class="index-main-start-form__input" id="sign-up-location" name="placeName" type="text" placeholder="Location"
+                      data-required="true" aria-label="Enter your location" aria-required="true">
+                </div>
+                
+                <div class="index-main-start__title"> How many hours a week do you drive for work? </div>
+                  <input class="index-main-start-form__input" id="sign-up-form-hours" name="hours" type="number" placeholder="30"
+                      data-required="true" aria-label="30" aria-required="true">
+
+                <div class="index-main-start__title"> How many days a week do you work? </div>
+                  <input class="index-main-start-form__input" id="sign-up-form-days" name="days" type="number" placeholder="4"
+                      data-required="true" aria-label="4" aria-required="true">
+
+                <div class="index-main-start__title"> Best number to contact you? </div>
+                  <input class="index-main-start-form__input" id="sign-up-form-phone" name="phone" type="phone" placeholder="310 555 1212"
+                      data-required="true" aria-label="310 555 1212" aria-required="true">
+
+                <div class="index-main-start__title"> How many years have you been driving? </div>
+                  <input class="index-main-start-form__input" id="sign-up-form-experience" name="experience" type="number" placeholder="3" data-required="true" aria-label="3" aria-required="true">
+
+                <input type='hidden' name='accountType' value='waivework'>
+                <button class="index-main-start-form__submit" type="submit">Get started</button>
+              
+              </form>
+              
+              <div class="index-main-start__terms">By clicking “Get Started”, you agree to WaiveCar’s <a href="https://lb.waivecar.com/terms.pdf">Terms&nbsp;&&nbsp;Condition</a> and <a href="https://lb.waivecar.com/privacy">Privacy&nbsp;Policy</a>.
+              </div>
+            
+            </div>
+          
           </div>
         
         </div>
-        
-        <div class="about-article__thumb">
-          <img class="about-article__img" src="pic/about-article-img.svg" alt="About WaiveCar">
-        </div>
       
-      </article>
-    </section>
-    
-    
-    <section class="about-map">
-      
-      <div class="about-map__container" id="map"></div>
-  
-      <div class="about-map__wrapper">
-    
-        <!-- Get in Touch -->
-        <div class="about-map-contacts">
-      
-          <!-- Title -->
-          <h2 class="about-map-contacts__title">Get in Touch</h2>
-      
-          <!-- Description -->
-          <p class="about-map-contacts__desc">Got questions? Don’t hesitate to reach out!</p>
-      
-          <!-- Container -->
-          <address class="about-map-contacts__container">
-        
-            <!-- Address -->
-            <div class="about-map-contacts-item">
-          
-              <!-- Icon -->
-              <div class="about-map-contacts-item__thumb">
-                <svg class="about-map-contacts-item__icon about-map-contacts-item__icon--marker">
-                  <use xlink:href="#icon-map-marker"></use>
-                </svg>
-              </div>
-          
-              <div class="about-map-contacts-item__info">
-            
-                <div class="about-map-contacts-item__title">Address</div>
-            
-                <div class="about-map-contacts-item__link">2102 Pico Blvd, Santa Monica, CA 90401</div>
-          
-              </div>
-        
-            </div>
-        
-            <div class="about-map-contacts-item">
-          
-              <!-- Icon -->
-              <div class="about-map-contacts-item__thumb">
-                <svg class="about-map-contacts-item__icon about-map-contacts-item__icon--phone">
-                  <use xlink:href="#icon-phone"></use>
-                </svg>
-              </div>
-          
-              <!-- Information -->
-              <div class="about-map-contacts-item__info">
-            
-                <!-- Title -->
-                <div class="about-map-contacts-item__title">Phone</div>
-            
-                <!-- Data -->
-                <div class="about-map-contacts-item__link">
-                  <a href="tel:+18559248355">+1 855-924-8355</a>
-                </div>
-          
-              </div>
-        
-            </div>
-        
-            <!-- Email -->
-            <div class="about-map-contacts-item">
-          
-              <!-- Icon -->
-              <div class="about-map-contacts-item__thumb">
-                <svg class="about-map-contacts-item__icon about-map-contacts-item__icon--email">
-                  <use xlink:href="#icon-email"></use>
-                </svg>
-              </div>
-          
-              <div class="about-map-contacts-item__info">
-            
-                <!-- Title -->
-                <div class="about-map-contacts-item__title">Email</div>
-            
-                <!-- Data -->
-                <div class="about-map-contacts-item__link">
-                  <a href="mailto:info@waivecar.com">info@waivecar.com</a>
-                </div>
-          
-              </div>
-        
-            </div>
-      
-          </address>
-    
-        </div>
-  
       </div>
       
-    </section>
-  
-  </div>
-  
+    </div>
+    
   <footer class="footer">
   <div class="footer__container">
       
@@ -316,3 +298,4 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-72407446-1"></script>
 </body>
 </html>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQysUfVLDsR8aYHZBQ9epqpGAQ-LZ1bTw&libraries=places&callback=initMap" async defer></script>
