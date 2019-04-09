@@ -27,7 +27,7 @@ include('header.php');
      <div class="work-jumbotron">
        <h3>Drive for work? Why not use the most economical option? Get a long term WaiveWork car now.</h3>
        <div class="work-button-holder">
-         <button class="index-main-start-form__submit work-button" onclick="window.location='work-signup.html'">Sign up here</button>
+         <button class="index-main-start-form__submit work-button" onclick="window.location='index.html'">Sign up here</button>
        </div>
      </div>
       <div class="index-main__wrapper">
