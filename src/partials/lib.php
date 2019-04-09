@@ -17,9 +17,11 @@ function footer_links() {
             <a class="f-menu__link" href="work-info.html">Waive Work</a>
           </li>
       
+<!--
           <li class="f-menu__item">
             <a class="f-menu__link" href="how-it-works.html">How it Works</a>
           </li>
+-->
       
           <li class="f-menu__item">
             <a class="f-menu__link" href="faq.html">FAQ</a>
