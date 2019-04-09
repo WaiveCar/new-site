@@ -14,12 +14,14 @@ function footer_links() {
     
         <ul class="f-menu__wrapper">
           <li class="f-menu__item">
-            <a class="f-menu__link" href="waive-work.html">Waive Work</a>
+            <a class="f-menu__link" href="work-info.html">Waive Work</a>
           </li>
       
+<!--
           <li class="f-menu__item">
             <a class="f-menu__link" href="how-it-works.html">How it Works</a>
           </li>
+-->
       
           <li class="f-menu__item">
             <a class="f-menu__link" href="faq.html">FAQ</a>

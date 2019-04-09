@@ -79,6 +79,7 @@ include('header.php');
                         data-required="true" aria-label="Enter your location" aria-required="true" required>
                   </div>
                   
+<<<<<<< HEAD
                   <div class="index-main-start__title"> Best number to contact you? </div>
                     <input class="index-main-start-form__input" id="sign-up-form-phone" name="phone" type="phone" placeholder="310 555 1212"
                         data-required="true" aria-label="310 555 1212" aria-required="true" required>
