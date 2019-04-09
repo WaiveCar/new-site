@@ -2,7 +2,7 @@
 
 base=`pwd`
 mv $base/dist/guide /tmp
-pagelist="work-signup about index faq how-it-works privacy terms waive-work"
+pagelist="work-signup about index faq how-it-works privacy terms waive-car"
 . "$HOME/.nvm/nvm.sh"
 {
   cd src

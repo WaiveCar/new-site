@@ -82,7 +82,8 @@
         <nav class="h-menu">
         <?
           $header = [
-            [ 'waive-work.html', 'Waive Work' ],
+            [ 'index.html', 'Waive Work' ],
+            [ 'waive-car.html', 'Waive Car' ],
             [ "how-it-works.html", 'How it Works' ],
             [ "faq", 'FAQ' ],
             [ 'about.html', 'About us' ]
