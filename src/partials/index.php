@@ -33,6 +33,22 @@ include('header.php');
   color: grey;
   font-size: 14px;
 }
+#notice {
+  display: inline-block;
+  margin: 3rem 0 0 0;
+  padding: 1rem;
+  width: 30rem;
+  line-height: 2rem;
+  font-size: 1.5rem;
+  border: 1px solid #161616;
+}
+.work-main-btn {
+display: inline-block;
+}
+#notice b {
+  display: block;
+  margin-bottom: 0.5rem;
+}
 </style>
     <div class="index-main">
       <div class="index-main__wrapper">
@@ -48,8 +64,15 @@ include('header.php');
               <li class="index-main-info__list-item">Help the environment with our fresh efficient hybrids or electric cars</li>
               <li class="index-main-info__list-item">Take the car home with you</li>
             </ul>
-            <a class='work-main-btn' href="/work-info.html"><span class="work-main-btn__title">Explore WaiveWork</span>
           </a>
+<center>
+<div>
+            <a class='work-main-btn' href="/work-info.html"><span class="work-main-btn__title">Explore WaiveWork</span></a>
+</div>
+<div id='notice'>
+<b>Already a WaiveCar user?</b>Just reach out to us and tell us you're interested in WaiveWork!
+</div>
+</center>
           </div>
           <div class="index-main-start">
             
