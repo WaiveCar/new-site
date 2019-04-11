@@ -109,11 +109,11 @@ display: inline-block;
                   <input type='hidden' name='accountType' value='waivework'>
                   <div class="index-main-start__title"> What is your home address?</div>
                   <div class="index-main-start-form__row">
-                    <input class="index-main-start-form__input" id="sign-up-form-address-1" name="address1" type="text" placeholder="Address Line 1"
+                    <input class="index-main-start-form__input" id="sign-up-form-address-1" name="street1" type="text" placeholder="Address Line 1"
                         data-required="true" aria-label="Address Line 1" aria-required="true" required>
                   </div>
                   <div class="index-main-start-form__row">
-                    <input class="index-main-start-form__input" id="sign-up-form-address-2" name="address2" type="text" placeholder="Address Line 2"
+                    <input class="index-main-start-form__input" id="sign-up-form-address-2" name="street2" type="text" placeholder="Address Line 2"
                         data-required="true" aria-label="Address Line 2" aria-required="false">
                   </div>
                   <div class="index-main-start-form__row">
@@ -130,7 +130,7 @@ display: inline-block;
                   </div>
                   <div class="index-main-start__title"> What is your license information?</div>
                   <div class="index-main-start-form__row">
-                    <input class="index-main-start-form__input" id="sign-up-form-license-number" name="licenseNumber" 
+                    <input class="index-main-start-form__input" id="sign-up-form-license-number" name="number" 
                         type="text" placeholder="License Number"
                         data-required="true" aria-label="License Number" aria-required="true" required>
                   </div>
@@ -149,7 +149,7 @@ display: inline-block;
                   <div class="index-main-start-form__row">
                     <input class="index-main-start-form__input licensedate placeholderclass" id="sign-up-form-expiration" 
                         name="expiration" type="date" placeholder="Expiration"
-                        data-required="true" aria-label="expiration" aria-required="true" required
+                        data-required="true" aria-label="expirationDate" aria-required="true" required
                         onclick="$(this).removeClass('placeholderclass')"
                     >
                   </div>
