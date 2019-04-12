@@ -127,6 +127,10 @@
 .page-wrapper--no-download::after {
   height: 0
 }
+.work-subtitle {
+  color: grey;
+  font-size: 14px;
+}
 #notice {
   display: inline-block;
   margin: 3rem 0 0 0;
@@ -158,6 +162,7 @@ display: inline-block;
               <li class="index-main-info__list-item">Help the environment with our fresh efficient hybrids or electric cars</li>
               <li class="index-main-info__list-item">Take the car home with you</li>
             </ul>
+          </a>
 <center>
 <div>
             <a class='work-main-btn' href="/work-info.html"><span class="work-main-btn__title">Explore WaiveWork</span></a>
@@ -167,7 +172,6 @@ display: inline-block;
 </div>
 </center>
           </div>
-          
           <div class="index-main-start">
             
             <div class="index-main-start__bg"></div>
@@ -196,30 +200,18 @@ display: inline-block;
                         data-required="true" aria-label="Enter your location" aria-required="true" required>
                   </div>
                   
-                  <div class="index-main-start__title"> How many hours a week do you drive for work? </div>
-                    <input class="index-main-start-form__input" id="sign-up-form-hours" name="hours" type="number" placeholder="30"
-                        data-required="true" aria-label="30" aria-required="true">
-
-                  <div class="index-main-start__title"> How many days a week do you work? </div>
-                    <input class="index-main-start-form__input" id="sign-up-form-days" name="days" type="number" placeholder="4"
-                        data-required="true" aria-label="4" aria-required="true">
-
-                  <div class="index-main-start__title"> How many years have you been driving? </div>
-                    <input class="index-main-start-form__input" id="sign-up-form-experience" name="experience" type="number" placeholder="3" 
-                      data-required="true" aria-label="3" aria-required="true">
-
                   <div class="index-main-start__title"> Best number to contact you? </div>
                     <input class="index-main-start-form__input" id="sign-up-form-phone" name="phone" type="phone" placeholder="310 555 1212"
                         data-required="true" aria-label="310 555 1212" aria-required="true" required>
 
                   <input type='hidden' name='accountType' value='waivework'>
-                  <div class="index-main-start__title"> Please provide your current address</div>
+                  <div class="index-main-start__title"> What is your home address?</div>
                   <div class="index-main-start-form__row">
-                    <input class="index-main-start-form__input" id="sign-up-form-address-1" name="address1" type="text" placeholder="Address Line 1"
+                    <input class="index-main-start-form__input" id="sign-up-form-address-1" name="street1" type="text" placeholder="Address Line 1"
                         data-required="true" aria-label="Address Line 1" aria-required="true" required>
                   </div>
                   <div class="index-main-start-form__row">
-                    <input class="index-main-start-form__input" id="sign-up-form-address-2" name="address2" type="text" placeholder="Address Line 2"
+                    <input class="index-main-start-form__input" id="sign-up-form-address-2" name="street2" type="text" placeholder="Address Line 2"
                         data-required="true" aria-label="Address Line 2" aria-required="false">
                   </div>
                   <div class="index-main-start-form__row">
@@ -234,9 +226,9 @@ display: inline-block;
                     <input class="index-main-start-form__input" id="sign-up-form-zip" name="zip" type="number" placeholder="Zip Code"
                         data-required="true" aria-label="Zip Code" aria-required="true" required>
                   </div>
-                  <div class="index-main-start__title"> Please provide your license information</div>
+                  <div class="index-main-start__title"> What is your license information?</div>
                   <div class="index-main-start-form__row">
-                    <input class="index-main-start-form__input" id="sign-up-form-license-number" name="licenseNumber" 
+                    <input class="index-main-start-form__input" id="sign-up-form-license-number" name="number" 
                         type="text" placeholder="License Number"
                         data-required="true" aria-label="License Number" aria-required="true" required>
                   </div>
@@ -255,10 +247,19 @@ display: inline-block;
                   <div class="index-main-start-form__row">
                     <input class="index-main-start-form__input licensedate placeholderclass" id="sign-up-form-expiration" 
                         name="expiration" type="date" placeholder="Expiration"
-                        data-required="true" aria-label="expiration" aria-required="true" required
+                        data-required="true" aria-label="expirationDate" aria-required="true" required
                         onclick="$(this).removeClass('placeholderclass')"
                     >
                   </div>
+                  <div class="index-main-start__title"> How many years have you been driving? </div>
+                    <input class="index-main-start-form__input" id="sign-up-form-experience" name="experience" type="number" placeholder="3"
+                      data-required="true" aria-label="3" aria-required="true">
+
+                  <div class="index-main-start__title"> How much would you be willing to pay per week?<div> 
+                  <div class="work-subtitle">We prioritize our long waitlist and guide our offer by this amount.</div>
+                    <input class="index-main-start-form__input" id="sign-up-form-offer-per-week" name="offerPerWeek" type="number" placeholder="dollars per day"
+                      data-required="true" aria-label="3" aria-required="true">
+
                   <div class="index-main-start__title"> Will you be driving for rideshare services?</div>
                   <div class="radio-holder">
                     <div>
@@ -267,6 +268,33 @@ display: inline-block;
                     </div>
                     <div>
                       <input type="radio" id="No" name="rideshare" value="false">
+                      <label for="no">No</label>
+                    </div>
+                  </div>
+                  <div>
+                    We have a fleet of Hyundai Ioniqs which are otherwise identical except some are hybrid and electric.
+                    <ol class="work-subtitle">
+                      <li>Electric</li>
+                        <ul>
+                          <li>140 mile range</li>
+                          <li>5mi charge/hr slow charger included</li>
+                          <li>20 minutes to fast charge to 75% ($.25/minute)</li>
+                        </ul>
+                      <li>Hybrid</li>
+                        <ul>
+                          <li>60mpg</li>
+                          <li>600 miles/tank</li>
+                        </ul>
+                    </ol>
+                  </div>
+                  <div class="index-main-start__title"> Are you interested in using an electric car?</div>
+                  <div class="radio-holder">
+                    <div>
+                      <input type="radio" id="yes" name="wantsElectric" value="true" checked>
+                      <label for="yes">Yes</label>
+                    </div>
+                    <div>
+                      <input type="radio" id="No" name="wantsElectric" value="false">
                       <label for="no">No</label>
                     </div>
                   </div>
@@ -301,7 +329,7 @@ display: inline-block;
     
         <ul class="f-menu__wrapper">
           <li class="f-menu__item">
-            <a class="f-menu__link" href="work-info.html">Waive Work</a>
+            <a class="f-menu__link" href="waive-car.html">WaiveCar</a>
           </li>
       
 <!--
