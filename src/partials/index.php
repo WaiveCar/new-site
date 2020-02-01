@@ -61,7 +61,7 @@ display: inline-block;
             <div class="index-main-info__title">Sign up for WaiveWork</div>
             
             <ul class="index-main-info__list">
-              <li class="index-main-info__list-item">Help the environment with our fresh efficient hybrids or electric cars</li>
+              <li class="index-main-info__list-item">Help the environment with our fresh efficient hybrid cars</li>
               <li class="index-main-info__list-item">Take the car home with you</li>
             </ul>
           </a>

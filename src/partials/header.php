@@ -80,28 +80,6 @@
         </a>
         
         <nav class="h-menu">
-        <?
-          $header = [
-            [ 'waive-car.html', 'WaiveCar' ],
-            //[ "how-it-works.html", 'How it Works' ],
-            [ "faq", 'FAQ' ],
-            [ 'about.html', 'About us' ]
-          ];
-          foreach($header as $row) {
-            list($path, $text) = $row;
-            if ($PAGETITLE === $text) {
-              $class = "h-menu__item h-menu__item--active";
-              $href = "#";
-            } else {
-              $class = "h-menu__item";
-              $href = $path;
-            }
-
-            ?>  
-            <span class="<?= $class ?>">
-              <a class="h-menu__link" href="<?= $href ?>"><?= $text ?></a>
-            </span>
-          <? } ?>
           <a class="h-menu__login" href="https://lb.waivecar.com/login">Login</a>
         </nav>
   

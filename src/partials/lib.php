@@ -10,30 +10,6 @@ function footer_links() {
       </a>
   
       <div class="f-menu">
-        <div class="f-menu__title">Company</div>
-    
-        <ul class="f-menu__wrapper">
-          <li class="f-menu__item">
-            <a class="f-menu__link" href="waive-car.html">WaiveCar</a>
-          </li>
-      
-<!--
-          <li class="f-menu__item">
-            <a class="f-menu__link" href="how-it-works.html">How it Works</a>
-          </li>
--->
-      
-          <li class="f-menu__item">
-            <a class="f-menu__link" href="faq.html">FAQ</a>
-          </li>
-      
-          <li class="f-menu__item">
-            <a class="f-menu__link" href="about.html">About Us</a>
-          </li>
-        </ul>
-      </div>
-  
-      <div class="f-menu">
         <div class="f-menu__title">More</div>
     
         <ul class="f-menu__wrapper">
