@@ -4,9 +4,7 @@ function footer_links() {
   ?><div class="footer__container">
       
       <a title="WaveCar" class="f-logo" href="index.html">
-        <svg title="WaveCar" class="f-logo__icon">
-          <use xlink:href="#logo"></use>
-        </svg>
+       <img src="/images/waivecar-blacktext-logo.svg">
       </a>
   
       <div class="f-menu">
@@ -59,6 +57,10 @@ function footer_links() {
           </a>
         
         </div>
+        <p style=color:white>
+          312 Arizona Ave<br>
+          Santa Monica, CA, 90401, US
+        </p>
       </div>
       
     </div><?

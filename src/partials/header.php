@@ -74,9 +74,7 @@
       <div class="header__wrapper header__wrapper--inner">
         
         <a class="h-logo" title='WaveCar' href="index.html">
-          <svg title="WaveCar" class="h-logo__icon">
-            <use xlink:href="#logo"></use>
-          </svg>
+          <img src="/images/waivecar-blacktext-logo.svg">
         </a>
         
         <nav class="h-menu">
