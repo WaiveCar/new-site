@@ -74,7 +74,7 @@
       <div class="header__wrapper header__wrapper--inner">
         
         <a class="h-logo" title='WaveCar' href="index.html">
-          <img src="/images/waivecar-blacktext-logo.svg">
+          <img style=width:300px src="/images/waivecar-blacktext-logo.svg">
         </a>
         
         <nav class="h-menu">

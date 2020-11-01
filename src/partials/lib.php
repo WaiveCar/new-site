@@ -4,7 +4,7 @@ function footer_links() {
   ?><div class="footer__container">
       
       <a title="WaveCar" class="f-logo" href="index.html">
-       <img src="/images/waivecar-blacktext-logo.svg">
+       <img style=width:200px src="/images/waivecar-whitetext-logo.svg">
       </a>
   
       <div class="f-menu">
@@ -57,7 +57,7 @@ function footer_links() {
           </a>
         
         </div>
-        <p style=color:white>
+        <p style=color:white;font-size:16px;margin:1rem>
           312 Arizona Ave<br>
           Santa Monica, CA, 90401, US
         </p>
