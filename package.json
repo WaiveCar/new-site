@@ -3,7 +3,7 @@
   "devDependencies": {
     "browser-sync": "*",
     "del": "*",
-    "gulp": "*",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "*",
     "gulp-clean-css": "*",
     "gulp-rename": "*",
@@ -11,7 +11,11 @@
     "gulp-uglify": "*",
     "gulp-watch": "*",
     "run-sequence": "*",
+    "sass": "^1.35.1",
     "sass-mq": "*",
     "susy": "*"
+  },
+  "dependencies": {
+    "gulp-util": "^3.0.8"
   }
 }

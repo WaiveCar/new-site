@@ -3,15 +3,10 @@
 'use strict';
 
 
-/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
- *
- *  Modules
- *
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-
 const gulp = require('gulp');
 const browserSync = require('browser-sync');
-const sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('sass'));
+
 const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
 const uglify = require('gulp-uglify');
@@ -104,11 +99,7 @@ gulp.task('css', () => {
 
 
 
-/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
- *
- *  Watchers
- *
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/*
 
 gulp.task('watch', ['sync', 'css'], () => {
   watch(paths.sass, () => {
@@ -131,6 +122,7 @@ watch(paths.pic, () => {
   browserSync.reload();
 });
 });
+*/
 
 
 
@@ -200,14 +192,6 @@ gulp.task('dist-clean', () => {
 });
 
 
-//
-// Group the distribution tasks
-//
-gulp.task('dist', function() {
-
-  runSequence(
-    'dist-clean',
-    ['dist-move', 'dist-css', 'dist-js']
-  );
-
-});
+gulp.task('dist', 
+  gulp.series( 'dist-clean', 'dist-move', 'dist-css', 'dist-js' )
+);

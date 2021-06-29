@@ -3,7 +3,6 @@
 base=`pwd`
 mv $base/dist/guide /tmp
 pagelist="work-signup about index faq how-it-works privacy terms work-info work-step2 waive-car"
-. "$HOME/.nvm/nvm.sh"
 {
   cd src
   for i in $pagelist; do
@@ -12,7 +11,7 @@ pagelist="work-signup about index faq how-it-works privacy terms work-info work-
   done
   cd ..
 }
-gulp dist
+node  --stack-trace-limit=5000 --stack-size=10000  node_modules/.bin/gulp dist
 
 {
   cd src
